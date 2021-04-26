@@ -13,18 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\gameObj">
+      <UniqueIdentifier>{ff9a19d0-75c0-4779-86ff-f20d7446f234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gameObj">
+      <UniqueIdentifier>{ca5fb422-6a9b-4591-97d0-8661dabe3b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gameObj\render">
+      <UniqueIdentifier>{ddf6716d-b9cc-4802-ab4c-b13d0fe45f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="olc::PGE">
+      <UniqueIdentifier>{0ebc0167-4ba6-47e4-93df-4984963d5751}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="LazySprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="olcPixelGameEngine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="interfaces.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\gameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="LazySprite.h">
+      <Filter>Header Files\gameObj\render</Filter>
+    </ClInclude>
+    <ClInclude Include="olcPGEX_TransformedView.h">
+      <Filter>olc::PGE</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files\gameObj\render</Filter>
+    </ClInclude>
+    <ClInclude Include="olcPixelGameEngine.h">
+      <Filter>olc::PGE</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

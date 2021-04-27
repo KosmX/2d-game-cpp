@@ -12,10 +12,15 @@ namespace render {
 	}
 
 	LazySprite::LazySprite(int u, int v, int sizeU, int sizeV)
-		: uv(u, v), size(sizeU, sizeV)
+		: LazySprite(olc::vi2d(u, v), olc::vi2d(sizeU, sizeV))
+	{}
+	LazySprite::LazySprite(olc::vi2d pos, olc::vi2d size)
+		: uv(pos), size(size)
 	{
 		sprite = nullptr;
 	}
+
+	
 	void LazySprite::render(olc::TransformedView& scene, olc::vf2d pos, olc::vf2d scale)
 	{
 		scene.DrawPartialDecal(pos, this->getDecay(), uv, size, scale);

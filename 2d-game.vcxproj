@@ -149,6 +149,8 @@
     <ClCompile Include="ResourceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="olc.h" />
+    <ClInclude Include="ITexture.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="interfaces.h" />
     <ClInclude Include="LazySprite.h" />

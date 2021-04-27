@@ -59,5 +59,11 @@
     <ClInclude Include="olcPixelGameEngine.h">
       <Filter>olc::PGE</Filter>
     </ClInclude>
+    <ClInclude Include="ITexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="olc.h">
+      <Filter>olc::PGE</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

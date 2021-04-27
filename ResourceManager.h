@@ -25,22 +25,19 @@ namespace render
 		 */
 		static void createInstance(std::string* parent = nullptr);
 
-		static olc::Decal* getSprite(std::string& key);
+		static olc::Decal* getSprite(const std::string& key);
 
 	private:
 
-		std::string parentFolder;
+		const std::string parentFolder;
 		ResourceManager(std::string* parent, olc::ResourcePack *pack = nullptr);
 		ResourceManager(const ResourceManager& other) = default; //make it private... I won't copy it.
 		std::map<std::string, SpriteManager*> resourceMap;
 		olc::ResourcePack* pack;
 	public:
-		olc::Decal* getDecal(std::string* string);
-		olc::Decal* operator[](std::string* key);
-		olc::Decal* operator[](std::string& key)
-		{
-			return this->operator[](&key);
-		}
+		olc::Decal* getDecal(const std::string& string);
+		//olc::Decal* operator[](std::string* key);
+		olc::Decal* operator[](const std::string& key);
 		
 		~ResourceManager();
 	};

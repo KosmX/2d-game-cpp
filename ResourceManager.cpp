@@ -2,23 +2,16 @@
 
 namespace render
 {
-	ResourceManager::ResourceManager(std::string* parent, olc::ResourcePack* pack) : pack(pack)
-	{
-		if (parent != nullptr) {
-			this->parentFolder = *parent;
-		}
-		else{
-			parentFolder = "./";
-		}
-	}
+	ResourceManager::ResourceManager(std::string* parent, olc::ResourcePack* pack) : parentFolder(parent != nullptr ? *parent : "./"), pack(pack)
+	{}
 
-	olc::Decal* ResourceManager::getDecal(std::string* string)
+	olc::Decal* ResourceManager::getDecal(const std::string& string)
 	{
-		if(resourceMap.count(*string) == 0){
-			std::string tmp(this->parentFolder + *string);
-			resourceMap[*string] = new SpriteManager(tmp, pack);
+		if(resourceMap.count(string) == 0){
+			std::string tmp(this->parentFolder + string);
+			resourceMap[string] = new SpriteManager(tmp, pack);
 		}
-		return resourceMap[*string]->getDecal();
+		return resourceMap[string]->getDecal();
 	}
 
 	ResourceManager::~ResourceManager()
@@ -33,11 +26,10 @@ namespace render
 		return *instance;
 	}
 
-	olc::Decal* ResourceManager::operator[](std::string* key)
+	olc::Decal* ResourceManager::operator[](const std::string& key)
 	{
 		return this->getDecal(key);
 	}
-
 
 
 	/**
@@ -48,7 +40,7 @@ namespace render
 		instance = std::make_unique<ResourceManager>(*new ResourceManager(parent));
 	}
 
-	olc::Decal* ResourceManager::getSprite(std::string& key)
+	olc::Decal* ResourceManager::getSprite(const std::string& key)
 	{
 		return getInstance()[key];
 	}

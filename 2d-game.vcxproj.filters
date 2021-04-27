@@ -33,10 +33,10 @@
     <ClCompile Include="Entity.cpp">
       <Filter>Source Files\gameObj</Filter>
     </ClCompile>
-    <ClCompile Include="LazySprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="LazySprite.cpp">
       <Filter>Source Files\gameObj</Filter>
     </ClCompile>
   </ItemGroup>

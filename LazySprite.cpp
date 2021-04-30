@@ -11,11 +11,11 @@ namespace render {
 		return this->sprite;
 	}
 
-	LazySprite::LazySprite(int u, int v, int sizeU, int sizeV)
-		: LazySprite(olc::vi2d(u, v), olc::vi2d(sizeU, sizeV))
+	LazySprite::LazySprite(const std::string& resName, int u, int v, int sizeU, int sizeV)
+		: LazySprite(resName, olc::vi2d(u, v), olc::vi2d(sizeU, sizeV))
 	{}
-	LazySprite::LazySprite(olc::vi2d pos, olc::vi2d size)
-		: uv(pos), size(size)
+	LazySprite::LazySprite(const std::string& resName, olc::vi2d pos, olc::vi2d size)
+		: resourceName(resName), uv(pos), size(size)
 	{
 		sprite = nullptr;
 	}

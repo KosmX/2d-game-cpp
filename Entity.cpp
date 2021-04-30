@@ -6,6 +6,14 @@ namespace entities {
 	{
 		
 	}
+	olc::vf2d Entity::getPos() const
+	{
+		return this->pos;
+	}
+	void Entity::render(olc::TransformedView& scene) const
+	{
+		this->texture.render(scene, *this);
+	}
 	Entity::~Entity()
 	{
 		delete &texture;

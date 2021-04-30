@@ -9,14 +9,14 @@ namespace entities {
 	{
 	protected:
 		olc::vf2d pos; //I can store these safely directly
-		render::ITexture& texture;
+		virtual render::ITexture& getTexture() = 0;
 	public:
 
 		Entity(render::ITexture& texture, const olc::vf2d& pos);
 		
 		virtual olc::vf2d getPos() const;
 
-		virtual void tick(float deltaT);
+		virtual void tick(float deltaT){}
 
 		//this shouldn't change it's state
 		virtual void render(olc::TransformedView& scene) const;

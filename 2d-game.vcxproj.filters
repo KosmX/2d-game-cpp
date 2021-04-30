@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Header Files\gameObj">
       <UniqueIdentifier>{ff9a19d0-75c0-4779-86ff-f20d7446f234}</UniqueIdentifier>
     </Filter>
@@ -24,6 +20,9 @@
     </Filter>
     <Filter Include="olc::PGE">
       <UniqueIdentifier>{0ebc0167-4ba6-47e4-93df-4984963d5751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gameObj\management">
+      <UniqueIdentifier>{886a9672-46a0-46f4-a068-e12dce07d024}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +37,12 @@
     </ClCompile>
     <ClCompile Include="LazySprite.cpp">
       <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleSprite.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="mainGame.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,11 +64,23 @@
     <ClInclude Include="olcPixelGameEngine.h">
       <Filter>olc::PGE</Filter>
     </ClInclude>
-    <ClInclude Include="ITexture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="olc.h">
       <Filter>olc::PGE</Filter>
+    </ClInclude>
+    <ClInclude Include="ITexture.h">
+      <Filter>Header Files\gameObj\render</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSprite.h">
+      <Filter>Header Files\gameObj\render</Filter>
+    </ClInclude>
+    <ClInclude Include="mainGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicArray.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

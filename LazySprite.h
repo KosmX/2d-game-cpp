@@ -25,14 +25,14 @@ namespace render {
 		 * u, v the texture coordinates on the image,
 		 * sizeU, V are the size of that sprite
 		 */
-		LazySprite(int u, int v, int sizeU = 16, int sizeV = 16);
+		LazySprite(const std::string& resName, int u, int v, int sizeU = 16, int sizeV = 16);
 
-		LazySprite(olc::vi2d pos, olc::vi2d size = olc::vi2d(16, 16));
+		LazySprite(const std::string& resName, olc::vi2d pos, olc::vi2d size = olc::vi2d(16, 16));
 
 		/**
 		 * Render the sprite in world-space
 		 */
-		void render(olc::TransformedView& scene, olc::vf2d, olc::vf2d scale);
+		void render(olc::TransformedView& scene, olc::vf2d, olc::vf2d scale = olc::vf2d(1, 1));
 
 		void renderCentered(olc::TransformedView& scene, olc::vf2d, olc::vf2d scale);
 

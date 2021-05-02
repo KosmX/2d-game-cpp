@@ -1,0 +1,106 @@
+﻿  Entity.cpp
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,52): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,62): error C2061: syntax error: identifier 'Entity'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,31): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,41): error C2065: 'Entity': undeclared identifier
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,20): error C2923: 'std::shared_ptr': 'Entity' is not a valid template type argument for parameter '_Ty'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,20): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter 'T', expected a real type
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,31): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,41): error C2065: 'Entity': undeclared identifier
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,20): error C2923: 'std::shared_ptr': 'Entity' is not a valid template type argument for parameter '_Ty'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,20): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter 'T', expected a real type
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,44): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,54): error C2061: syntax error: identifier 'Entity'
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(9,2): error C2504: 'Entity': base class undefined
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(17,15): error C3668: 'entities::WallEntity::getAsWall': method with override specifier 'override' did not override any base class methods
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.cpp(21,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.cpp(21,20): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.cpp(49,35): error C2660: 'render::ITexture::render': function does not take 2 arguments
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,16): message : see declaration of 'render::ITexture::render'
+  game.cpp
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,52): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,62): error C2061: syntax error: identifier 'Entity'
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,44): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,54): error C2061: syntax error: identifier 'Entity'
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(9,2): error C2504: 'Entity': base class undefined
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(15,32): error C2061: syntax error: identifier 'GameClient'
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(17,15): error C3668: 'entities::WallEntity::getAsWall': method with override specifier 'override' did not override any base class methods
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(25,21): error C2061: syntax error: identifier 'GameClient'
+  mainGame.cpp
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,52): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,62): error C2061: syntax error: identifier 'Entity'
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,44): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,54): error C2061: syntax error: identifier 'Entity'
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(9,2): error C2504: 'Entity': base class undefined
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(15,32): error C2061: syntax error: identifier 'GameClient'
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(17,15): error C3668: 'entities::WallEntity::getAsWall': method with override specifier 'override' did not override any base class methods
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(25,21): error C2061: syntax error: identifier 'GameClient'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.cpp(47,35): error C2660: 'entities::Entity::tick': function does not take 2 arguments
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(25,16): message : see declaration of 'entities::Entity::tick'
+  ResourceManager.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(3579,1): error C2248: 'render::ResourceManager::ResourceManager': cannot access private member declared in class 'render::ResourceManager'
+C:\Users\kosmx\Documents\GitHub\2d-game\ResourceManager.h(34): message : see declaration of 'render::ResourceManager::ResourceManager'
+C:\Users\kosmx\Documents\GitHub\2d-game\ResourceManager.h(15): message : see declaration of 'render::ResourceManager'
+C:\Users\kosmx\Documents\GitHub\2d-game\ResourceManager.cpp(40): message : see reference to function template instantiation 'std::unique_ptr<render::ResourceManager,std::default_delete<render::ResourceManager>> std::make_unique<render::ResourceManager,render::ResourceManager&,0>(render::ResourceManager &)' being compiled
+  SimpleSprite.cpp
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,31): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,41): error C2065: 'Entity': undeclared identifier
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,20): error C2923: 'std::shared_ptr': 'Entity' is not a valid template type argument for parameter '_Ty'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,20): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter 'T', expected a real type
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,31): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,41): error C2065: 'Entity': undeclared identifier
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,20): error C2923: 'std::shared_ptr': 'Entity' is not a valid template type argument for parameter '_Ty'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,20): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter 'T', expected a real type
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(9,2): error C2504: 'Entity': base class undefined
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(17,15): error C3668: 'entities::WallEntity::getAsWall': method with override specifier 'override' did not override any base class methods
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,11): error C2653: 'render': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,27): error C2143: syntax error: missing ';' before '&'
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,27): error C2433: 'entities::Entity::ITexture': 'virtual' not permitted on data declarations
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,45): error C2238: unexpected token(s) preceding ';'
+  WallEntity.cpp
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,52): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\ITexture.h(14,62): error C2061: syntax error: identifier 'Entity'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,31): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,41): error C2065: 'Entity': undeclared identifier
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,20): error C2923: 'std::shared_ptr': 'Entity' is not a valid template type argument for parameter '_Ty'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,20): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter 'T', expected a real type
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,31): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,41): error C2065: 'Entity': undeclared identifier
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,20): error C2923: 'std::shared_ptr': 'Entity' is not a valid template type argument for parameter '_Ty'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,20): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter 'T', expected a real type
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(33,21): error C2143: syntax error: missing ';' before '*'
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(33,21): error C2433: 'entities::Entity::WallEntity': 'virtual' not permitted on data declarations
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(33,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(34,3): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,8): error C3668: 'render::SimpleSprite::render': method with override specifier 'override' did not override any base class methods
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(17,15): error C3668: 'entities::WallEntity::getAsWall': method with override specifier 'override' did not override any base class methods
+  WallSprite.cpp
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,31): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,41): error C2065: 'Entity': undeclared identifier
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,20): error C2923: 'std::shared_ptr': 'Entity' is not a valid template type argument for parameter '_Ty'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(21,20): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter 'T', expected a real type
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,31): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,41): error C2065: 'Entity': undeclared identifier
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,20): error C2923: 'std::shared_ptr': 'Entity' is not a valid template type argument for parameter '_Ty'
+C:\Users\kosmx\Documents\GitHub\2d-game\mainGame.h(27,20): error C3203: 'shared_ptr': unspecialized class template can't be used as a template argument for template parameter 'T', expected a real type
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(11,2): error C2504: 'ITexture': base class undefined
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,44): error C2653: 'entities': is not a class or namespace name
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,54): error C2061: syntax error: identifier 'Entity'
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(18,8): error C3668: 'render::SimpleSprite::render': method with override specifier 'override' did not override any base class methods
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(9,2): error C2504: 'Entity': base class undefined
+C:\Users\kosmx\Documents\GitHub\2d-game\WallEntity.h(17,15): error C3668: 'entities::WallEntity::getAsWall': method with override specifier 'override' did not override any base class methods
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,19): error C2039: 'ITexture': is not a member of 'render'
+C:\Users\kosmx\Documents\GitHub\2d-game\SimpleSprite.h(7): message : see declaration of 'render'
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,27): error C2143: syntax error: missing ';' before '&'
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,27): error C2433: 'entities::Entity::ITexture': 'virtual' not permitted on data declarations
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kosmx\Documents\GitHub\2d-game\Entity.h(14,45): error C2238: unexpected token(s) preceding ';'

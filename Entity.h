@@ -1,16 +1,16 @@
 #pragma once
 
 #include "olc.h"
-#include "ITexture.h"
 #include "mainGame.h"
+#include "WallEntity.h"
 
 namespace entities {
+	class WallEntity;
 
 	class Entity
 	{
 	protected:
 		olc::vf2d pos; //I can store these safely directly
-		virtual render::ITexture& getTexture() = 0;
 
 		virtual olc::vf2d getHitBoxSize() const = 0;
 		virtual olc::vf2d getCollision(const Entity& other);
@@ -29,9 +29,26 @@ namespace entities {
 		virtual ~Entity() = default;
 
 		//TODO getAs*** stuff, all virtual
+		virtual WallEntity* getAsWall()
+		{
+			return nullptr;
+		}
+		
 	};
 
+	
+	class WallEntity :
+		public Entity
+	{
 
+	private:
+
+	public:
+
+		virtual void initWallTexture(GameClient& client);
+
+		WallEntity* getAsWall() override;
+	};
 }
 
 /**

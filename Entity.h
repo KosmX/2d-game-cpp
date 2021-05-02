@@ -2,6 +2,7 @@
 
 #include "olc.h"
 #include "ITexture.h"
+#include "mainGame.h"
 
 namespace entities {
 
@@ -10,18 +11,22 @@ namespace entities {
 	protected:
 		olc::vf2d pos; //I can store these safely directly
 		virtual render::ITexture& getTexture() = 0;
+
+		virtual olc::vf2d getHitBoxSize() const = 0;
+		virtual olc::vf2d getCollision(const Entity& other);
 	public:
 
-		Entity(render::ITexture& texture, const olc::vf2d& pos);
-		
-		virtual olc::vf2d getPos() const;
+		Entity(const olc::vf2d& pos);
 
-		virtual void tick(float deltaT){}
+		//nodiscard???
+		[[nodiscard]] virtual olc::vf2d getPos() const;
+
+		virtual void tick(GameClient& client, float deltaT){}
 
 		//this shouldn't change it's state
-		virtual void render(olc::TransformedView& scene) const;
+		virtual void render(olc::TransformedView& scene);
 
-		virtual ~Entity();
+		virtual ~Entity() = default;
 
 		//TODO getAs*** stuff, all virtual
 	};

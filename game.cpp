@@ -29,8 +29,10 @@ int main(int argc, char* argv[])
 		//TODO write something meaningful
 	}
 
-	GameClient client;
+	GameClient::createInstance();
 
+	GameClient& client = GameClient::createInstance();
+	
 	if(client.Construct(256, 240, 4, 4)){
 		client.Start();
 	}

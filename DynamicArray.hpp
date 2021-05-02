@@ -1,7 +1,6 @@
 #pragma once
 
 #include <list>
-#include <vector>
 
 //I won't be able to do an enhanced (Range-based) for with this...
 
@@ -12,14 +11,38 @@ template<typename T>
 class DynamicArray
 {
 private:
-	std::vector<T> entries;
+	//I won't be very efficient
+	std::list<T> entries;
 	std::list<T> newEntries;
 
 public:
+	DynamicArray() : entries(), newEntries(){}
+
+	DynamicArray<T>& operator+=(T& entry)
+	{
+		newEntries.push_back(entry);
+		return *this;
+	}
+
+	void finalizeAdd()
+	{
+		//this moves every entry form newEntries to entries.
+		//makes the newEntries empty.
+		entries.merge(newEntries);
+	}
+
+	void removeIf(bool (*l)(const T&))
+	{
+		entries.remove_if(l);
+	}
 	
+	//It will mainly iterate, not search
 	auto begin()
 	{
 		return entries.begin();
 	}
+	auto end()
+	{
+		return entries.end();
+	}
 };
-

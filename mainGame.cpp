@@ -1,9 +1,30 @@
 #include "mainGame.h"
 #include "ResourceManager.h"
+#include <algorithm>
+
+const float maxTimeDelta = 0.05f;
+using namespace std;
+using namespace entities;
+
+GameClient& GameClient::createInstance()
+{
+	instance = new GameClient();
+	return *instance;
+}
 
 GameClient::GameClient()
 {
 	this->sAppName = "KosmX's game";
+}
+
+DynamicArray<std::shared_ptr<entities::Entity>>& GameClient::getEntities()
+{
+	return this->entities;
+}
+
+GameClient& GameClient::getInstance()
+{
+	return *instance;
 }
 
 bool GameClient::OnUserCreate()
@@ -19,12 +40,12 @@ bool GameClient::OnUserCreate()
 
 bool GameClient::OnUserUpdate(float fElapsedTime)
 {
-
+	fElapsedTime = std::min(maxTimeDelta, fElapsedTime);
 	//return false if it want to exit.
-	return true;
-}
 
-GameClient::~GameClient()
-{
-	//TODO free anything
+	for(std::shared_ptr<Entity> entity : this->getEntities()){
+		entity->tick(*this, fElapsedTime);
+	}
+	
+	return true;
 }

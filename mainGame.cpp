@@ -49,3 +49,5 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 	
 	return true;
 }
+
+GameClient* GameClient::instance = nullptr;

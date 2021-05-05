@@ -149,6 +149,7 @@
     <ClCompile Include="mainGame.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SimpleSprite.cpp" />
+    <ClCompile Include="WallEntity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynamicArray.hpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SimpleSprite.h" />
+    <ClInclude Include="WallEntity.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

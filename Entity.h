@@ -2,9 +2,12 @@
 
 #include "olc.h"
 #include "ITexture.h"
-#include "mainGame.h"
+
+class GameClient;
 
 namespace entities {
+
+	class WallEntity;
 
 	class Entity
 	{
@@ -29,6 +32,12 @@ namespace entities {
 		virtual ~Entity() = default;
 
 		//TODO getAs*** stuff, all virtual
+		//same purpose to dynamic_cast, but without using language server
+		virtual WallEntity* getAsWallEntity()
+		{
+			return nullptr;
+		}
+		
 	};
 
 

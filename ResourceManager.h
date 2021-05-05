@@ -1,8 +1,6 @@
 #pragma once
 
 #include <string>
-#include <map>
-#include <memory>
 #include "olcPixelGameEngine.h"
 
 namespace render
@@ -15,7 +13,7 @@ namespace render
 	class ResourceManager
 	{
 	private: //static
-		static std::unique_ptr<ResourceManager> instance;
+		static ResourceManager* instance;
 		static ResourceManager& getInstance(); //who needs that???
 	
 	public: //static

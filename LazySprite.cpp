@@ -6,28 +6,24 @@ namespace render {
 	olc::Decal* LazySprite::getDecay()
 	{
 		if (sprite == nullptr) {
-			this->sprite = render::ResourceManager::getSprite(this->resourceName);
+			this->sprite = ResourceManager::getSprite(this->resourceName);
 		}
 		return this->sprite;
 	}
 
-	LazySprite::LazySprite(const std::string& resName, int u, int v, int sizeU, int sizeV)
-		: LazySprite(resName, olc::vi2d(u, v), olc::vi2d(sizeU, sizeV))
-	{}
-	LazySprite::LazySprite(const std::string& resName, olc::vi2d pos, olc::vi2d size)
-		: resourceName(resName), uv(pos), size(size)
-	{
-		sprite = nullptr;
-	}
 
-	
-	void LazySprite::render(olc::TransformedView& scene, olc::vf2d pos, olc::vf2d scale)
+	LazySprite::LazySprite(const std::string& resName)
+		: sprite(nullptr), resourceName(resName)
+	{}
+
+	void LazySprite::render(olc::TransformedView& scene, const olc::vi2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale)
 	{
 		scene.DrawPartialDecal(pos, this->getDecay(), uv, size, scale);
 	}
-	void LazySprite::renderCentered(olc::TransformedView& scene, olc::vf2d pos, olc::vf2d scale)
+	
+
+	void LazySprite::renderCentered(olc::TransformedView& scene, const olc::vi2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale)
 	{
-		//probably modify the ints to doubles???
-		render(scene, pos + size*2.0, scale);
+		this->render(scene, pos + size / 2.0f, uv, size, scale);
 	}
 }

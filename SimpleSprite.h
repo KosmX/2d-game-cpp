@@ -3,7 +3,6 @@
 #include <string>
 #include "LazySprite.h"
 
-
 namespace render {
 
 	class SimpleSprite :
@@ -11,9 +10,10 @@ namespace render {
 	{
 	private:
 		LazySprite sprite;
-
+		const olc::vf2d uv, size;
+	
 	public:
-		SimpleSprite(const std::string name, olc::vi2d pos);
+		SimpleSprite(const std::string& name, const olc::vi2d& pos, const olc::vf2d& size);
 
 		void render(olc::TransformedView& scene, entities::Entity& entity) override;
 	};

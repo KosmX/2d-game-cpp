@@ -1,6 +1,10 @@
 #pragma once
-#include "Entity.h"
+
 #include "olcPGEX_TransformedView.h"
+
+namespace entities {
+	class Entity;
+}
 
 namespace render
 {
@@ -10,7 +14,7 @@ namespace render
 	public:
 
 		//Giving the entity will reduce the variables needed, and will make it's use more dynamic
-		virtual void render(olc::TransformedView& scene, Entity& entity) = 0;
+		virtual void render(olc::TransformedView& scene, entities::Entity& entity) = 0;
 		
 		virtual ~ITexture() = default;
 	};

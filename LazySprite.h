@@ -13,28 +13,26 @@ namespace render {
 	class LazySprite
 	{
 	private:
-		olc::Decal* sprite = nullptr;
+		olc::Decal* sprite;
 
 	protected:
 		const std::string resourceName;
 		//int const u, v, sizeU, sizeV;
-		olc::vi2d const uv, size;
+		//olc::vi2d const uv, size;
 		olc::Decal* getDecay();
 	public:
 		/**
 		 * u, v the texture coordinates on the image,
 		 * sizeU, V are the size of that sprite
 		 */
-		LazySprite(const std::string& resName, int u, int v, int sizeU = 16, int sizeV = 16);
-
-		LazySprite(const std::string& resName, olc::vi2d pos, olc::vi2d size = olc::vi2d(16, 16));
+		explicit LazySprite(const std::string& resName);
 
 		/**
 		 * Render the sprite in world-space
 		 */
-		void render(olc::TransformedView& scene, olc::vf2d, olc::vf2d scale = olc::vf2d(1, 1));
+		void render(olc::TransformedView& scene, const olc::vi2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale = olc::vf2d(1, 1));
 
-		void renderCentered(olc::TransformedView& scene, olc::vf2d, olc::vf2d scale);
+		void renderCentered(olc::TransformedView& scene, const olc::vi2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale = olc::vf2d(1, 1));
 
 		//decal reference is not my stuff, I don't have to delete it.
 	};

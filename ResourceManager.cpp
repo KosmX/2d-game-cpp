@@ -37,7 +37,10 @@ namespace render
 	 */
 	void ResourceManager::createInstance(std::string* parent)
 	{
-		instance = std::make_unique<ResourceManager>(*new ResourceManager(parent));
+		if(instance != nullptr){
+			throw std::runtime_error("Can't create a second instance of a singleton resource manager");
+		}
+		instance = new ResourceManager(parent);
 	}
 
 	olc::Decal* ResourceManager::getSprite(const std::string& key)
@@ -59,5 +62,5 @@ namespace render
 		return &this->decalData;
 	}
 
-	//std::unique_ptr<ResourceManager> ResourceManager::instance;
+	ResourceManager* ResourceManager::instance = nullptr;
 }

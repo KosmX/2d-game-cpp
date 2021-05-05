@@ -148,11 +148,13 @@
     <ClCompile Include="LazySprite.cpp" />
     <ClCompile Include="mainGame.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="SimpleSprite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynamicArray.hpp" />
     <ClInclude Include="mainGame.h" />
     <ClInclude Include="olc.h" />
+    <ClInclude Include="ITexture.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="interfaces.h" />
     <ClInclude Include="LazySprite.h" />
@@ -160,6 +162,7 @@
     <ClInclude Include="olcPixelGameEngine.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="SimpleSprite.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

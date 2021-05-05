@@ -17,12 +17,17 @@ namespace entities {
 
 		virtual olc::vf2d getHitBoxSize() const = 0;
 		virtual olc::vf2d getCollision(const Entity& other);
+		bool is_initialized;
 	public:
-
+		
 		Entity(const olc::vf2d& pos);
+
+		virtual void init(GameClient& client){}
+		virtual boolean isInitialized();
 
 		//nodiscard???
 		[[nodiscard]] virtual olc::vf2d getPos() const;
+		[[nodiscard]] virtual olc::vf2d getSize() const;
 
 		virtual void tick(GameClient& client, float deltaT){}
 

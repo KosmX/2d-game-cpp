@@ -53,6 +53,9 @@
     <ClCompile Include="WallEntity.cpp">
       <Filter>Source Files\gameObj\entities</Filter>
     </ClCompile>
+    <ClCompile Include="WallTexture.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interfaces.h">
@@ -93,6 +96,9 @@
     </ClInclude>
     <ClInclude Include="WallEntity.h">
       <Filter>Header Files\gameObj\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="WallTexture.h">
+      <Filter>Header Files\gameObj\render</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

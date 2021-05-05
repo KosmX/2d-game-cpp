@@ -46,7 +46,13 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 	for(std::shared_ptr<Entity> entity : this->getEntities()){
 		entity->tick(*this, fElapsedTime);
 	}
-	
+
+	entities.finalizeAdd();
+	for(auto &entity : entities){
+		if(!entity->isInitialized()){
+			entity->init(*this);
+		}
+	}
 	return true;
 }
 

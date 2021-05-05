@@ -1,6 +1,7 @@
 #pragma once
 
 #include "olcPGEX_TransformedView.h"
+#include "LazySprite.h"
 
 namespace entities {
 	class Entity;

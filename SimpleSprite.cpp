@@ -8,5 +8,5 @@ render::SimpleSprite::SimpleSprite(const std::string& name, const vi2d& pos, con
 
 void render::SimpleSprite::render(olc::TransformedView& scene, entities::Entity& entity)
 {
-	this->sprite.render(scene, entity.getPos(), uv, size);
+	this->sprite.renderCentered(scene, entity.getPos(), uv, size);
 }

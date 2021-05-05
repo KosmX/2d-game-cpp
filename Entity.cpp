@@ -1,7 +1,5 @@
 #include "Entity.h"
 
-#include <utility>
-
 using namespace std;
 using namespace olc;
 
@@ -36,18 +34,28 @@ namespace entities {
 
 	
 	Entity::Entity(const olc::vf2d& pos)
-		: pos(pos)
-	{
-		
-	}
+		: pos(pos), is_initialized(false){}
+	
 	vf2d Entity::getPos() const
 	{
 		return this->pos;
 	}
+	
+	olc::vf2d Entity::getSize() const
+	{
+		return olc::vf2d(1, 1);
+	}
+	
 	void Entity::render(olc::TransformedView& scene)
 	{
 		getTexture().render(scene, *this);
 	}
+
+	boolean Entity::isInitialized()
+	{
+		return is_initialized;
+	}
+
 
 }
 

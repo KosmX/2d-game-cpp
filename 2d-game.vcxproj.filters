@@ -24,16 +24,13 @@
     <Filter Include="Header Files\gameObj\management">
       <UniqueIdentifier>{886a9672-46a0-46f4-a068-e12dce07d024}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gameObj\entities">
-      <UniqueIdentifier>{019a40f0-9aba-4843-a753-9ba31998703e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gameObj\entities">
-      <UniqueIdentifier>{bf3d32be-2a80-447b-ad99-95fd482d9b18}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\gameObj</Filter>
     </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
       <Filter>Source Files\gameObj</Filter>
@@ -41,16 +38,19 @@
     <ClCompile Include="LazySprite.cpp">
       <Filter>Source Files\gameObj</Filter>
     </ClCompile>
+    <ClCompile Include="SimpleSprite.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
     <ClCompile Include="mainGame.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Entity.cpp">
-      <Filter>Source Files\gameObj\entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interfaces.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\gameObj</Filter>
     </ClInclude>
     <ClInclude Include="LazySprite.h">
       <Filter>Header Files\gameObj\render</Filter>
@@ -67,6 +67,12 @@
     <ClInclude Include="olc.h">
       <Filter>olc::PGE</Filter>
     </ClInclude>
+    <ClInclude Include="ITexture.h">
+      <Filter>Header Files\gameObj\render</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSprite.h">
+      <Filter>Header Files\gameObj\render</Filter>
+    </ClInclude>
     <ClInclude Include="mainGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -75,9 +81,6 @@
     </ClInclude>
     <ClInclude Include="DynamicArray.hpp">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Entity.h">
-      <Filter>Header Files\gameObj\entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

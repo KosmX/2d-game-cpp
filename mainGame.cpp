@@ -5,6 +5,7 @@
 const float maxTimeDelta = 0.05f;
 using namespace std;
 using namespace entities;
+using namespace olc;
 
 GameClient& GameClient::createInstance()
 {
@@ -40,10 +41,12 @@ bool GameClient::OnUserCreate()
 
 bool GameClient::OnUserUpdate(float fElapsedTime)
 {
+
+	
 	fElapsedTime = std::min(maxTimeDelta, fElapsedTime);
 	//return false if it want to exit.
 
-	for(std::shared_ptr<Entity> entity : this->getEntities()){
+	for(std::shared_ptr<Entity>& entity : this->getEntities()){
 		entity->tick(*this, fElapsedTime);
 	}
 
@@ -53,6 +56,22 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 			entity->init(*this);
 		}
 	}
+
+	//lambda remove condition. because why not?
+	entities.removeIf([](const shared_ptr<Entity>& entity)->bool
+		{
+			return !entity->isAlive();
+		});
+
+	TransformedView scene;
+
+	scene.Initialise()
+
+	for(auto& entity : entities){
+		// I literally add entities to the scene :D
+		scene += entity;
+	}
+	
 	return true;
 }
 

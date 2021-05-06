@@ -18,16 +18,18 @@ namespace entities {
 		virtual olc::vf2d getHitBoxSize() const = 0;
 		virtual olc::vf2d getCollision(const Entity& other);
 		bool is_initialized;
+		bool is_alive; //walls shouldn't have variables like this. But it will be an intended bug.
 	public:
-		
+
 		Entity(const olc::vf2d& pos);
 
 		virtual void init(GameClient& client){}
-		virtual boolean isInitialized();
+		virtual bool isInitialized();
 
 		//nodiscard???
 		[[nodiscard]] virtual olc::vf2d getPos() const;
 		[[nodiscard]] virtual olc::vf2d getSize() const;
+		[[nodiscard]] virtual bool isAlive() const;
 
 		virtual void tick(GameClient& client, float deltaT){}
 
@@ -52,3 +54,4 @@ namespace entities {
  * I literally add entities to the scene :D
  */
 olc::TransformedView& operator+=(olc::TransformedView&, entities::Entity&);
+olc::TransformedView& operator+=(olc::TransformedView&, std::shared_ptr<entities::Entity>&);

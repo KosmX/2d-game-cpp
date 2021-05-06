@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DynamicArray&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAEAAAggQBQAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>DynamicArray.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameClient" Collapsed="true">
+    <Position X="1" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAABAAAAAAAAEABAAAAABAAQQACAAAAAAAAAA=</HashCode>
+      <FileName>mainGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="render::IRenderable" Collapsed="true">
+    <Position X="9.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>interfaces.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="render::ITexture" Collapsed="true">
+    <Position X="3.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ITexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="render::LazySprite" Collapsed="true">
+    <Position X="7.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAgAABAAAAAAQAAAAAAwAAA=</HashCode>
+      <FileName>LazySprite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="render::SpriteManager" Collapsed="true">
+    <Position X="7.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAABAAAAAAAAIAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ResourceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="render::ResourceManager" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAABAEFAAAAAFAAAQAAEAAAAAIAAA=</HashCode>
+      <FileName>ResourceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="render::SimpleSprite" Collapsed="true">
+    <Position X="4.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAIAAAAAAABAAAAAAAAAAAAAQAgA=</HashCode>
+      <FileName>SimpleSprite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="render::WallTexture" Collapsed="true">
+    <Position X="2.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAICAAAAAABAAAAAAgAAAAAAQAAA=</HashCode>
+      <FileName>WallTexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="entities::Entity" Collapsed="true">
+    <Position X="0.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABCAAAAQIAAAgAAAACAAIAAAAAIAAIEAAAAAIEQAAA=</HashCode>
+      <FileName>Entity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="entities::WallEntity" Collapsed="true">
+    <Position X="0.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAgAAAAIAAAAA=</HashCode>
+      <FileName>WallEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::TransformedView" Collapsed="true">
+    <Position X="8.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABHBQAQAAFAGAzQACAMCyEQQUAAACBAQAsDE4AAIAog=</HashCode>
+      <FileName>olcPGEX_TransformedView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::TileTransformedView" Collapsed="true">
+    <Position X="8.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAABAAAYAAAEAAAAAEAAKAAAAIAAAAEAIA=</HashCode>
+      <FileName>olcPGEX_TransformedView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::PixelGameEngine" Collapsed="true">
+    <Position X="1" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QoPpggsYRXDVtjgCGwsE0EVcQaBG2BiAGPRVSMDpMzk=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Sprite" Collapsed="true">
+    <Position X="20.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABABBAEACQAAQBQAAAAARAAAAAIAAQAAEAAgAAEAI=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::ResourcePack" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAEAAAIAAIBAIAgAAAAAAAAAAAACgIAIAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::ImageLoader" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAACAAAAAAAAAAIAAgAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Decal" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAQAAAAAAAAAAAAABAAAAAAUAEAAAAAAgA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Renderable" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAQAAAAAAAAAAAgAAAAAAEAQEAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Renderer" Collapsed="true">
+    <Position X="5.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAgAAAAAIBASAAACAAAAgAAAAAEAIBAAIBAAAEACgA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Platform" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAAAEAAAABAAAAAAAACAIAAAAAAAAQAEiAAACAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::PGEX" Collapsed="true">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAABAIAACAAAAgAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Renderer_OGL10" Collapsed="true">
+    <Position X="4.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAASAAQIBASCAACAAAAgAAAAAGAIBAAMJEAAEAAgA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Renderer_OGL33" Collapsed="true">
+    <Position X="6.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SCghAyFBQIBWSCIAGAAAIgABQAAGBJhBAsJMEEEACgg=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::GDIPlusStartup" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEBAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::ImageLoader_GDIPlus" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAIAAAAAAAAAgAAAAAAACAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::ImageLoader_LibPNG" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::ImageLoader_STB" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Platform_Windows" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgEAAEAAAABAABAAAAAKAIAAAAAAAAQAEiAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Platform_Linux" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgSAAEAAAgAAAAAAAAACAICgAAAAAAUAEiAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Platform_GLUT" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgIgAAAEAAAAAAAAAAAAACAJAAAQAAAAQAEiAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="olc::Platform_Emscripten" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAQAEiAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="olc::Pixel" Collapsed="true">
+    <Position X="20.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAABAQAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="olc::HWButton" Collapsed="true">
+    <Position X="16.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAgA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="olc::v2d_generic&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAgQQEAAAgAIAQAAAAAAhKAAgABgAAAAAAE=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="olc::ResourceBuffer" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="olc::DecalInstance" Collapsed="true">
+    <Position X="15" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAACAAAAAAACAAAAAAIAAAAAQAAAAAAgAAAAAAgA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="olc::LayerDesc" Collapsed="true">
+    <Position X="18.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAIAAAAAAAAABAABQAACAAAAAABQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="olc::vi2d" Collapsed="true">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::vu2d" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::vf2d" Collapsed="true">
+    <Position X="12.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::vd2d" Collapsed="true">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="wglSwapInterval_t" Collapsed="true">
+    <Position X="20.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="glDeviceContext_t" Collapsed="true">
+    <Position X="16.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="glRenderContext_t" Collapsed="true">
+    <Position X="18.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="glSwapInterval_t" Collapsed="true">
+    <Position X="22" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="locSwapInterval_t" Collapsed="true">
+    <Position X="15" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::GLchar" Collapsed="true">
+    <Position X="15" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::GLsizeiptr" Collapsed="true">
+    <Position X="20.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locCreateShader_t" Collapsed="true">
+    <Position X="16.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locCreateProgram_t" Collapsed="true">
+    <Position X="15" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locDeleteShader_t" Collapsed="true">
+    <Position X="20.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locShaderSource_t" Collapsed="true">
+    <Position X="22" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locCompileShader_t" Collapsed="true">
+    <Position X="22" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locLinkProgram_t" Collapsed="true">
+    <Position X="20.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locDeleteProgram_t" Collapsed="true">
+    <Position X="18.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locAttachShader_t" Collapsed="true">
+    <Position X="15" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locBindBuffer_t" Collapsed="true">
+    <Position X="16.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locBufferData_t" Collapsed="true">
+    <Position X="20.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locGenBuffers_t" Collapsed="true">
+    <Position X="15" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locVertexAttribPointer_t" Collapsed="true">
+    <Position X="18.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locEnableVertexAttribArray_t" Collapsed="true">
+    <Position X="22" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locUseProgram_t" Collapsed="true">
+    <Position X="16.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locBindVertexArray_t" Collapsed="true">
+    <Position X="18.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locGenVertexArrays_t" Collapsed="true">
+    <Position X="16.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="olc::locGetShaderInfoLog_t" Collapsed="true">
+    <Position X="18.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="olc::rcode" Collapsed="true">
+    <Position X="18.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgCA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="olc::Key" Collapsed="true">
+    <Position X="16.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgBKPCYRIAQCigCAAQAAwU8kkgMKYJhzAAAAvv//YQE=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="olc::DecalMode" Collapsed="true">
+    <Position X="15" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACAAAAAAABAAAIAAAAAAAAAAAAAgAAAABAA=</HashCode>
+      <FileName>olcPixelGameEngine.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

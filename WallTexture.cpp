@@ -20,7 +20,7 @@ namespace render
 
 		//I can't use index[] because that is not const function... WHY???
 		offset += (offsetMap.find(wallEntity.getNeighbourID())->second * this->size);
-		this->sprite.render(scene, wallEntity.getPos(), offset, size, wallEntity.getSize());
+		this->sprite.renderCentered(scene, wallEntity.getPos(), offset, size, wallEntity.getSize());
 	}
 
 

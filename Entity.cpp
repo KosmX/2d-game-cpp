@@ -34,32 +34,41 @@ namespace entities {
 
 	
 	Entity::Entity(const olc::vf2d& pos)
-		: pos(pos), is_initialized(false){}
+		: pos(pos), is_initialized(false), is_alive(true){}
 	
 	vf2d Entity::getPos() const
 	{
 		return this->pos;
 	}
 	
-	olc::vf2d Entity::getSize() const
+	vf2d Entity::getSize() const
 	{
-		return olc::vf2d(1, 1);
+		return vf2d(1/16, 1/16);
 	}
 	
-	void Entity::render(olc::TransformedView& scene)
+	void Entity::render(TransformedView& scene)
 	{
 		getTexture().render(scene, *this);
 	}
 
-	boolean Entity::isInitialized()
+	bool Entity::isInitialized()
 	{
 		return is_initialized;
 	}
 
+	bool Entity::isAlive() const
+	{
+		return this->is_alive;
+	}
 
 }
 
-TransformedView& operator+=(olc::TransformedView& scene, entities::Entity& entity) {
+TransformedView& operator+=(TransformedView& scene, entities::Entity& entity) {
 	entity.render(scene);
+	return scene;
+}
+
+TransformedView& operator+=(TransformedView& scene, std::shared_ptr<entities::Entity>& entity) {
+	entity->render(scene);
 	return scene;
 }

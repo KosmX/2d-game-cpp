@@ -2,7 +2,7 @@
 
 namespace render
 {
-	ResourceManager::ResourceManager(std::string* parent, olc::ResourcePack* pack) : parentFolder(parent != nullptr ? *parent : "./"), pack(pack)
+	ResourceManager::ResourceManager(std::string* parent, olc::ResourcePack* pack) : parentFolder(parent != nullptr ? *parent : "./DawnLike/"), pack(pack)
 	{}
 
 	olc::Decal* ResourceManager::getDecal(const std::string& string)

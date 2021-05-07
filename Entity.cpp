@@ -43,7 +43,7 @@ namespace entities {
 	
 	vf2d Entity::getSize() const
 	{
-		return vf2d(1/16, 1/16);
+		return vf2d(1, 1);
 	}
 	
 	void Entity::render(TransformedView& scene)

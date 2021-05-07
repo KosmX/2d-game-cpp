@@ -10,7 +10,7 @@ namespace render
 
 	
 	WallTexture::WallTexture(const std::string& resName, const vf2d& baseOffset, const vf2d& size)
-		: sprite(resName), baseOffset(baseOffset), size(size) {}
+		: sprite(resName), baseOffset(baseOffset * size), size(size) {}
 	void WallTexture::render(olc::TransformedView& scene, Entity& entity)
 	{
 		if(entity.getAsWallEntity() == nullptr){

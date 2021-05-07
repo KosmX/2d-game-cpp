@@ -21,7 +21,7 @@ namespace entities {
 		bool is_alive; //walls shouldn't have variables like this. But it will be an intended bug.
 	public:
 
-		Entity(const olc::vf2d& pos);
+		explicit Entity(const olc::vf2d& pos);
 
 		virtual void init(GameClient& client){}
 		virtual bool isInitialized();

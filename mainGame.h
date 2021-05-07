@@ -10,11 +10,13 @@ class GameClient :
 {
 private:
 	static GameClient* instance;
-	static GameClient& createInstance();
+	static GameClient& createInstance(bool debug);
 	//I want it to me a singleton, but I don't want to let anything init this
 	friend int main(int, char* []);
-	olc::vf2d viewArea = {0, 0};
-	olc::vf2d viewScale;
+	olc::vf2d viewArea = {-2, -2};
+	//olc::vf2d viewScale = {2, 2};
+	bool debug;
+	olc::TransformedView scene;
 public:
 	static GameClient& getInstance();
 
@@ -24,7 +26,7 @@ private:
 
 	
 public:
-	GameClient();
+	GameClient(bool debug = false);
 
 	DynamicArray<std::shared_ptr<entities::Entity>>& getEntities();
 	
@@ -32,7 +34,12 @@ public:
 
 	bool OnUserUpdate(float fElapsedTime) override;
 
+	void setDebugMode(bool bl = true);
 	
+	void addEntity(std::shared_ptr<entities::Entity>& entity);
+
+	GameClient& operator+=(std::shared_ptr<entities::Entity> entity);
+ 
 	//for some reason, probably I won't need it
 	//bool OnUserDestroy() override;
 };

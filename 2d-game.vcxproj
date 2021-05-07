@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DungeonGenerator.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="GameException.cpp" />
@@ -150,10 +151,12 @@
     <ClCompile Include="mainGame.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SimpleSprite.cpp" />
+    <ClCompile Include="TestGenerator.cpp" />
     <ClCompile Include="WallEntity.cpp" />
     <ClCompile Include="WallTexture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DungeonGenerator.h" />
     <ClInclude Include="DynamicArray.hpp" />
     <ClInclude Include="GameException.h" />
     <ClInclude Include="mainGame.h" />
@@ -167,6 +170,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SimpleSprite.h" />
+    <ClInclude Include="TestGenerator.h" />
     <ClInclude Include="WallEntity.h" />
     <ClInclude Include="WallTexture.h" />
   </ItemGroup>

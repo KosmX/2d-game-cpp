@@ -59,6 +59,12 @@
     <ClCompile Include="GameException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DungeonGenerator.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGenerator.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interfaces.h">
@@ -105,6 +111,12 @@
     </ClInclude>
     <ClInclude Include="GameException.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonGenerator.h">
+      <Filter>Header Files\gameObj\management</Filter>
+    </ClInclude>
+    <ClInclude Include="TestGenerator.h">
+      <Filter>Header Files\gameObj\management</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

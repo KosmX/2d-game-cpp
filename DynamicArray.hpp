@@ -45,4 +45,8 @@ public:
 	{
 		return entries.end();
 	}
+	int getSize() const
+	{
+		return entries.size();
+	}
 };

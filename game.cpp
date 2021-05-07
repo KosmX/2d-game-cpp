@@ -13,6 +13,7 @@ int main(int argc, char* argv[])
 	cout << argv[0] << endl;
 	
 	bool invalidArg = false;
+	bool debug = true;
 	for(int i = 0; i < argc; i++){
 		std::string tmp(argv[i]);
 		if(tmp == "-r" || tmp == "--resource"){
@@ -24,17 +25,19 @@ int main(int argc, char* argv[])
 				invalidArg = true;
 			}
 		}
+		else if(tmp == "-d"){
+			debug = true;
+		}
 	}
 	if(invalidArg){
 		cout << "Invalid arguments" << endl;
 		//TODO write something meaningful
+		return 0;
 	}
 
-	GameClient::createInstance();
-
-	GameClient& client = GameClient::createInstance();
+	GameClient& client = GameClient::createInstance(debug);
 	
-	if(client.Construct(256, 240, 4, 4)){
+	if(client.Construct(512, 400, 2, 2)){
 		client.Start();
 	}
 	return 0;

@@ -4,29 +4,46 @@
 
 using namespace olc;
 
-void entities::WallEntity::updateNeighbours()
-{
-	this->neighbourID = 0;
-	for (auto& entity : client.getEntities()) {
-		if (entity->getAsWallEntity() != nullptr) {
-			WallEntity& wallEntity = *entity->getAsWallEntity();
-			vi2d distance = entity->getPos() - this->getPos();
-			if (abs(distance.x) == 1 && abs(distance.y) == 0) {
-				neighbourID |= distance.x == 1 ? 0b0100 : 0b1000;
-			}
-			else if (abs(distance.x) == 0 && abs(distance.y) == 1) {
-				neighbourID |= distance.x == 1 ? 0b01 : 0b10;
+namespace entities {
+	void WallEntity::updateNeighbours(GameClient& client)
+	{
+		this->neighbourID = 0;
+		for (auto& entity : client.getEntities()) {
+			if (entity->getAsWallEntity() != nullptr) {
+				WallEntity& wallEntity = *entity->getAsWallEntity();
+				vi2d distance = entity->getPos() - this->getPos();
+				if (abs(distance.x) == 1 && abs(distance.y) == 0) {
+					neighbourID |= distance.x != 1 ? 0b0100 : 0b1000;
+				}
+				else if (abs(distance.x) == 0 && abs(distance.y) == 1) {
+					neighbourID |= distance.y != 1 ? 0b01 : 0b10;
+				}
 			}
 		}
 	}
-}
 
-void entities::WallEntity::init(GameClient& client)
-{
-	this->updateNeighbours();
-}
+	render::ITexture& WallEntity::getTexture()
+	{
+		return this->usedTexture;
+	}
 
-byte entities::WallEntity::getNeighbourID() const
-{
-	return neighbourID;
+	olc::vf2d WallEntity::getHitBoxSize() const
+	{
+		return olc::vf2d(0.5, 0.5);
+	}
+
+	void WallEntity::init(GameClient& client)
+	{
+		this->updateNeighbours(client);
+	}
+
+	WallEntity::WallEntity(const olc::vf2d& pos, render::WallTexture& texture)
+		: Entity(pos), usedTexture(texture), neighbourID(0) {}
+
+	byte WallEntity::getNeighbourID() const
+	{
+		return neighbourID;
+	}
+
+	render::WallTexture WallEntity::simpleWallTexture("Objects/Wall.png", { 0, 3 });
 }

@@ -1,5 +1,6 @@
 #include "WallTexture.h"
 #include "WallEntity.h"
+#include "GameException.h"
 
 using namespace olc;
 using namespace entities;
@@ -13,7 +14,7 @@ namespace render
 	void WallTexture::render(olc::TransformedView& scene, Entity& entity)
 	{
 		if(entity.getAsWallEntity() == nullptr){
-			throw std::invalid_argument("Wall texture needs a wall entity");
+			throw GameException("Wall texture needs a wall entity", entity);
 		}
 		WallEntity& wallEntity = *entity.getAsWallEntity();
 		vf2d offset = this->baseOffset;

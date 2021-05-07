@@ -13,6 +13,8 @@ private:
 	static GameClient& createInstance();
 	//I want it to me a singleton, but I don't want to let anything init this
 	friend int main(int, char* []);
+	olc::vf2d viewArea = {0, 0};
+	olc::vf2d viewScale;
 public:
 	static GameClient& getInstance();
 

@@ -65,11 +65,14 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 
 	TransformedView scene;
 
-	scene.Initialise()
-
+	scene.Initialise(this->viewArea, this->viewScale);
+	
 	for(auto& entity : entities){
 		// I literally add entities to the scene :D
-		scene += entity;
+		try {
+			scene += entity;
+		}
+		catch ()
 	}
 	
 	return true;

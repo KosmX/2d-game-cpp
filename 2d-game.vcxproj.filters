@@ -56,6 +56,9 @@
     <ClCompile Include="WallTexture.cpp">
       <Filter>Source Files\gameObj</Filter>
     </ClCompile>
+    <ClCompile Include="GameException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interfaces.h">
@@ -99,6 +102,9 @@
     </ClInclude>
     <ClInclude Include="WallTexture.h">
       <Filter>Header Files\gameObj\render</Filter>
+    </ClInclude>
+    <ClInclude Include="GameException.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

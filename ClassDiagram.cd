@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="DynamicArray&lt;T&gt;" Collapsed="true">
-    <Position X="9.5" Y="11.5" Width="1.5" />
+    <Position X="8.5" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAEAAAggQBQAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>DynamicArray.hpp</FileName>
@@ -10,12 +10,12 @@
   <Class Name="GameClient" Collapsed="true">
     <Position X="1" Y="10" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAABAAAAAAAAEABAAAAABAAQQACAAAAAAAAAA=</HashCode>
+      <HashCode>AgAAAAAAABAAAAAQAAEABAAAAABAAQQACAAAAAgAAAA=</HashCode>
       <FileName>mainGame.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="render::IRenderable" Collapsed="true">
-    <Position X="9.75" Y="12.5" Width="1.5" />
+    <Position X="8.5" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>interfaces.h</FileName>
@@ -29,14 +29,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="render::LazySprite" Collapsed="true">
-    <Position X="7.75" Y="10.75" Width="1.5" />
+    <Position X="6.75" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIAAAAAAAAAAAAAAgAABAAAAAAQAAAAAAwAAA=</HashCode>
       <FileName>LazySprite.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="render::SpriteManager" Collapsed="true">
-    <Position X="7.75" Y="11.75" Width="1.5" />
+    <Position X="6.75" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAAAAABAAAAAAAAIAAAAAAAAABAAAAAA=</HashCode>
       <FileName>ResourceManager.h</FileName>

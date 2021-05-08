@@ -84,7 +84,7 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 
 	//debug section
 	if (debug) {
-		scene.DrawCircle({ 0, 0 }, 1);
+		//scene.DrawCircle({ 0, 0 }, 1);
 		cout << entities.getSize() << " was ticked" << endl;
 	}
 	return true;

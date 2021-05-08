@@ -143,12 +143,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CharacterTexture.cpp" />
     <ClCompile Include="DungeonGenerator.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="GameException.cpp" />
     <ClCompile Include="LazySprite.cpp" />
+    <ClCompile Include="LivingEntity.cpp" />
     <ClCompile Include="mainGame.cpp" />
+    <ClCompile Include="PlayerEntity.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SimpleSprite.cpp" />
     <ClCompile Include="TestGenerator.cpp" />
@@ -156,9 +159,11 @@
     <ClCompile Include="WallTexture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CharacterTexture.h" />
     <ClInclude Include="DungeonGenerator.h" />
     <ClInclude Include="DynamicArray.hpp" />
     <ClInclude Include="GameException.h" />
+    <ClInclude Include="LivingEntity.h" />
     <ClInclude Include="mainGame.h" />
     <ClInclude Include="olc.h" />
     <ClInclude Include="ITexture.h" />
@@ -167,6 +172,7 @@
     <ClInclude Include="LazySprite.h" />
     <ClInclude Include="olcPGEX_TransformedView.h" />
     <ClInclude Include="olcPixelGameEngine.h" />
+    <ClInclude Include="PlayerEntity.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SimpleSprite.h" />

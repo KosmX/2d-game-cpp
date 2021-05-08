@@ -1,4 +1,5 @@
 #include "Entity.h"
+#include <sstream>
 
 using namespace std;
 using namespace olc;
@@ -50,6 +51,14 @@ namespace entities {
 	{
 		getTexture().render(scene, *this);
 	}
+
+	std::string Entity::getName() const
+	{
+		stringstream s;
+		s << "Entity#" << this;
+		return s.str();
+	}
+
 
 	bool Entity::isInitialized()
 	{

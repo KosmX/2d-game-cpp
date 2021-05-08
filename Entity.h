@@ -8,6 +8,7 @@ class GameClient;
 namespace entities {
 
 	class WallEntity;
+	class LivingEntity;
 
 	class Entity
 	{
@@ -31,11 +32,19 @@ namespace entities {
 		[[nodiscard]] virtual olc::vf2d getSize() const;
 		[[nodiscard]] virtual bool isAlive() const;
 
-		virtual void tick(GameClient& client, float deltaT){}
+		virtual void tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this){}
 
+		/**
+		 * @param damage how much damage should it take
+		 * @param attacker who deal the damage. not the projectile, the entity
+		 * @return did the entity take the damage or no (like a wall)
+		 */
+		virtual bool damage(int damage, Entity& attacker) = 0;
 		//this shouldn't change it's state
 		virtual void render(olc::TransformedView& scene);
 
+		virtual std::string getName() const;
+		
 		virtual ~Entity() = default;
 
 		//TODO getAs*** stuff, all virtual
@@ -44,7 +53,11 @@ namespace entities {
 		{
 			return nullptr;
 		}
-		
+
+		virtual LivingEntity* getAsLivingEntity()
+		{
+			return nullptr;
+		}
 	};
 
 

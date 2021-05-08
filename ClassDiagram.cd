@@ -3,14 +3,14 @@
   <Class Name="DynamicArray&lt;T&gt;" Collapsed="true">
     <Position X="8.5" Y="10" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAEAAAggQBQAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <HashCode>AAAAAAACAIAAAAAEAAAggQBQAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>DynamicArray.hpp</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameClient" Collapsed="true">
     <Position X="1" Y="10" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAABAAAAAQAAEABAAAAABAAQQACAAAAAgAAAA=</HashCode>
+      <HashCode>AgAAAAAAABAAAAAAAAGABcAAAABAAQQACAAAAAiAAAA=</HashCode>
       <FileName>mainGame.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -63,7 +63,7 @@
       <FileName>WallTexture.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="entities::Entity" Collapsed="true">
+  <Class Name="entities::Entity">
     <Position X="0.5" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EABCAAAAQIAAAgAAAACAAIAAAAAIAAIEAAAAAIEQAAA=</HashCode>
@@ -71,9 +71,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="entities::WallEntity" Collapsed="true">
-    <Position X="0.5" Y="12.25" Width="1.5" />
+    <Position X="2.5" Y="14.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAgAAAAIAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAgAAgAAAACAAAgAAAAAAAKAgQAgAIAAAAA=</HashCode>
       <FileName>WallEntity.h</FileName>
     </TypeIdentifier>
   </Class>

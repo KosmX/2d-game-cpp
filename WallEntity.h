@@ -7,8 +7,9 @@
 namespace entities {
 	class WallEntity : public Entity
 	{
-	protected:
+	public:
 		static render::WallTexture simpleWallTexture;
+		static render::WallTexture simpleGreenWallTexture;
 		
 	private:
 		byte neighbourID;
@@ -23,6 +24,8 @@ namespace entities {
 		explicit WallEntity(const olc::vf2d& pos, render::WallTexture& texture = simpleWallTexture);
 		
 		void init(GameClient& client) override;
+
+		bool damage(int damage, Entity& attacker) override;
 		
 		virtual byte getNeighbourID() const;
 

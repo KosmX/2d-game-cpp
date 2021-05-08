@@ -40,10 +40,16 @@ namespace entities {
 	WallEntity::WallEntity(const olc::vf2d& pos, render::WallTexture& texture)
 		: Entity(pos), usedTexture(texture), neighbourID(0) {}
 
+	bool WallEntity::damage(int damage, Entity& attacker)
+	{
+		return false;
+	}
+
 	byte WallEntity::getNeighbourID() const
 	{
 		return neighbourID;
 	}
 
 	render::WallTexture WallEntity::simpleWallTexture("Objects/Wall.png", { 0, 3 });
+	render::WallTexture WallEntity::simpleGreenWallTexture("Objects/Wall.png", { 14, 30 });
 }

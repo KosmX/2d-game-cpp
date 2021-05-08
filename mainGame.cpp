@@ -54,7 +54,7 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 	//return false if it want to exit.
 
 	for(std::shared_ptr<Entity>& entity : this->getEntities()){
-		entity->tick(*this, fElapsedTime);
+		entity->tick(*this, fElapsedTime, entity);
 	}
 
 	entities.finalizeAdd();

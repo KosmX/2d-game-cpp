@@ -65,14 +65,14 @@
     <ClCompile Include="TestGenerator.cpp">
       <Filter>Source Files\gameObj</Filter>
     </ClCompile>
-    <ClCompile Include="CharacterTexture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LivingEntity.cpp">
       <Filter>Source Files\gameObj\entities</Filter>
     </ClCompile>
+    <ClCompile Include="CharacterTexture.cpp">
+      <Filter>Source Files\gameObj</Filter>
+    </ClCompile>
     <ClCompile Include="PlayerEntity.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\gameObj\entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -127,14 +127,14 @@
     <ClInclude Include="TestGenerator.h">
       <Filter>Header Files\gameObj\management</Filter>
     </ClInclude>
-    <ClInclude Include="CharacterTexture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="LivingEntity.h">
       <Filter>Header Files\gameObj\entities</Filter>
     </ClInclude>
+    <ClInclude Include="CharacterTexture.h">
+      <Filter>Header Files\gameObj\render</Filter>
+    </ClInclude>
     <ClInclude Include="PlayerEntity.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\gameObj\entities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -8,10 +8,10 @@ namespace entities {
     {
     private:
         std::string name;
+        render::ITexture& texture;
+		render::ITexture& getTexture() override;
     public:
         void tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this) override;
-        PlayerEntity(olc::vf2d pos, const std::string& name = "Player");
+        PlayerEntity(olc::vf2d pos, render::ITexture& skin, const std::string& name = "Player");
     };
 }
-
-entities::PlayerEntity* = new entities::PlayerEntity();

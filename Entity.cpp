@@ -25,10 +25,10 @@ namespace entities {
 		offset *= dir;
 		hitSize -= vf2d(ignoreDistance, ignoreDistance);
 		if (delta.x > hitSize.x) {
-			offset.x = 0;
+			offset.y = 0;
 		}
 		if (delta.y > hitSize.y) {
-			offset.y = 0;
+			offset.x = 0;
 		}
 		return offset;
 	}

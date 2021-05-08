@@ -30,7 +30,11 @@ namespace entities {
 				}
 			}
 		}
+		return offset;
 	}
+
+	LivingEntity::LivingEntity(olc::vf2d pos)
+		: Entity(pos), timeUntilNextPhase(0), direction(0), anim_phase(0) {}
 
 	bool LivingEntity::damage(int damage, Entity& attacker)
 	{
@@ -66,6 +70,11 @@ namespace entities {
 		return direction;
 	}
 
+	char LivingEntity::getAnimPhase() const
+	{
+		return this->anim_phase;
+	}
+
 	void LivingEntity::tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this)
 	{
 		timeUntilNextPhase += deltaT;
@@ -78,6 +87,11 @@ namespace entities {
 		pos += speed * deltaT;
 		vf2d offset = collisionOffset(client);
 		pos += offset;
+	}
+
+	LivingEntity* LivingEntity::getAsLivingEntity()
+	{
+		return this;
 	}
 
 	const float LivingEntity::phaseLength = 0.5;

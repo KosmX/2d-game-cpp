@@ -24,11 +24,17 @@ public:
 		return *this;
 	}
 
-	void finalizeAdd()
+	/**
+	 * @return an iterator pointing to the first, newly added element.
+	 */
+	auto finalizeAdd()
 	{
 		//this moves every entry form newEntries to entries.
 		//makes the newEntries empty.
-		entries.merge(newEntries);
+		//entries.merge(newEntries); merge needs two ordered lists, i have only sets.
+		auto oldEnd = newEntries.begin() != newEntries.end() ? newEntries.begin() : entries.end();
+		entries.splice(entries.end(), newEntries);
+		return oldEnd;
 	}
 
 	void removeIf(bool (*l)(const T&))

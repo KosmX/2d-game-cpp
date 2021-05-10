@@ -16,13 +16,13 @@ namespace render {
 		: sprite(nullptr), resourceName(resName)
 	{}
 
-	void LazySprite::render(olc::TransformedView& scene, const olc::vi2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale)
+	void LazySprite::render(olc::TransformedView& scene, const olc::vf2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale)
 	{
 		scene.DrawPartialDecal(pos, this->getDecay(), uv, size, scale);
 	}
 	
 
-	void LazySprite::renderCentered(olc::TransformedView& scene, const olc::vi2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale)
+	void LazySprite::renderCentered(olc::TransformedView& scene, const olc::vf2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale)
 	{
 		this->render(scene, pos + size / 2.0f, uv, size, scale);
 	}

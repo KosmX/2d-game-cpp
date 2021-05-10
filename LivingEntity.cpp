@@ -8,7 +8,7 @@ namespace entities {
 
 	vf2d LivingEntity::getHitBoxSize() const
 	{
-		return olc::vf2d(0.8, 0.8);
+		return olc::vf2d(0.8f, 0.8f)/2;
 	}
 
 	vf2d LivingEntity::collisionOffset(GameClient& client)
@@ -33,8 +33,8 @@ namespace entities {
 		return offset;
 	}
 
-	LivingEntity::LivingEntity(olc::vf2d pos)
-		: Entity(pos), timeUntilNextPhase(0), direction(0), anim_phase(0) {}
+	LivingEntity::LivingEntity(olc::vf2d pos, int health)
+		: Entity(pos), direction(0), health(health), anim_phase(0), timeUntilNextPhase(0) {}
 
 	bool LivingEntity::damage(int damage, Entity& attacker)
 	{
@@ -55,17 +55,17 @@ namespace entities {
 		if(speed.mag2() < 0.1 ){
 			return direction;
 		}
-		else if(speed.x > std::abs(speed.y)){
+		else if(speed.x >= std::abs(speed.y)){
 			direction = 2;
 		}
-		else if(speed.x < -std::abs(speed.y)){
+		else if(speed.x <= -std::abs(speed.y)){
 			direction = 1;
 		}
-		else if(speed.y > std::abs(speed.x)){
-			direction = 3;
+		else if(speed.y >= std::abs(speed.x)){
+			direction = 0;
 		}
 		else{
-			direction = 0;
+			direction = 3;
 		}
 		return direction;
 	}
@@ -77,7 +77,8 @@ namespace entities {
 
 	void LivingEntity::tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this)
 	{
-		timeUntilNextPhase += deltaT;
+		timeUntilNextPhase += deltaT * speed.mag();
+		if (speed == vf2d(0, 0))anim_phase = 0;
 		if(timeUntilNextPhase > phaseLength){
 			anim_phase = (anim_phase + 1) % 4;
 			timeUntilNextPhase -= phaseLength;
@@ -94,5 +95,5 @@ namespace entities {
 		return this;
 	}
 
-	const float LivingEntity::phaseLength = 0.5;
+	const float LivingEntity::phaseLength = 1;
 }

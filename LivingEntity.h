@@ -16,7 +16,7 @@ namespace entities {
 		virtual olc::vf2d collisionOffset(GameClient& client);
 		
 	public:
-		LivingEntity(olc::vf2d pos);
+		LivingEntity(olc::vf2d pos, int health = 512);
 		bool damage(int damage, Entity& attacker) override;
 		char getDirection();
 		char getAnimPhase() const;

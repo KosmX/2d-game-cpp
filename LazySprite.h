@@ -30,9 +30,9 @@ namespace render {
 		/**
 		 * Render the sprite in world-space
 		 */
-		void render(olc::TransformedView& scene, const olc::vi2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale = olc::vf2d(1, 1));
+		void render(olc::TransformedView& scene, const olc::vf2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale = olc::vf2d(1, 1));
 
-		void renderCentered(olc::TransformedView& scene, const olc::vi2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale = olc::vf2d(1, 1));
+		void renderCentered(olc::TransformedView& scene, const olc::vf2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale = olc::vf2d(1, 1));
 
 		//decal reference is not my stuff, I don't have to delete it.
 	};

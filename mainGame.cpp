@@ -57,11 +57,10 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 		entity->tick(*this, fElapsedTime, entity);
 	}
 
-	entities.finalizeAdd();
-	for(auto &entity : entities){
-		if(!entity->isInitialized()){
-			entity->init(*this);
-		}
+	auto iterator = entities.finalizeAdd();
+	
+	while (iterator != entities.end()){
+		iterator++->get()->init(*this);
 	}
 
 	//lambda remove condition. because why not?

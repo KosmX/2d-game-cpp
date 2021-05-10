@@ -5,7 +5,7 @@ using namespace std;
 using namespace olc;
 
 // fine tuning the collision engine, the edges of a box won't collide
-const float ignoreDistance = 0.01f;
+const float ignoreDistance = 0.08f;
 
 namespace entities {
 	/*
@@ -15,6 +15,8 @@ namespace entities {
 	 */
 	vf2d Entity::getCollision(const Entity& other)
 	{
+		if (&other == this)return { 0, 0 }; //don't do collision with itself
+		
 		const vf2d delta = this->getPos() - other.getPos();
 		//pair<bool, bool> dir(delta.x < 0, delta.y < 0);
 		vf2d dir(delta.x < 0 ? 1 : -1, delta.y < 0 ? 1 : -1);
@@ -24,10 +26,10 @@ namespace entities {
 		offset = vf2d(offset.x < 0 ? offset.x : 0, offset.y < 0 ? offset.y : 0);
 		offset *= dir;
 		hitSize -= vf2d(ignoreDistance, ignoreDistance);
-		if (delta.x > hitSize.x) {
+		if (abs(delta.x) > hitSize.x) {
 			offset.y = 0;
 		}
-		if (delta.y > hitSize.y) {
+		if (abs(delta.y) > hitSize.y) {
 			offset.x = 0;
 		}
 		return offset;

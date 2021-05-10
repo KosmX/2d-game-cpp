@@ -72,6 +72,11 @@ namespace entities {
 		return this->is_alive;
 	}
 
+	bool Entity::canBeRemoved() const
+	{
+		return this->isAlive(); //most times
+	}
+
 }
 
 TransformedView& operator+=(TransformedView& scene, entities::Entity& entity) {

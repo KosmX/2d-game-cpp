@@ -57,7 +57,6 @@ bool GameClient::OnUserCreate()
 
 bool GameClient::OnUserUpdate(float fElapsedTime)
 {
-
 	
 	fElapsedTime = std::min(maxTimeDelta, fElapsedTime);
 	//return false if it want to exit.
@@ -75,7 +74,7 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 	//lambda remove condition. because why not?
 	entities.removeIf([](const shared_ptr<Entity>& entity)->bool
 		{
-			return !entity->isAlive();
+			return !entity->canBeRemoved();
 		});
 
 	this->updateWorldOffset(fElapsedTime);

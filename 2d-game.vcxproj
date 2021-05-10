@@ -151,12 +151,15 @@
     <ClCompile Include="LazySprite.cpp" />
     <ClCompile Include="LivingEntity.cpp" />
     <ClCompile Include="mainGame.cpp" />
+    <ClCompile Include="MeleeWeapon.cpp" />
     <ClCompile Include="PlayerEntity.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SimpleSprite.cpp" />
     <ClCompile Include="TestGenerator.cpp" />
+    <ClCompile Include="TypicalMeleeWeapon.cpp" />
     <ClCompile Include="WallEntity.cpp" />
     <ClCompile Include="WallTexture.cpp" />
+    <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CharacterTexture.h" />
@@ -165,6 +168,7 @@
     <ClInclude Include="GameException.h" />
     <ClInclude Include="LivingEntity.h" />
     <ClInclude Include="mainGame.h" />
+    <ClInclude Include="MeleeWeapon.h" />
     <ClInclude Include="olc.h" />
     <ClInclude Include="ITexture.h" />
     <ClInclude Include="Entity.h" />
@@ -177,8 +181,11 @@
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SimpleSprite.h" />
     <ClInclude Include="TestGenerator.h" />
+    <ClInclude Include="TypicalMeleeWeapon.h" />
     <ClInclude Include="WallEntity.h" />
     <ClInclude Include="WallTexture.h" />
+    <ClInclude Include="Weapon.h" />
+    <ClInclude Include="WeaponTextures.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

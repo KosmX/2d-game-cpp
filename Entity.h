@@ -31,6 +31,7 @@ namespace entities {
 		[[nodiscard]] virtual olc::vf2d getPos() const;
 		[[nodiscard]] virtual olc::vf2d getSize() const;
 		[[nodiscard]] virtual bool isAlive() const;
+		[[nodiscard]] virtual bool canBeRemoved() const;
 
 		virtual void tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this){}
 

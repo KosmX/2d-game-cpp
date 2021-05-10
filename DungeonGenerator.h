@@ -1,4 +1,9 @@
 #pragma once
+#include <memory>
+
+namespace entities {
+	class PlayerEntity;
+}
 
 class GameClient;
 
@@ -8,6 +13,6 @@ class GameClient;
 class DungeonGenerator
 {
 public:
-	virtual void generate(GameClient& client) = 0;
+	virtual std::shared_ptr<entities::PlayerEntity> generate(GameClient& client) = 0;
 };
 

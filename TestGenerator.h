@@ -4,6 +4,6 @@ class TestGenerator :
     public DungeonGenerator
 {
 public:
-	void generate(GameClient& client) override;
+	std::shared_ptr<entities::PlayerEntity> generate(GameClient& client) override;
 };
 

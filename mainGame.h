@@ -3,6 +3,7 @@
 #include "DynamicArray.hpp"
 #include <memory>
 #include "Entity.h"
+#include "PlayerEntity.h"
 
 
 class GameClient :
@@ -17,6 +18,8 @@ private:
 	//olc::vf2d viewScale = {2, 2};
 	bool debug;
 	olc::TransformedView scene;
+	std::shared_ptr<entities::PlayerEntity>	player;
+	void updateWorldOffset(float dTick);
 public:
 	static GameClient& getInstance();
 

@@ -5,7 +5,7 @@ using namespace std;
 using namespace olc;
 
 // fine tuning the collision engine, the edges of a box won't collide
-const float ignoreDistance = 0.08f;
+const float ignoreDistance = 0.1f;
 
 namespace entities {
 	/*

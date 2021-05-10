@@ -9,6 +9,9 @@ using namespace std;
 using namespace entities;
 using namespace olc;
 
+const float screenMoveScale = 8;
+const int worldToScreenScale = 16;
+
 GameClient& GameClient::createInstance(bool debug)
 {
 	instance = new GameClient(debug);
@@ -26,6 +29,12 @@ DynamicArray<std::shared_ptr<entities::Entity>>& GameClient::getEntities()
 	return this->entities;
 }
 
+void GameClient::updateWorldOffset(float dTick)
+{
+	vf2d delta = scene.GetWorldOffset() + this->GetScreenPixelSize()/2.f + vf2d(4, 0);
+	scene.MoveWorldOffset((player->getPos() - delta) * dTick * screenMoveScale);
+}
+
 GameClient& GameClient::getInstance()
 {
 	return *instance;
@@ -37,10 +46,10 @@ bool GameClient::OnUserCreate()
 	//Set resource parent!
 	render::ResourceManager::createInstance();
 
-	scene.Initialise(this->GetWindowSize(), {16, 16}); // uh. idk. maybe that's the best option
+	scene.Initialise(this->GetScreenPixelSize(), {worldToScreenScale, worldToScreenScale}); // uh. idk. maybe that's the best option
 	
 	TestGenerator generator;
-	generator.generate(*this);
+	player = generator.generate(*this);
 
 	
 	return true;
@@ -69,7 +78,8 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 			return !entity->isAlive();
 		});
 
-	scene.SetWorldOffset(this->viewArea);
+	this->updateWorldOffset(fElapsedTime);
+	
 	
 	for(auto& entity : entities){
 		// I literally add entities to the scene :D

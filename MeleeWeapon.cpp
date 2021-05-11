@@ -21,11 +21,17 @@ namespace weapons {
         return bl;
     }
 
-    bool MeleeWeapon::use(std::shared_ptr<LivingEntity> user)
+    MeleeWeapon::MeleeWeapon(render::ITexture& texture, float cooldownTime, int damage, const olc::vf2d& pos)
+	    : Weapon(texture, cooldownTime, damage, pos) {}
+
+    bool MeleeWeapon::use(std::shared_ptr<LivingEntity> user, const olc::vf2d& direction)
     {
         if (this->cooldown != 0) return false;
         this->cooldown = this->cooldownTime;
-    	
+    }
+    void MeleeWeapon::setPos(const olc::vf2d& newPos)
+    {
+        this->pos = newPos; //I should test its pos...
     }
     bool MeleeWeapon::predicateDistance::operator()(std::shared_ptr<Entity> entity, std::shared_ptr<Entity> other) const
     {

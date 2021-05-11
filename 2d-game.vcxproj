@@ -191,6 +191,9 @@
     <None Include="ClassDiagram.cd" />
     <None Include="README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

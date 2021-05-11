@@ -30,6 +30,9 @@
     <Filter Include="Source Files\gameObj\entities">
       <UniqueIdentifier>{df2376d0-03f2-4c26-aabc-0cfcf53c4a2c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gameObj\wepons">
+      <UniqueIdentifier>{de0faaa5-c9ef-49fa-881f-2e075bcfb99a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
@@ -148,14 +151,14 @@
     <ClInclude Include="Weapon.h">
       <Filter>Header Files\gameObj\entities</Filter>
     </ClInclude>
-    <ClInclude Include="MeleeWeapon.h">
-      <Filter>Header Files\gameObj\entities</Filter>
-    </ClInclude>
     <ClInclude Include="WeaponTextures.h">
-      <Filter>Header Files\gameObj</Filter>
+      <Filter>Header Files\gameObj\render</Filter>
     </ClInclude>
     <ClInclude Include="TypicalMeleeWeapon.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\gameObj\wepons</Filter>
+    </ClInclude>
+    <ClInclude Include="MeleeWeapon.h">
+      <Filter>Header Files\gameObj\wepons</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -163,5 +166,10 @@
       <Filter>Source Files</Filter>
     </None>
     <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.md">
+      <Filter>Header Files\gameObj\wepons</Filter>
+    </Text>
   </ItemGroup>
 </Project>

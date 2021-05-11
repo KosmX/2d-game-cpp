@@ -20,12 +20,12 @@ namespace weapons {
         int baseDamage;
     public:
 
-        Weapon(render::ITexture& texture, float cooldownTime, int damage = 10, olc::vf2d pos = { 0, 0 });
+        Weapon(render::ITexture& texture, float cooldownTime, int damage = 10, const olc::vf2d& pos = { 0, 0 });
 
     	/**
     	 * @return true, if can use
     	 */
-        virtual bool use(std::shared_ptr<LivingEntity> user) = 0;
+        virtual bool use(std::shared_ptr<LivingEntity> user, const olc::vf2d& direction) = 0;
 
         virtual bool update(float dTick);
     	

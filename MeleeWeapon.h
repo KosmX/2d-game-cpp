@@ -26,6 +26,9 @@ namespace weapons {
         };
     
     public:
-        bool use(std::shared_ptr<LivingEntity> user) override;
+        MeleeWeapon(render::ITexture& texture, float cooldownTime, int damage = 10, const olc::vf2d& pos = { 0, 0 });
+    	
+        bool use(std::shared_ptr<LivingEntity> user, const olc::vf2d& direction) override;
+        virtual void setPos(const olc::vf2d& newPos);
     };
 }

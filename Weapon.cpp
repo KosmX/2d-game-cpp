@@ -21,5 +21,16 @@ namespace weapons
 	{
 		return this->cooldown / this->cooldownTime;
 	}
+
+	bool Weapon::canBeRemoved() const
+	{
+		return isPickedUp;
+	}
+
+	void Weapon::setPickUp(bool bl)
+	{
+		isPickedUp = bl;
+	}
+
 	
 }

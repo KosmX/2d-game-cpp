@@ -74,7 +74,7 @@ namespace entities {
 
 	bool Entity::canBeRemoved() const
 	{
-		return this->isAlive(); //most times
+		return !this->isAlive(); //most times
 	}
 
 }

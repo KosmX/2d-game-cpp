@@ -15,6 +15,9 @@ namespace entities {
 	{
 		vf2d offset = { 0, 0 };
 		for (auto& entity : client.getEntities()) {
+			if(std::dynamic_pointer_cast<LivingEntity>(entity) != nullptr){
+				continue;
+			}
 			vf2d current = this->getCollision(*entity);
 			if (offset == vf2d(0, 0)) {
 				offset = current;

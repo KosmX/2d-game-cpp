@@ -19,6 +19,7 @@ namespace weapons {
         float cooldownTime;
         int baseDamage;
         std::string name;
+        bool isPickedUp = false;
     public:
 
         Weapon(render::ITexture& texture, float cooldownTime, int damage = 10, const std::string& name = "Weapon", const olc::vf2d& pos = { 0, 0 });
@@ -35,6 +36,10 @@ namespace weapons {
     	 * like 2 charges
     	 */
         virtual float getCooldownBar();
+
+    	bool canBeRemoved() const override;
+
+        virtual void setPickUp(bool bl);
 
     	/**
     	 * Secondary charge bar. for some purpose

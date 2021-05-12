@@ -6,7 +6,10 @@
 using namespace olc;
 
 namespace entities {
-	
+	std::shared_ptr<weapons::Weapon> PlayerEntity::getWeapon()
+	{
+		return this->weapons[selectedSlot];
+	}
 	void PlayerEntity::tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this)
 	{
 		vf2d newSpeed = { 0, 0 };
@@ -24,9 +27,37 @@ namespace entities {
 			this->getWeapon()->use(shared_this, mouse);
 		}
 
+		this->weaponToPickUp = nullptr;
+		
 		for(auto& entity : client.getEntities()){
 			if(std::dynamic_pointer_cast<weapons::Weapon>(entity)){
-				
+				weaponToPickUp = std::dynamic_pointer_cast<weapons::Weapon>(entity);
+				break;
+			}
+		}
+
+		if(client.GetKey(TAB).bPressed){
+			if(weaponToPickUp != nullptr){
+				weaponToPickUp->setPickUp(true);
+				if(this->getWeapon() != nullptr){
+					this->getWeapon()->setPickUp(false);
+					std::shared_ptr<Entity> tmp = this->getWeapon();
+					client.addEntity(tmp);
+					this->weapons[selectedSlot] = weaponToPickUp;
+					weaponToPickUp = nullptr;
+				}
+			}
+		}
+
+		int mouseWheel = client.GetMouseWheel();
+		if(mouseWheel != 0){
+			if(mouseWheel > 0){
+				this->selectedSlot = (selectedSlot + 1)%maxWeapons;
+			}
+			else{
+				if(--this->selectedSlot < 0){
+					selectedSlot = maxWeapons - 1;
+				}
 			}
 		}
 		
@@ -37,5 +68,9 @@ namespace entities {
 		: CharacterEntity(skin, pos), name(name)
 	{
 
+	}
+	const std::shared_ptr<weapons::Weapon>& PlayerEntity::getWeapon() const
+	{
+		return this->weapons[selectedSlot];
 	}
 }

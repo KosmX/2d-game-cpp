@@ -14,7 +14,7 @@ namespace entities {
     	/**
     	 * Return null if not available
     	 */
-        std::shared_ptr<weapons::Weapon> getWeapon();
+        virtual std::shared_ptr<weapons::Weapon> getWeapon();
 
         render::ITexture& texture;
 		render::ITexture& getTexture() override;

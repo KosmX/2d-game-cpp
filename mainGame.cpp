@@ -74,7 +74,7 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 	//lambda remove condition. because why not?
 	entities.removeIf([](const shared_ptr<Entity>& entity)->bool
 		{
-			return !entity->canBeRemoved();
+			return entity->canBeRemoved();
 		});
 
 	this->updateWorldOffset(fElapsedTime);
@@ -103,7 +103,7 @@ void GameClient::setDebugMode(bool bl)
 	this->debug = bl;
 }
 
-void GameClient::addEntity(std::shared_ptr<entities::Entity>& entity)
+void GameClient::addEntity(std::shared_ptr<Entity>& entity)
 {
 	this->entities.operator+=(entity);
 }
@@ -113,7 +113,7 @@ const olc::TransformedView& GameClient::getScene()
 	return scene;
 }
 
-GameClient& GameClient::operator+=(std::shared_ptr<entities::Entity> entity)
+GameClient& GameClient::operator+=(std::shared_ptr<Entity> entity)
 {
 	this->addEntity(entity);
 	return *this;

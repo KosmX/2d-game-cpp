@@ -37,15 +37,15 @@ namespace entities {
 		}
 
 		if(client.GetKey(TAB).bPressed){
-			if(weaponToPickUp != nullptr){
+			if (weaponToPickUp != nullptr) {
 				weaponToPickUp->setPickUp(true);
-				if(this->getWeapon() != nullptr){
+				if (this->getWeapon() != nullptr) {
 					this->getWeapon()->setPickUp(false);
 					std::shared_ptr<Entity> tmp = this->getWeapon();
 					client.addEntity(tmp);
-					this->weapons[selectedSlot] = weaponToPickUp;
-					weaponToPickUp = nullptr;
 				}
+				this->weapons[selectedSlot] = weaponToPickUp;
+				weaponToPickUp = nullptr;
 			}
 		}
 
@@ -61,16 +61,20 @@ namespace entities {
 			}
 		}
 		
-		LivingEntity::tick(client, deltaT, shared_this);
+		CharacterEntity::tick(client, deltaT, shared_this); //super.tick();
 	}
 
 	PlayerEntity::PlayerEntity(olc::vf2d pos, render::ITexture& skin, const std::string& name)
 		: CharacterEntity(skin, pos), name(name)
 	{
-
+		this->health = maxHealth;
 	}
 	const std::shared_ptr<weapons::Weapon>& PlayerEntity::getWeapon() const
 	{
 		return this->weapons[selectedSlot];
+	}
+	float PlayerEntity::getHealthStatus()
+	{
+		return health/maxHealth;
 	}
 }

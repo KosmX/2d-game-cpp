@@ -1,6 +1,7 @@
 #include "LivingEntity.h"
 
 #include "mainGame.h"
+#include "WallEntity.h"
 
 using namespace olc;
 
@@ -15,7 +16,7 @@ namespace entities {
 	{
 		vf2d offset = { 0, 0 };
 		for (auto& entity : client.getEntities()) {
-			if(std::dynamic_pointer_cast<LivingEntity>(entity) != nullptr){
+			if(std::dynamic_pointer_cast<WallEntity>(entity) == nullptr){
 				continue;
 			}
 			vf2d current = this->getCollision(*entity);
@@ -37,7 +38,7 @@ namespace entities {
 	}
 
 	LivingEntity::LivingEntity(olc::vf2d pos, int health)
-		: Entity(pos), direction(0), health(health), anim_phase(0), timeUntilNextPhase(0) {}
+		: Entity(pos), health(health), direction(0), anim_phase(0), timeUntilNextPhase(0) {}
 
 	bool LivingEntity::damage(int damage, Entity& attacker)
 	{

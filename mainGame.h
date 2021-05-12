@@ -20,6 +20,8 @@ private:
 	olc::TransformedView scene;
 	std::shared_ptr<entities::PlayerEntity>	player;
 	void updateWorldOffset(float dTick);
+	void renderStatus();
+	void renderStatusLine(int i, float f, const olc::Pixel& pixel);
 public:
 	static GameClient& getInstance();
 

@@ -20,5 +20,7 @@ namespace entities {
 		render::ITexture& getTexture() override;
     public:
         CharacterEntity(render::ITexture& skin, const olc::vf2d& pos);
+    	void tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this) override;
+    	void render(olc::TransformedView& scene) override;
     };
 }

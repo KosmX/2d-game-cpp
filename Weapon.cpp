@@ -19,7 +19,7 @@ namespace weapons
 
 	float Weapon::getCooldownBar()
 	{
-		return this->cooldown / this->cooldownTime;
+		return 1 - this->cooldown / this->cooldownTime;
 	}
 
 	bool Weapon::canBeRemoved() const
@@ -30,6 +30,11 @@ namespace weapons
 	void Weapon::setPickUp(bool bl)
 	{
 		isPickedUp = bl;
+	}
+
+	void Weapon::setPos(const olc::vf2d& newPos)
+	{
+		this->pos = newPos;
 	}
 
 	

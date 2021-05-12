@@ -5,7 +5,6 @@ namespace entities {
 		public Entity
 	{
 	private:
-		int health;
 		char direction;
 		char anim_phase;
 		float timeUntilNextPhase;
@@ -14,9 +13,9 @@ namespace entities {
 		olc::vf2d getHitBoxSize() const override;
 		olc::vf2d speed;
 		virtual olc::vf2d collisionOffset(GameClient& client);
-		
+		int health;
 	public:
-		LivingEntity(olc::vf2d pos, int health = 512);
+		LivingEntity(olc::vf2d pos, int health = 100);
 		bool damage(int damage, Entity& attacker) override;
 		char getDirection();
 		char getAnimPhase() const;

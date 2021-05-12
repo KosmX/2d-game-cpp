@@ -3,6 +3,7 @@
 #include <algorithm>
 #include "GameException.h"
 #include "TestGenerator.h"
+#include "Weapon.h"
 
 const float maxTimeDelta = 0.05f;
 using namespace std;
@@ -55,8 +56,37 @@ bool GameClient::OnUserCreate()
 	return true;
 }
 
+void GameClient::renderStatusLine(int i, float f, const olc::Pixel& pixel)
+{
+	DrawLine(vf2d(0, i + 0.f), vf2d( 128.f * f, i ), pixel);
+	DrawLine(vf2d(0, i + 1.f), vf2d( 128.f * f, i + 1 ), pixel);
+}
+
+void GameClient::renderStatus()
+{
+	SetDrawTarget(1);
+
+	float health = this->player->getHealthStatus();
+	if (this->player->getWeapon()) {
+		float weapon = 0;
+		float weapon2 = 0;
+		shared_ptr<weapons::Weapon> wep = this->player->getWeapon();
+		weapon = wep->getCooldownBar();
+		weapon2 = wep->getSecondaryBar();
+		renderStatusLine(4, weapon, WHITE);
+		renderStatusLine(6, weapon2, BLUE);
+	}
+
+	renderStatusLine(0, health, RED);
+	
+	
+	SetDrawTarget(static_cast<uint8_t>(0));
+}
+
+
 bool GameClient::OnUserUpdate(float fElapsedTime)
 {
+	Clear(BLACK);
 	
 	fElapsedTime = std::min(maxTimeDelta, fElapsedTime);
 	//return false if it want to exit.
@@ -90,6 +120,8 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 		}
 	}
 
+	renderStatus();
+	
 	//debug section
 	if (debug) {
 		//scene.DrawCircle({ 0, 0 }, 1);

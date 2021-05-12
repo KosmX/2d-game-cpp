@@ -30,6 +30,5 @@ namespace weapons {
         MeleeWeapon(render::ITexture& texture, const std::string& name, float cooldownTime, int damage = 10, const olc::vf2d& pos = { 0, 0 });
     	
         bool use(std::shared_ptr<Entity> user, const olc::vf2d& direction) override;
-        virtual void setPos(const olc::vf2d& newPos);
     };
 }

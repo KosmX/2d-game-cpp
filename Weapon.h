@@ -45,5 +45,6 @@ namespace weapons {
     	 * Secondary charge bar. for some purpose
     	 */
         virtual float getSecondaryBar() { return 0; }
+        virtual void setPos(const olc::vf2d& newPos);
     };
 }

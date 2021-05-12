@@ -1,7 +1,10 @@
 #include "MeleeWeapon.h"
+
 #include "mainGame.h"
 
+
 namespace weapons {
+	
     int MeleeWeapon::getDamage() const
     {
         return this->baseDamage;
@@ -27,20 +30,18 @@ namespace weapons {
     bool MeleeWeapon::use(std::shared_ptr<Entity> user, const olc::vf2d& direction)
     {
         if (this->cooldown != 0) return false;
-        this->cooldown = this->cooldownTime;
-        return damageIf(user, this->getPredicator(direction));
+        if (damageIf(user, this->getPredicator(direction))) {
+            this->cooldown = this->cooldownTime;
+            return true;
+        }
+        return false;
     }
 
 	float MeleeWeapon::getHitOffset() const
 	{
         return 0;
 	}
-
-	
-    void MeleeWeapon::setPos(const olc::vf2d& newPos)
-    {
-        this->pos = newPos; //I should test its pos...
-    }
+    
     bool MeleeWeapon::predicateDistance::operator()(const olc::vf2d& usePos, std::shared_ptr<Entity> other) const
     {
         float d = (usePos - other->getPos()).mag();

@@ -108,6 +108,11 @@ void GameClient::addEntity(std::shared_ptr<entities::Entity>& entity)
 	this->entities.operator+=(entity);
 }
 
+const olc::TransformedView& GameClient::getScene()
+{
+	return scene;
+}
+
 GameClient& GameClient::operator+=(std::shared_ptr<entities::Entity> entity)
 {
 	this->addEntity(entity);

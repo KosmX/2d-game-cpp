@@ -48,15 +48,10 @@ namespace entities {
 		
 		virtual ~Entity() = default;
 
-		//TODO getAs*** stuff, all virtual
-		//same purpose to dynamic_cast, but without using language server
-		virtual WallEntity* getAsWallEntity()
-		{
-			return nullptr;
-		}
 
-		virtual LivingEntity* getAsLivingEntity()
-		{
+		
+
+		virtual operator WallEntity* (){
 			return nullptr;
 		}
 	};

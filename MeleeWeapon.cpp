@@ -6,11 +6,11 @@ namespace weapons {
     {
         return this->baseDamage;
     }
-    bool MeleeWeapon::damageEntity(std::shared_ptr<LivingEntity> user, std::shared_ptr<Entity>& victim)
+    bool MeleeWeapon::damageEntity(std::shared_ptr<Entity> user, std::shared_ptr<Entity>& victim)
     {
         return victim->damage(this->getDamage(), *victim);
     }
-    bool MeleeWeapon::damageIf(std::shared_ptr<LivingEntity>& user, std::function<bool(std::shared_ptr<Entity>, std::shared_ptr<Entity>)> predicate)
+    bool MeleeWeapon::damageIf(std::shared_ptr<Entity>& user, std::function<bool(std::shared_ptr<Entity>, std::shared_ptr<Entity>)> predicate)
     {
         bool bl = false;
         for(auto& entity : GameClient::getInstance().getEntities()){
@@ -24,7 +24,7 @@ namespace weapons {
     MeleeWeapon::MeleeWeapon(render::ITexture& texture, const std::string& name, float cooldownTime, int damage, const olc::vf2d& pos)
 	    : Weapon(texture, cooldownTime, damage, name, pos) {}
 
-    bool MeleeWeapon::use(std::shared_ptr<LivingEntity> user, const olc::vf2d& direction)
+    bool MeleeWeapon::use(std::shared_ptr<Entity> user, const olc::vf2d& direction)
     {
         if (this->cooldown != 0) return false;
         this->cooldown = this->cooldownTime;

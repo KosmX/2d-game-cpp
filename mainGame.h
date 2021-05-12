@@ -41,6 +41,8 @@ public:
 	
 	void addEntity(std::shared_ptr<entities::Entity>& entity);
 
+	const olc::TransformedView& getScene(); //for some reason
+
 	GameClient& operator+=(std::shared_ptr<entities::Entity> entity);
  
 	//for some reason, probably I won't need it

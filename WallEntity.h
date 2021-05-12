@@ -30,9 +30,5 @@ namespace entities {
 		virtual byte getNeighbourID() const;
 
 		//This is a wall entity after all.
-		WallEntity* getAsWallEntity() override
-		{
-			return this;
-		}
 	};
 }

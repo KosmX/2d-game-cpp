@@ -26,7 +26,7 @@ namespace weapons {
     	/**
     	 * @return true, if can use
     	 */
-        virtual bool use(std::shared_ptr<LivingEntity> user, const olc::vf2d& direction) = 0;
+        virtual bool use(std::shared_ptr<Entity> user, const olc::vf2d& direction) = 0;
 
         virtual bool update(float dTick);
     	

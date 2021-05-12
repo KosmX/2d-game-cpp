@@ -90,10 +90,5 @@ namespace entities {
 		pos += offset;
 	}
 
-	LivingEntity* LivingEntity::getAsLivingEntity()
-	{
-		return this;
-	}
-
 	const float LivingEntity::phaseLength = 1;
 }

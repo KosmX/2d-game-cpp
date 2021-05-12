@@ -13,10 +13,10 @@ namespace render
 		: sprite(resName), baseOffset(baseOffset * size), size(size) {}
 	void WallTexture::render(olc::TransformedView& scene, Entity& entity)
 	{
-		if(entity.getAsWallEntity() == nullptr){
+		if(dynamic_cast<WallEntity*>(&entity) == nullptr){
 			throw GameException("Wall texture needs a wall entity", entity);
 		}
-		WallEntity& wallEntity = *entity.getAsWallEntity();
+		auto& wallEntity = dynamic_cast<WallEntity&>(entity);
 		vf2d offset = this->baseOffset;
 
 		//I can't use index[] because that is not const function... WHY???

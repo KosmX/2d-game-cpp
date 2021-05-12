@@ -23,7 +23,5 @@ namespace entities {
 
 
 		void tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this) override; //TODO
-
-		LivingEntity* getAsLivingEntity() override;
 	};
 }

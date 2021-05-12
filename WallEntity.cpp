@@ -9,8 +9,8 @@ namespace entities {
 	{
 		this->neighbourID = 0;
 		for (auto& entity : client.getEntities()) {
-			if (entity->getAsWallEntity() != nullptr) {
-				WallEntity& wallEntity = *entity->getAsWallEntity();
+			if (std::dynamic_pointer_cast<WallEntity>(entity) != nullptr) {
+				auto& wallEntity = dynamic_cast<WallEntity&>(*entity);
 				vi2d distance = entity->getPos() - this->getPos();
 				if (abs(distance.x) == 1 && abs(distance.y) == 0) {
 					neighbourID |= distance.x != 1 ? 0b0100 : 0b1000;

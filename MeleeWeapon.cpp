@@ -10,7 +10,7 @@ namespace weapons {
     {
         return victim->damage(this->getDamage(), *victim);
     }
-    bool MeleeWeapon::damageIf(std::shared_ptr<LivingEntity>& user, bool(*predicate)(std::shared_ptr<Entity> self, std::shared_ptr<Entity> other))
+    bool MeleeWeapon::damageIf(std::shared_ptr<LivingEntity>& user, std::function<bool(std::shared_ptr<Entity>, std::shared_ptr<Entity>)> predicate)
     {
         bool bl = false;
         for(auto& entity : GameClient::getInstance().getEntities()){
@@ -28,6 +28,7 @@ namespace weapons {
     {
         if (this->cooldown != 0) return false;
         this->cooldown = this->cooldownTime;
+    	damageIf()
     }
     void MeleeWeapon::setPos(const olc::vf2d& newPos)
     {

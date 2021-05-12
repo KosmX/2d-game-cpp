@@ -9,7 +9,7 @@ namespace weapons {
     protected:
         virtual int getDamage() const;
         virtual bool damageEntity(std::shared_ptr<LivingEntity> user, std::shared_ptr<Entity>& victim);
-        virtual bool damageIf(std::shared_ptr<LivingEntity>& user, bool(*predicate)(std::shared_ptr<Entity> self, std::shared_ptr<Entity> other));
+        virtual bool damageIf(std::shared_ptr<LivingEntity>& user, std::function<bool(std::shared_ptr<Entity> self, std::shared_ptr<Entity> other)> predicate);
         //virtual bool(*getPredicator())(std::shared_ptr<Entity>, std::shared_ptr<Entity>) = 0;
         virtual std::function<bool(std::shared_ptr<Entity>, std::shared_ptr<Entity>)> getPredicator() = 0;
     	

@@ -18,9 +18,10 @@ namespace weapons {
         float cooldown;
         float cooldownTime;
         int baseDamage;
+        std::string name;
     public:
 
-        Weapon(render::ITexture& texture, float cooldownTime, int damage = 10, const olc::vf2d& pos = { 0, 0 });
+        Weapon(render::ITexture& texture, float cooldownTime, int damage = 10, const std::string& name = "Weapon", const olc::vf2d& pos = { 0, 0 });
 
     	/**
     	 * @return true, if can use

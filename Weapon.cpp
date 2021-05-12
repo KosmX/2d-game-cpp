@@ -7,8 +7,8 @@ namespace weapons
 		return this->texture;
 	}
 
-	Weapon::Weapon(render::ITexture& texture, float cooldownTime, int damage, const olc::vf2d& pos)
-		: Entity(pos), texture(texture), cooldown(0), cooldownTime(cooldownTime), baseDamage(damage) {}
+	Weapon::Weapon(render::ITexture& texture, float cooldownTime, int damage, const std::string& name, const olc::vf2d& pos)
+		: Entity(pos), texture(texture), cooldown(0), cooldownTime(cooldownTime), baseDamage(damage), name(name) {}
 
 	bool Weapon::update(float dTick)
 	{

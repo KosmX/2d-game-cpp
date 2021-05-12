@@ -15,9 +15,11 @@ namespace weapons {
     	
         float maxRange;
         float attackOffset;
-        std::function<bool(std::shared_ptr<Entity>, std::shared_ptr<Entity>)> getPredicator() override;
+		std::function<bool(std::shared_ptr<Entity>, std::shared_ptr<Entity>)> getPredicator(const olc::vf2d& direction) override;
+
+    	float getHitOffset() const override;
     	
     public:
-        TypicalMeleeWeapon(render::ITexture& text, float cooldownTime, int damage, float range, const olc::vf2d& pos = {0, 0});
+        TypicalMeleeWeapon(render::ITexture& text, const std::string& name, float cooldownTime, int damage, float range, float hitOffset = .5f, const olc::vf2d& pos = { 0, 0 });
     };
 }

@@ -16,5 +16,8 @@ namespace weapons
 		inline render::SimpleSprite crystalBow("Items/Ammo.png", { 48, 16 });
 		inline render::SimpleSprite rifle("Items/Ammo.png", { 16, 64 });
 		inline render::SimpleSprite photoMachine("Items/Light.png", { 16 * 6, 0 });//flash
+		inline render::SimpleSprite pistol("FromMacskusz111/pistol.png");
+		inline render::SimpleSprite minigun("FromMacskusz111/gun1.png");
+		inline render::SimpleSprite glitchGun("FromMacskusz111/bug.png");
 	}
 }

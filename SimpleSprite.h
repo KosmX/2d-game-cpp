@@ -13,7 +13,7 @@ namespace render {
 		const olc::vf2d uv, size;
 	
 	public:
-		SimpleSprite(const std::string& name, const olc::vi2d& pos, const olc::vf2d& size = {16, 16});
+		SimpleSprite(const std::string& name, const olc::vi2d& pos = { 0, 0 }, const olc::vf2d& size = { 16, 16 });
 
 		void render(olc::TransformedView& scene, entities::Entity& entity) override;
 	};

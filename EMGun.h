@@ -9,8 +9,9 @@ namespace weapons
 	{
 	private:
 		float energy = 128;
+		float energyRegenRate;
 	public:
-		EMGun(render::ITexture& texture, float cooldownTime, int damage, float projectileSpeed = 10, const std::string& name = "RangedWeapon", const olc::vf2d& pos = { 0, 0 });
+		EMGun(render::ITexture& texture, float cooldownTime, int damage, float projectileSpeed = 10, const std::string& name = "RangedWeapon", const olc::vf2d& pos = { 0, 0 }, float energyRegen = 12);
 
 		bool use(std::shared_ptr<Entity> user, const olc::vf2d& direction) override;
 

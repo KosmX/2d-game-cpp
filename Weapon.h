@@ -30,6 +30,11 @@ namespace weapons {
     	 */
         virtual bool use(std::shared_ptr<Entity> user, const olc::vf2d& direction) = 0;
 
+    	void tick(GameClient& client, float deltaT, std::shared_ptr<Entity>& shared_this) override
+    	{
+            update(deltaT); //weapons on the ground can charge...
+    	}
+    	
         virtual bool update(float dTick);
     	
     	/**

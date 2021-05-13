@@ -5,6 +5,8 @@
 
 using namespace olc;
 
+const float maxWeaponPickupRange = 1;
+
 namespace entities {
 	std::shared_ptr<weapons::Weapon> PlayerEntity::getWeapon()
 	{
@@ -28,9 +30,14 @@ namespace entities {
 		}
 
 		this->weaponToPickUp = nullptr;
+		for(int i = 0; i < maxWeapons; i++){
+			if(weapons[i]){
+				weapons[i]->update(deltaT);
+			}
+		}
 		
 		for(auto& entity : client.getEntities()){
-			if(std::dynamic_pointer_cast<weapons::Weapon>(entity)){
+			if(std::dynamic_pointer_cast<weapons::Weapon>(entity) && (entity->getPos() - getPos()).mag() < maxWeaponPickupRange){
 				weaponToPickUp = std::dynamic_pointer_cast<weapons::Weapon>(entity);
 				break;
 			}

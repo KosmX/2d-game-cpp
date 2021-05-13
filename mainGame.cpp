@@ -32,7 +32,7 @@ DynamicArray<std::shared_ptr<Entity>>& GameClient::getEntities()
 
 void GameClient::updateWorldOffset(float dTick)
 {
-	vf2d delta = scene.GetWorldOffset() + scene.GetWorldTL()/4;
+	vf2d delta = scene.GetWorldOffset() + scene.GetWorldVisibleArea()/4;
 	scene.MoveWorldOffset((player->getPos() - delta) * dTick * screenMoveScale);
 }
 

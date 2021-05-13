@@ -17,7 +17,6 @@ namespace entities {
 	{
 		LivingEntity::tick(client, deltaT, shared_this);
 		if(this->getWeapon()){
-			this->getWeapon()->update(deltaT);
 			this->getWeapon()->setPos(this->getPos() + (this->speed != olc::vf2d(0, 0) ? this->speed.norm()/2 : olc::vf2d(0, 0)));
 		}
 	}

@@ -17,6 +17,6 @@ namespace weapons {
 		return true;
 	}
 
-	const Pistol RangedWeapon::pistol(textures::rifle, .3f, 10, 10, "Pistol");
-	const EMGun RangedWeapon::emgun(textures::rifle, .08f, 14, 10, "Pistol");
+	const Pistol RangedWeapon::pistol(textures::pistol, .3f, 10, 10, "Pistol");
+	const EMGun RangedWeapon::emgun(textures::minigun, .08f, 14, 10, "Pistol");
 }

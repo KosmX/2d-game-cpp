@@ -23,4 +23,7 @@ namespace render {
 
 	CharacterTexture CharacterTexture::EngineerTexture("Commissions/Engineer.png");
 	CharacterTexture CharacterTexture::MageTexture("Commissions/Mage.png");
+	CharacterTexture CharacterTexture::PaladinTexture("Commissions/Paladin.png");
+	CharacterTexture CharacterTexture::RougeTexture("Commissions/Rouge.png");
+	CharacterTexture CharacterTexture::WarriorTexture("Commissions/Warrior.png");
 }

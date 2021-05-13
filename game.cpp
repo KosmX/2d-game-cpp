@@ -5,6 +5,8 @@
 
 #include <iostream>
 #include <string>
+#include <random>
+#include <time.h>
 
 using namespace std;
 
@@ -35,6 +37,8 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 
+	srand(time(nullptr));
+	
 	GameClient& client = GameClient::createInstance(debug);
 	
 	if(client.Construct(512, 400, 2, 2)){

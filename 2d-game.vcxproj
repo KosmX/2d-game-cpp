@@ -149,6 +149,7 @@
     <ClCompile Include="DungeonGenerator.cpp" />
     <ClCompile Include="EMGun.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityWithAI.cpp" />
     <ClCompile Include="ExplosiveProjectile.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="GameException.cpp" />
@@ -176,6 +177,7 @@
     <ClInclude Include="DungeonGenerator.h" />
     <ClInclude Include="DynamicArray.hpp" />
     <ClInclude Include="EMGun.h" />
+    <ClInclude Include="EntityWithAI.h" />
     <ClInclude Include="ExplosiveProjectile.h" />
     <ClInclude Include="GameException.h" />
     <ClInclude Include="GlitchGun.h" />

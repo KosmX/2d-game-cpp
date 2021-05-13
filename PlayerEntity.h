@@ -14,6 +14,7 @@ namespace entities {
         std::shared_ptr<weapons::Weapon> weapons[maxWeapons];
         int selectedSlot = 0;
         float maxHealth = 200;
+        float lastDamage = 0;
     public:
         std::shared_ptr<weapons::Weapon> getWeapon() override;
 
@@ -21,7 +22,9 @@ namespace entities {
         PlayerEntity(olc::vf2d pos, render::ITexture& skin, const std::string& name = "Player");
 
         const std::shared_ptr<weapons::Weapon>& getWeapon() const;
-        
+
+    	bool damage(int damage, Entity& attacker) override;
+    	
         float getHealthStatus();
     };
 }

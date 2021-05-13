@@ -8,6 +8,9 @@ namespace render {
     public:
         static CharacterTexture EngineerTexture;
         static CharacterTexture MageTexture;
+        static CharacterTexture PaladinTexture;
+        static CharacterTexture WarriorTexture;
+        static CharacterTexture RougeTexture;
 		//TODO add the others
     private:
         LazySprite sprite;

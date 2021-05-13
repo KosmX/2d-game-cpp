@@ -128,7 +128,7 @@ bool GameClient::OnUserUpdate(float fElapsedTime)
 		//scene.DrawCircle({ 0, 0 }, 1);
 		cout << entities.getSize() << " was ticked" << endl;
 	}
-	return true;
+	return player->isAlive();
 }
 
 void GameClient::setDebugMode(bool bl)
@@ -150,6 +150,11 @@ GameClient& GameClient::operator+=(std::shared_ptr<Entity> entity)
 {
 	this->addEntity(entity);
 	return *this;
+}
+
+std::shared_ptr<entities::PlayerEntity> GameClient::getPlayerEntity()
+{
+	return player;
 }
 
 GameClient* GameClient::instance = nullptr;

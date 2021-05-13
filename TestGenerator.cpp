@@ -8,6 +8,7 @@
 #include "TypicalMeleeWeapon.h"
 #include "EMGun.h"
 #include "GlitchGun.h"
+#include "EntityWithAI.h"
 
 using namespace entities;
 using namespace std;
@@ -30,6 +31,14 @@ shared_ptr<PlayerEntity> TestGenerator::generate(GameClient& client)
 	auto weapon2 = make_shared<weapons::EMGun>(*new weapons::EMGun(weapons::RangedWeapon::emgun)); //bee careful with make_shared?!
 
 	shared_ptr<weapons::Weapon> gg(new weapons::GlitchGun(0.3f, 40, 10, "GItc|_|Un"));
+
+	shared_ptr<EntityWithAI> e1(new EntityWithAI({ 10, 10 }, render::CharacterTexture::WarriorTexture));
+	shared_ptr<EntityWithAI> e2(new EntityWithAI({ 10, 12 }, render::CharacterTexture::PaladinTexture));
+	shared_ptr<weapons::Weapon> w1(new weapons::Pistol(weapons::RangedWeapon::pistol));
+	e2->addWeapon(w1);
+
+	client += e2;
+	client += e1;
 
 	weapon->setPos({ -3, -4 });
 	weapon1->setPos({ -4, -4 });

@@ -35,6 +35,12 @@ namespace entities {
 				weapons[i]->update(deltaT);
 			}
 		}
+
+		lastDamage = std::max(lastDamage - deltaT, 0.f);
+		if(lastDamage < 0.1f){
+			health = std::min(maxHealth, health + 1.f);
+			lastDamage = 0.1;
+		}
 		
 		for(auto& entity : client.getEntities()){
 			if(std::dynamic_pointer_cast<weapons::Weapon>(entity) && (entity->getPos() - getPos()).mag() < maxWeaponPickupRange){
@@ -79,6 +85,11 @@ namespace entities {
 	const std::shared_ptr<weapons::Weapon>& PlayerEntity::getWeapon() const
 	{
 		return this->weapons[selectedSlot];
+	}
+	bool PlayerEntity::damage(int damage, Entity& attacker)
+	{
+		this->lastDamage = 8;
+		return CharacterEntity::damage(damage, attacker);
 	}
 	float PlayerEntity::getHealthStatus()
 	{

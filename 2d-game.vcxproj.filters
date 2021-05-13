@@ -113,6 +113,9 @@
     <ClCompile Include="ExplosiveProjectile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EntityWithAI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interfaces.h">
@@ -206,6 +209,9 @@
       <Filter>Header Files\gameObj\wepons</Filter>
     </ClInclude>
     <ClInclude Include="ExplosiveProjectile.h">
+      <Filter>Header Files\gameObj\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityWithAI.h">
       <Filter>Header Files\gameObj\entities</Filter>
     </ClInclude>
   </ItemGroup>

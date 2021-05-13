@@ -46,7 +46,8 @@ public:
 	const olc::TransformedView& getScene(); //for some reason
 
 	GameClient& operator+=(std::shared_ptr<entities::Entity> entity);
- 
+
+	std::shared_ptr<entities::PlayerEntity> getPlayerEntity();
 	//for some reason, probably I won't need it
 	//bool OnUserDestroy() override;
 };

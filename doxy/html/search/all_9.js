@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['i_227',['I',['../namespaceolc.html#aa26a067cf0db83f0b1dd587036a64be7ac242ddce5db0d462674ead1db3956a19',1,'olc']]],
+  ['id_228',['id',['../classolc_1_1_decal.html#a7cc798e0327ea4118c648b10e2d57986',1,'olc::Decal']]],
+  ['ignoredistance_229',['ignoreDistance',['../_entity_8cpp.html#abbe123cdd88a2c284df8426f38efafca',1,'Entity.cpp']]],
+  ['illuminate_230',['ILLUMINATE',['../namespaceolc.html#aeda642f63378f868193c28e8613138caab892134232b911680f88a64a24883f7d',1,'olc']]],
+  ['imageloader_231',['ImageLoader',['../classolc_1_1_image_loader.html',1,'olc::ImageLoader'],['../classolc_1_1_image_loader.html#a7aa358a572ec995b530ca5b54829f044',1,'olc::ImageLoader::ImageLoader()']]],
+  ['init_232',['init',['../classentities_1_1_entity.html#afd80ddceccb36b87d0d80dcc7f88fc3b',1,'entities::Entity::init()'],['../classentities_1_1_wall_entity.html#ad66ed8002d8082035bd3b7df07ff45b5',1,'entities::WallEntity::init()']]],
+  ['initialise_233',['Initialise',['../classolc_1_1_transformed_view.html#a799473b80691228b87a818f80847ca76',1,'olc::TransformedView']]],
+  ['ins_234',['INS',['../namespaceolc.html#aa26a067cf0db83f0b1dd587036a64be7a691b8388214af88a7794c43d31fbe16a',1,'olc']]],
+  ['inv_235',['inv',['../structolc_1_1_pixel.html#a8a1daba449fb823a4535a6089fe880ab',1,'olc::Pixel']]],
+  ['is_5falive_236',['is_alive',['../classentities_1_1_entity.html#aedac7bb35b729e4a02c582b9f4369ab8',1,'entities::Entity']]],
+  ['is_5finitialized_237',['is_initialized',['../classentities_1_1_entity.html#a1453bca3376a185aa54135dd4958b244',1,'entities::Entity']]],
+  ['isalive_238',['isAlive',['../classentities_1_1_entity.html#ab0ee90a84f2163b600e603f24cff046f',1,'entities::Entity']]],
+  ['isfocused_239',['IsFocused',['../classolc_1_1_pixel_game_engine.html#a92192402b5d499ab8b230dfb9393f3b7',1,'olc::PixelGameEngine']]],
+  ['isinitialized_240',['isInitialized',['../classentities_1_1_entity.html#ab010066d52a02c63908f70ff6ef7d873',1,'entities::Entity']]],
+  ['ispickedup_241',['isPickedUp',['../classweapons_1_1_weapon.html#aba025076ad5e6fae2f9b9d40f4ef815d',1,'weapons::Weapon']]],
+  ['ispointvisible_242',['IsPointVisible',['../classolc_1_1_transformed_view.html#a664ea0cbd54bbff17ea419ebfac1e359',1,'olc::TransformedView']]],
+  ['isrectvisible_243',['IsRectVisible',['../classolc_1_1_transformed_view.html#aecadbbdf84343ec0a2f0e2e8c9017f0e',1,'olc::TransformedView']]],
+  ['itexture_244',['ITexture',['../classrender_1_1_i_texture.html',1,'render']]],
+  ['itexture_2eh_245',['ITexture.h',['../_i_texture_8h.html',1,'']]]
+];

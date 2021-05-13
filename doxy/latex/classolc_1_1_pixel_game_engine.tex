@@ -1,0 +1,909 @@
+\hypertarget{classolc_1_1_pixel_game_engine}{}\doxysection{olc\+::Pixel\+Game\+Engine Class Reference}
+\label{classolc_1_1_pixel_game_engine}\index{olc::PixelGameEngine@{olc::PixelGameEngine}}
+
+
+{\ttfamily \#include $<$olc\+Pixel\+Game\+Engine.\+h$>$}
+
+Inheritance diagram for olc\+::Pixel\+Game\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classolc_1_1_pixel_game_engine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classolc_1_1_pixel_game_engine_afe9d685732305246c3fcb361ae3c4bc6}{Pixel\+Game\+Engine}} ()
+\item 
+virtual \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a423d90134c297f7b9f1834a136071b19}{$\sim$\+Pixel\+Game\+Engine}} ()
+\item 
+\mbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc\+::rcode}} \mbox{\hyperlink{classolc_1_1_pixel_game_engine_af1a9cf3b38dda2071b7ec18868ee1ccd}{Construct}} (int32\+\_\+t screen\+\_\+w, int32\+\_\+t screen\+\_\+h, int32\+\_\+t pixel\+\_\+w, int32\+\_\+t pixel\+\_\+h, bool full\+\_\+screen=false, bool vsync=false, bool cohesion=false)
+\item 
+\mbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc\+::rcode}} \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a8e8848aa1c743a1ec2cdaa14c87e5cde}{Start}} ()
+\item 
+virtual bool \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a6a33b6ff7cd23dfd05b34416865fb5c3}{On\+User\+Create}} ()
+\item 
+virtual bool \mbox{\hyperlink{classolc_1_1_pixel_game_engine_af9379a3db341b0acb410ea543e30fdd1}{On\+User\+Update}} (float f\+Elapsed\+Time)
+\item 
+virtual bool \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ad4fbf979865fb1f08250ea379f2de669}{On\+User\+Destroy}} ()
+\item 
+bool \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a92192402b5d499ab8b230dfb9393f3b7}{Is\+Focused}} () const
+\item 
+\mbox{\hyperlink{structolc_1_1_h_w_button}{H\+W\+Button}} \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a27cb4cb68d5e1ca7df8014d66221269e}{Get\+Key}} (\mbox{\hyperlink{namespaceolc_aa26a067cf0db83f0b1dd587036a64be7}{Key}} k) const
+\item 
+\mbox{\hyperlink{structolc_1_1_h_w_button}{H\+W\+Button}} \mbox{\hyperlink{classolc_1_1_pixel_game_engine_abdf9f5d70c9e24ab9358a8dd07474105}{Get\+Mouse}} (uint32\+\_\+t b) const
+\item 
+int32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a2ec1d2a1f3777338fb4388c620344a34}{Get\+MouseX}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a8dde80c07547240f5e72b4f2fcd89668}{Get\+MouseY}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a9640286e4a7cd03c6f545b1df7373269}{Get\+Mouse\+Wheel}} () const
+\item 
+const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \& \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a54b5141da371af51541874dd68e4e6a2}{Get\+Window\+Mouse}} () const
+\item 
+const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \& \mbox{\hyperlink{classolc_1_1_pixel_game_engine_af11fb390dbc5a3168c26fe911690dcbe}{Get\+Mouse\+Pos}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aa3b458d05eab503d9918cfd2d383a45c}{Screen\+Width}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_abbbee4578ffa6b844c04c1af363052af}{Screen\+Height}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a45d918f65f5fee13e654878d8271326b}{Get\+Draw\+Target\+Width}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a4ee3dbff01900d71e62bfe499b1c83c3}{Get\+Draw\+Target\+Height}} () const
+\item 
+\mbox{\hyperlink{classolc_1_1_sprite}{olc\+::\+Sprite}} $\ast$ \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a5fd95bd9571bc3ed3fd5d7d110e48cff}{Get\+Draw\+Target}} () const
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_abd403468f57f7665d56e202da8de8e76}{Set\+Screen\+Size}} (int w, int h)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a70b6a145d7ab0c8857000a72ce4d4a70}{Set\+Draw\+Target}} (\mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$target)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a89d27938d71d49b42a20307444147697}{Get\+F\+PS}} () const
+\item 
+float \mbox{\hyperlink{classolc_1_1_pixel_game_engine_af881473291c52d849dbef155e359b27c}{Get\+Elapsed\+Time}} () const
+\item 
+const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \& \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aee10e917aeb1ce4625561d71126e0a7d}{Get\+Window\+Size}} () const
+\item 
+const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \& \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a721fb4cfac75f76c6d5832415fccbe61}{Get\+Pixel\+Size}} () const
+\item 
+const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \& \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a5602d50220bd7edbd77fc67eaa981ce5}{Get\+Screen\+Pixel\+Size}} () const
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a5842c1087a70c95a7ff96d53f28b7bab}{Set\+Draw\+Target}} (uint8\+\_\+t layer)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a1e3453e2a118596fa04a961f66c6fd46}{Enable\+Layer}} (uint8\+\_\+t layer, bool b)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a0e1ddc993ef65dfe00f2bbcf59e535ad}{Set\+Layer\+Offset}} (uint8\+\_\+t layer, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&offset)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a9fed21eddcebeb743472d8b9eb1e3ece}{Set\+Layer\+Offset}} (uint8\+\_\+t layer, float x, float y)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_af8fbe005b4069ed1de8e0347b72ebc30}{Set\+Layer\+Scale}} (uint8\+\_\+t layer, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&scale)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a409825b0147e25c0d4c05fb0aa1f6273}{Set\+Layer\+Scale}} (uint8\+\_\+t layer, float x, float y)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a7d7c04245161782d5f5c48d3d62ff7a7}{Set\+Layer\+Tint}} (uint8\+\_\+t layer, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a40a88ddb3800e59121f05b06fd64dbfd}{Set\+Layer\+Custom\+Render\+Function}} (uint8\+\_\+t layer, std\+::function$<$ void()$>$ f)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structolc_1_1_layer_desc}{Layer\+Desc}} $>$ \& \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aac31baad6daf55b926f6add9c44a5591}{Get\+Layers}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ae15ffa0503e2893aad7001aa2f5769b7}{Create\+Layer}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ae4a3d1aaa40761986389966ab927ef32}{Set\+Pixel\+Mode}} (\mbox{\hyperlink{structolc_1_1_pixel_ae9012164940526ddb09b217dbbddfd65}{Pixel\+::\+Mode}} m)
+\item 
+\mbox{\hyperlink{structolc_1_1_pixel_ae9012164940526ddb09b217dbbddfd65}{Pixel\+::\+Mode}} \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ad4f95a449dc09a2650ec771e6fa83049}{Get\+Pixel\+Mode}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a9aa31ae4e1735efa72f3ea17fb51b2ef}{Set\+Pixel\+Mode}} (std\+::function$<$ \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}}(const int x, const int y, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&p\+Source, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&p\+Dest)$>$ pixel\+Mode)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ab0726b7758bc1bf7f7de30369076b8e7}{Set\+Pixel\+Blend}} (float f\+Blend)
+\item 
+virtual bool \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a95ab046b4b0843565bddd0e009a25569}{Draw}} (int32\+\_\+t x, int32\+\_\+t y, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+bool \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ad7bd70d2c3d0bc5bbb0991fa4695a4e9}{Draw}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a131877968123c843374f079814503d22}{Draw\+Line}} (int32\+\_\+t x1, int32\+\_\+t y1, int32\+\_\+t x2, int32\+\_\+t y2, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, uint32\+\_\+t pattern=0x\+F\+F\+F\+F\+F\+F\+FF)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ac24457d32db7d8acf0661c6de57be7a8}{Draw\+Line}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos1, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos2, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, uint32\+\_\+t pattern=0x\+F\+F\+F\+F\+F\+F\+FF)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a2ce3e34fd633acdc22b8dc2c8d25f86c}{Draw\+Circle}} (int32\+\_\+t x, int32\+\_\+t y, int32\+\_\+t radius, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, uint8\+\_\+t mask=0x\+FF)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a0016377c9188719462724f523b3a6334}{Draw\+Circle}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, int32\+\_\+t radius, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, uint8\+\_\+t mask=0x\+FF)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a483f56606fbbf3ab4850554491a853bd}{Fill\+Circle}} (int32\+\_\+t x, int32\+\_\+t y, int32\+\_\+t radius, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a169b1c8ca3116ac2338785b8ffe87954}{Fill\+Circle}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, int32\+\_\+t radius, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a220f523e520e317f5656c4d3df777163}{Draw\+Rect}} (int32\+\_\+t x, int32\+\_\+t y, int32\+\_\+t w, int32\+\_\+t h, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ac8536bf173a396cf78f952ab66fe6156}{Draw\+Rect}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&size, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a6b5e218bb4360f27a470f9e821721331}{Fill\+Rect}} (int32\+\_\+t x, int32\+\_\+t y, int32\+\_\+t w, int32\+\_\+t h, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ae225f7027e20fe0f45a8190a992981cc}{Fill\+Rect}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&size, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a2bddba9e808a8702f6af354007302c16}{Draw\+Triangle}} (int32\+\_\+t x1, int32\+\_\+t y1, int32\+\_\+t x2, int32\+\_\+t y2, int32\+\_\+t x3, int32\+\_\+t y3, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aafe21db2127f56670b5f5f089adced71}{Draw\+Triangle}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos1, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos2, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos3, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ad31abffe6c4d0b864b8f7762c33b7a7d}{Fill\+Triangle}} (int32\+\_\+t x1, int32\+\_\+t y1, int32\+\_\+t x2, int32\+\_\+t y2, int32\+\_\+t x3, int32\+\_\+t y3, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a091224d5937210726d25c8cdeb4a951e}{Fill\+Triangle}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos1, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos2, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos3, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a5bae460b03f2837e39fdee3a0bbb6f99}{Draw\+Sprite}} (int32\+\_\+t x, int32\+\_\+t y, \mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$sprite, uint32\+\_\+t scale=1, uint8\+\_\+t flip=\mbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc\+::\+Sprite\+::\+N\+O\+NE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_adcf00714f6f13ed5ad256e2102084177}{Draw\+Sprite}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, \mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$sprite, uint32\+\_\+t scale=1, uint8\+\_\+t flip=\mbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc\+::\+Sprite\+::\+N\+O\+NE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ab777dd885946b2dba5e8bef894c6868c}{Draw\+Partial\+Sprite}} (int32\+\_\+t x, int32\+\_\+t y, \mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$sprite, int32\+\_\+t ox, int32\+\_\+t oy, int32\+\_\+t w, int32\+\_\+t h, uint32\+\_\+t scale=1, uint8\+\_\+t flip=\mbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc\+::\+Sprite\+::\+N\+O\+NE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aecfcfec384cf4eb56ab89f92df4ff288}{Draw\+Partial\+Sprite}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, \mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$sprite, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&sourcepos, const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&size, uint32\+\_\+t scale=1, uint8\+\_\+t flip=\mbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc\+::\+Sprite\+::\+N\+O\+NE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ac29d79dedde0b2187f9f9ccbbc33fd0b}{Draw\+String}} (int32\+\_\+t x, int32\+\_\+t y, const std\+::string \&s\+Text, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, uint32\+\_\+t scale=1)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ae099b13b38e5b02ffd31ad34a703cee5}{Draw\+String}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, const std\+::string \&s\+Text, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, uint32\+\_\+t scale=1)
+\item 
+\mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aa70121ffb85733f8ea2e7e5d0b4b311b}{Get\+Text\+Size}} (const std\+::string \&s)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a1ddca999be34411764bb12d2a15cc021}{Draw\+String\+Prop}} (int32\+\_\+t x, int32\+\_\+t y, const std\+::string \&s\+Text, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, uint32\+\_\+t scale=1)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a161ef8177257c371741d12cbc4818cf6}{Draw\+String\+Prop}} (const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&pos, const std\+::string \&s\+Text, \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, uint32\+\_\+t scale=1)
+\item 
+\mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ab282eddb9b8fe14d01311c8613f79e84}{Get\+Text\+Size\+Prop}} (const std\+::string \&s)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a27ee96acff2c74d47f0cb78493aac756}{Set\+Decal\+Mode}} (const \mbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138ca}{olc\+::\+Decal\+Mode}} \&mode)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a5b676590555cab61db67804417c6f25f}{Draw\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, \mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \}, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a8bae37cf84b215e9e0416f058241aeba}{Draw\+Partial\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, \mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+size, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \}, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a1b757070353b8f9238c229e42d33bbb5}{Draw\+Partial\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&size, \mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+size, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a26d7073d87bb19f15d5ade6bb58e8e2d}{Draw\+Explicit\+Decal}} (\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $\ast$pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $\ast$uv, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} $\ast$col, uint32\+\_\+t elements=4)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a65098b403a403c45041599893429b550}{Draw\+Warped\+Decal}} (\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(\&pos)\mbox{[}4\mbox{]}, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ae6cc4bd274522bf9ac36054eda6c95ac}{Draw\+Warped\+Decal}} (\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $\ast$pos, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a5174456bbdaace7cde233889f7ad6d72}{Draw\+Warped\+Decal}} (\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const std\+::array$<$ \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}, 4 $>$ \&pos, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a78be0709345710435fdaef7bc14f5fb3}{Draw\+Partial\+Warped\+Decal}} (\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(\&pos)\mbox{[}4\mbox{]}, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+size, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a5993da382c8e661655386a41ae874270}{Draw\+Partial\+Warped\+Decal}} (\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $\ast$pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+size, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aaccd68c61d88b13ffe1e93493f2a5b35}{Draw\+Partial\+Warped\+Decal}} (\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const std\+::array$<$ \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}, 4 $>$ \&pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+size, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ab9af9b6726271e83dd7e4b24583b4236}{Draw\+Rotated\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, \mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const float f\+Angle, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&center=\{ 0.\+0f, 0.\+0f \}, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \}, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aad3107bbad34e5792a9a35629e1fdbd0}{Draw\+Partial\+Rotated\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, \mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const float f\+Angle, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&center, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&source\+\_\+size, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \}, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a689d1828a93292702070b97fb14f5644}{Draw\+String\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, const std\+::string \&s\+Text, const \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a7392273f15fc09b3659b112564aa0dfa}{Draw\+String\+Prop\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, const std\+::string \&s\+Text, const \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a02a26bca44e04f075f517bdae6ac0e9d}{Fill\+Rect\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&size, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} col=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a11d9ed8762b81e0bd6bbe4349255b1e8}{Gradient\+Fill\+Rect\+Decal}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&size, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} col\+TL, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} col\+BL, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} col\+BR, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} col\+TR)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a40a7754338ea7b388ffa2383958d1f0b}{Draw\+Polygon\+Decal}} (\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$decal, const std\+::vector$<$ \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $>$ \&pos, const std\+::vector$<$ \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $>$ \&uv, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} tint=\mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}})
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aeb70b40809815fab4e1017e25c7ab161}{Clear}} (\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aed9a3f6bd349e091728a329ee42932bf}{Clear\+Buffer}} (\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p, bool b\+Depth=true)
+\item 
+\mbox{\hyperlink{classolc_1_1_sprite}{olc\+::\+Sprite}} $\ast$ \mbox{\hyperlink{classolc_1_1_pixel_game_engine_abab955edc6d1ec6023a7806509582f52}{Get\+Font\+Sprite}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a6e10d8fae75e26dea03b0b447667a308}{olc\+\_\+\+Update\+Mouse}} (int32\+\_\+t x, int32\+\_\+t y)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aa33ea5e40d4577e3c44fcf4a26cecadd}{olc\+\_\+\+Update\+Mouse\+Wheel}} (int32\+\_\+t delta)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a4f0dae00f21f8d71d4544d50593234c3}{olc\+\_\+\+Update\+Window\+Size}} (int32\+\_\+t x, int32\+\_\+t y)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_af1cd38cf0df2e7c3ab53bee66ec63771}{olc\+\_\+\+Update\+Viewport}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a117eedbe1e9366fe2bf402334beb9692}{olc\+\_\+\+Construct\+Font\+Sheet}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a0018131435f88bb5de406fd11ee54058}{olc\+\_\+\+Core\+Update}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_aa19aafa028a7e2eaaf7b2235a9bd2256}{olc\+\_\+\+Prepare\+Engine}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a59645c08376a7d4e58673919f3bd0dfb}{olc\+\_\+\+Update\+Mouse\+State}} (int32\+\_\+t button, bool state)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a61fde81846a9ef7f8fcf63080e6d350b}{olc\+\_\+\+Update\+Key\+State}} (int32\+\_\+t key, bool state)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_ab3150ba487188e64940c294998fa38d3}{olc\+\_\+\+Update\+Mouse\+Focus}} (bool state)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a7343712504f23f86c8490646ffc50e7f}{olc\+\_\+\+Update\+Key\+Focus}} (bool state)
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a2da1f2ebbc1a5fbdbf52890e6ac707b1}{olc\+\_\+\+Terminate}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a417b6cd564ccad1d878ae51cfdd3be8e}{olc\+\_\+\+Reanimate}} ()
+\item 
+bool \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a7b0f41bc4b4258a5c4fa1742b41d15e3}{olc\+\_\+\+Is\+Running}} ()
+\item 
+virtual void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a7afa0b57c65bd5d9a54c602afd4fe756}{olc\+\_\+\+Configure\+System}} ()
+\item 
+void \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a49a2ead57239e1595cc555effd3e3a2b}{pgex\+\_\+\+Register}} (\mbox{\hyperlink{classolc_1_1_p_g_e_x}{olc\+::\+P\+G\+EX}} $\ast$pgex)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a02d0f9c50770aa38aea1448f62d3604f}{s\+App\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a98fcee28f1a645fe0a29f6b6e6a5d7bb}{P\+G\+EX}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 855 of file olc\+Pixel\+Game\+Engine.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_afe9d685732305246c3fcb361ae3c4bc6}\label{classolc_1_1_pixel_game_engine_afe9d685732305246c3fcb361ae3c4bc6}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!PixelGameEngine@{PixelGameEngine}}
+\index{PixelGameEngine@{PixelGameEngine}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{PixelGameEngine()}{PixelGameEngine()}}
+{\footnotesize\ttfamily olc\+::\+Pixel\+Game\+Engine\+::\+Pixel\+Game\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a423d90134c297f7b9f1834a136071b19}\label{classolc_1_1_pixel_game_engine_a423d90134c297f7b9f1834a136071b19}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!````~PixelGameEngine@{$\sim$PixelGameEngine}}
+\index{````~PixelGameEngine@{$\sim$PixelGameEngine}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$PixelGameEngine()}{~PixelGameEngine()}}
+{\footnotesize\ttfamily virtual olc\+::\+Pixel\+Game\+Engine\+::$\sim$\+Pixel\+Game\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aeb70b40809815fab4e1017e25c7ab161}\label{classolc_1_1_pixel_game_engine_aeb70b40809815fab4e1017e25c7ab161}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!Clear@{Clear}}
+\index{Clear@{Clear}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aed9a3f6bd349e091728a329ee42932bf}\label{classolc_1_1_pixel_game_engine_aed9a3f6bd349e091728a329ee42932bf}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!ClearBuffer@{ClearBuffer}}
+\index{ClearBuffer@{ClearBuffer}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{ClearBuffer()}{ClearBuffer()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Clear\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p,  }\item[{bool}]{b\+Depth = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_af1a9cf3b38dda2071b7ec18868ee1ccd}\label{classolc_1_1_pixel_game_engine_af1a9cf3b38dda2071b7ec18868ee1ccd}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!Construct@{Construct}}
+\index{Construct@{Construct}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{Construct()}{Construct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc\+::rcode}} olc\+::\+Pixel\+Game\+Engine\+::\+Construct (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{screen\+\_\+w,  }\item[{int32\+\_\+t}]{screen\+\_\+h,  }\item[{int32\+\_\+t}]{pixel\+\_\+w,  }\item[{int32\+\_\+t}]{pixel\+\_\+h,  }\item[{bool}]{full\+\_\+screen = {\ttfamily false},  }\item[{bool}]{vsync = {\ttfamily false},  }\item[{bool}]{cohesion = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ae15ffa0503e2893aad7001aa2f5769b7}\label{classolc_1_1_pixel_game_engine_ae15ffa0503e2893aad7001aa2f5769b7}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!CreateLayer@{CreateLayer}}
+\index{CreateLayer@{CreateLayer}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{CreateLayer()}{CreateLayer()}}
+{\footnotesize\ttfamily uint32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Create\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ad7bd70d2c3d0bc5bbb0991fa4695a4e9}\label{classolc_1_1_pixel_game_engine_ad7bd70d2c3d0bc5bbb0991fa4695a4e9}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!Draw@{Draw}}
+\index{Draw@{Draw}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool olc\+::\+Pixel\+Game\+Engine\+::\+Draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a95ab046b4b0843565bddd0e009a25569}\label{classolc_1_1_pixel_game_engine_a95ab046b4b0843565bddd0e009a25569}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!Draw@{Draw}}
+\index{Draw@{Draw}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool olc\+::\+Pixel\+Game\+Engine\+::\+Draw (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a0016377c9188719462724f523b3a6334}\label{classolc_1_1_pixel_game_engine_a0016377c9188719462724f523b3a6334}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawCircle@{DrawCircle}}
+\index{DrawCircle@{DrawCircle}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawCircle()}{DrawCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Circle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{int32\+\_\+t}]{radius,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{uint8\+\_\+t}]{mask = {\ttfamily 0xFF} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a2ce3e34fd633acdc22b8dc2c8d25f86c}\label{classolc_1_1_pixel_game_engine_a2ce3e34fd633acdc22b8dc2c8d25f86c}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawCircle@{DrawCircle}}
+\index{DrawCircle@{DrawCircle}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawCircle()}{DrawCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Circle (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{int32\+\_\+t}]{radius,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{uint8\+\_\+t}]{mask = {\ttfamily 0xFF} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a5b676590555cab61db67804417c6f25f}\label{classolc_1_1_pixel_game_engine_a5b676590555cab61db67804417c6f25f}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawDecal@{DrawDecal}}
+\index{DrawDecal@{DrawDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawDecal()}{DrawDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{scale = {\ttfamily \{~1.0f,~1.0f~\}},  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a26d7073d87bb19f15d5ade6bb58e8e2d}\label{classolc_1_1_pixel_game_engine_a26d7073d87bb19f15d5ade6bb58e8e2d}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawExplicitDecal@{DrawExplicitDecal}}
+\index{DrawExplicitDecal@{DrawExplicitDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawExplicitDecal()}{DrawExplicitDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Explicit\+Decal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $\ast$}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $\ast$}]{uv,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} $\ast$}]{col,  }\item[{uint32\+\_\+t}]{elements = {\ttfamily 4} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ac24457d32db7d8acf0661c6de57be7a8}\label{classolc_1_1_pixel_game_engine_ac24457d32db7d8acf0661c6de57be7a8}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawLine@{DrawLine}}
+\index{DrawLine@{DrawLine}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos1,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos2,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{uint32\+\_\+t}]{pattern = {\ttfamily 0xFFFFFFFF} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a131877968123c843374f079814503d22}\label{classolc_1_1_pixel_game_engine_a131877968123c843374f079814503d22}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawLine@{DrawLine}}
+\index{DrawLine@{DrawLine}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x1,  }\item[{int32\+\_\+t}]{y1,  }\item[{int32\+\_\+t}]{x2,  }\item[{int32\+\_\+t}]{y2,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{uint32\+\_\+t}]{pattern = {\ttfamily 0xFFFFFFFF} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a1b757070353b8f9238c229e42d33bbb5}\label{classolc_1_1_pixel_game_engine_a1b757070353b8f9238c229e42d33bbb5}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPartialDecal@{DrawPartialDecal}}
+\index{DrawPartialDecal@{DrawPartialDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPartialDecal()}{DrawPartialDecal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Partial\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{size,  }\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+size,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a8bae37cf84b215e9e0416f058241aeba}\label{classolc_1_1_pixel_game_engine_a8bae37cf84b215e9e0416f058241aeba}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPartialDecal@{DrawPartialDecal}}
+\index{DrawPartialDecal@{DrawPartialDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPartialDecal()}{DrawPartialDecal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Partial\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+size,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{scale = {\ttfamily \{~1.0f,~1.0f~\}},  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aad3107bbad34e5792a9a35629e1fdbd0}\label{classolc_1_1_pixel_game_engine_aad3107bbad34e5792a9a35629e1fdbd0}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPartialRotatedDecal@{DrawPartialRotatedDecal}}
+\index{DrawPartialRotatedDecal@{DrawPartialRotatedDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPartialRotatedDecal()}{DrawPartialRotatedDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Partial\+Rotated\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const float}]{f\+Angle,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{center,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+size,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{scale = {\ttfamily \{~1.0f,~1.0f~\}},  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aecfcfec384cf4eb56ab89f92df4ff288}\label{classolc_1_1_pixel_game_engine_aecfcfec384cf4eb56ab89f92df4ff288}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPartialSprite@{DrawPartialSprite}}
+\index{DrawPartialSprite@{DrawPartialSprite}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPartialSprite()}{DrawPartialSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Partial\+Sprite (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{\mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$}]{sprite,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{sourcepos,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{size,  }\item[{uint32\+\_\+t}]{scale = {\ttfamily 1},  }\item[{uint8\+\_\+t}]{flip = {\ttfamily \mbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc\+::\+Sprite\+::\+N\+O\+NE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ab777dd885946b2dba5e8bef894c6868c}\label{classolc_1_1_pixel_game_engine_ab777dd885946b2dba5e8bef894c6868c}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPartialSprite@{DrawPartialSprite}}
+\index{DrawPartialSprite@{DrawPartialSprite}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPartialSprite()}{DrawPartialSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Partial\+Sprite (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{\mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$}]{sprite,  }\item[{int32\+\_\+t}]{ox,  }\item[{int32\+\_\+t}]{oy,  }\item[{int32\+\_\+t}]{w,  }\item[{int32\+\_\+t}]{h,  }\item[{uint32\+\_\+t}]{scale = {\ttfamily 1},  }\item[{uint8\+\_\+t}]{flip = {\ttfamily \mbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc\+::\+Sprite\+::\+N\+O\+NE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a5993da382c8e661655386a41ae874270}\label{classolc_1_1_pixel_game_engine_a5993da382c8e661655386a41ae874270}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPartialWarpedDecal@{DrawPartialWarpedDecal}}
+\index{DrawPartialWarpedDecal@{DrawPartialWarpedDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPartialWarpedDecal()}{DrawPartialWarpedDecal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Partial\+Warped\+Decal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $\ast$}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+size,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a78be0709345710435fdaef7bc14f5fb3}\label{classolc_1_1_pixel_game_engine_a78be0709345710435fdaef7bc14f5fb3}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPartialWarpedDecal@{DrawPartialWarpedDecal}}
+\index{DrawPartialWarpedDecal@{DrawPartialWarpedDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPartialWarpedDecal()}{DrawPartialWarpedDecal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Partial\+Warped\+Decal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(\&)}]{pos\mbox{[}4\mbox{]},  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+size,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aaccd68c61d88b13ffe1e93493f2a5b35}\label{classolc_1_1_pixel_game_engine_aaccd68c61d88b13ffe1e93493f2a5b35}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPartialWarpedDecal@{DrawPartialWarpedDecal}}
+\index{DrawPartialWarpedDecal@{DrawPartialWarpedDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPartialWarpedDecal()}{DrawPartialWarpedDecal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Partial\+Warped\+Decal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const std\+::array$<$ \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}, 4 $>$ \&}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{source\+\_\+size,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a40a7754338ea7b388ffa2383958d1f0b}\label{classolc_1_1_pixel_game_engine_a40a7754338ea7b388ffa2383958d1f0b}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawPolygonDecal@{DrawPolygonDecal}}
+\index{DrawPolygonDecal@{DrawPolygonDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawPolygonDecal()}{DrawPolygonDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Polygon\+Decal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $>$ \&}]{pos,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $>$ \&}]{uv,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}}}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ac8536bf173a396cf78f952ab66fe6156}\label{classolc_1_1_pixel_game_engine_ac8536bf173a396cf78f952ab66fe6156}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawRect@{DrawRect}}
+\index{DrawRect@{DrawRect}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawRect()}{DrawRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{size,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a220f523e520e317f5656c4d3df777163}\label{classolc_1_1_pixel_game_engine_a220f523e520e317f5656c4d3df777163}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawRect@{DrawRect}}
+\index{DrawRect@{DrawRect}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawRect()}{DrawRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Rect (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{int32\+\_\+t}]{w,  }\item[{int32\+\_\+t}]{h,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ab9af9b6726271e83dd7e4b24583b4236}\label{classolc_1_1_pixel_game_engine_ab9af9b6726271e83dd7e4b24583b4236}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawRotatedDecal@{DrawRotatedDecal}}
+\index{DrawRotatedDecal@{DrawRotatedDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawRotatedDecal()}{DrawRotatedDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Rotated\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const float}]{f\+Angle,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{center = {\ttfamily \{~0.0f,~0.0f~\}},  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{scale = {\ttfamily \{~1.0f,~1.0f~\}},  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_adcf00714f6f13ed5ad256e2102084177}\label{classolc_1_1_pixel_game_engine_adcf00714f6f13ed5ad256e2102084177}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawSprite@{DrawSprite}}
+\index{DrawSprite@{DrawSprite}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawSprite()}{DrawSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Sprite (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{\mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$}]{sprite,  }\item[{uint32\+\_\+t}]{scale = {\ttfamily 1},  }\item[{uint8\+\_\+t}]{flip = {\ttfamily \mbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc\+::\+Sprite\+::\+N\+O\+NE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a5bae460b03f2837e39fdee3a0bbb6f99}\label{classolc_1_1_pixel_game_engine_a5bae460b03f2837e39fdee3a0bbb6f99}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawSprite@{DrawSprite}}
+\index{DrawSprite@{DrawSprite}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawSprite()}{DrawSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Sprite (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{\mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$}]{sprite,  }\item[{uint32\+\_\+t}]{scale = {\ttfamily 1},  }\item[{uint8\+\_\+t}]{flip = {\ttfamily \mbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc\+::\+Sprite\+::\+N\+O\+NE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ae099b13b38e5b02ffd31ad34a703cee5}\label{classolc_1_1_pixel_game_engine_ae099b13b38e5b02ffd31ad34a703cee5}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawString@{DrawString}}
+\index{DrawString@{DrawString}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawString()}{DrawString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{const std\+::string \&}]{s\+Text,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{col = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{uint32\+\_\+t}]{scale = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ac29d79dedde0b2187f9f9ccbbc33fd0b}\label{classolc_1_1_pixel_game_engine_ac29d79dedde0b2187f9f9ccbbc33fd0b}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawString@{DrawString}}
+\index{DrawString@{DrawString}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawString()}{DrawString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+String (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{const std\+::string \&}]{s\+Text,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{col = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{uint32\+\_\+t}]{scale = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a689d1828a93292702070b97fb14f5644}\label{classolc_1_1_pixel_game_engine_a689d1828a93292702070b97fb14f5644}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawStringDecal@{DrawStringDecal}}
+\index{DrawStringDecal@{DrawStringDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawStringDecal()}{DrawStringDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+String\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{const std\+::string \&}]{s\+Text,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{col = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{scale = {\ttfamily \{~1.0f,~1.0f~\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a161ef8177257c371741d12cbc4818cf6}\label{classolc_1_1_pixel_game_engine_a161ef8177257c371741d12cbc4818cf6}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawStringProp@{DrawStringProp}}
+\index{DrawStringProp@{DrawStringProp}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawStringProp()}{DrawStringProp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+String\+Prop (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{const std\+::string \&}]{s\+Text,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{col = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{uint32\+\_\+t}]{scale = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a1ddca999be34411764bb12d2a15cc021}\label{classolc_1_1_pixel_game_engine_a1ddca999be34411764bb12d2a15cc021}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawStringProp@{DrawStringProp}}
+\index{DrawStringProp@{DrawStringProp}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawStringProp()}{DrawStringProp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+String\+Prop (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{const std\+::string \&}]{s\+Text,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{col = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{uint32\+\_\+t}]{scale = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a7392273f15fc09b3659b112564aa0dfa}\label{classolc_1_1_pixel_game_engine_a7392273f15fc09b3659b112564aa0dfa}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawStringPropDecal@{DrawStringPropDecal}}
+\index{DrawStringPropDecal@{DrawStringPropDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawStringPropDecal()}{DrawStringPropDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+String\+Prop\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{const std\+::string \&}]{s\+Text,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{col = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}},  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{scale = {\ttfamily \{~1.0f,~1.0f~\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aafe21db2127f56670b5f5f089adced71}\label{classolc_1_1_pixel_game_engine_aafe21db2127f56670b5f5f089adced71}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawTriangle@{DrawTriangle}}
+\index{DrawTriangle@{DrawTriangle}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawTriangle()}{DrawTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos1,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos2,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos3,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a2bddba9e808a8702f6af354007302c16}\label{classolc_1_1_pixel_game_engine_a2bddba9e808a8702f6af354007302c16}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawTriangle@{DrawTriangle}}
+\index{DrawTriangle@{DrawTriangle}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawTriangle()}{DrawTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Triangle (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x1,  }\item[{int32\+\_\+t}]{y1,  }\item[{int32\+\_\+t}]{x2,  }\item[{int32\+\_\+t}]{y2,  }\item[{int32\+\_\+t}]{x3,  }\item[{int32\+\_\+t}]{y3,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ae6cc4bd274522bf9ac36054eda6c95ac}\label{classolc_1_1_pixel_game_engine_ae6cc4bd274522bf9ac36054eda6c95ac}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawWarpedDecal@{DrawWarpedDecal}}
+\index{DrawWarpedDecal@{DrawWarpedDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawWarpedDecal()}{DrawWarpedDecal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Warped\+Decal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} $\ast$}]{pos,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a65098b403a403c45041599893429b550}\label{classolc_1_1_pixel_game_engine_a65098b403a403c45041599893429b550}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawWarpedDecal@{DrawWarpedDecal}}
+\index{DrawWarpedDecal@{DrawWarpedDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawWarpedDecal()}{DrawWarpedDecal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Warped\+Decal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(\&)}]{pos\mbox{[}4\mbox{]},  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a5174456bbdaace7cde233889f7ad6d72}\label{classolc_1_1_pixel_game_engine_a5174456bbdaace7cde233889f7ad6d72}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!DrawWarpedDecal@{DrawWarpedDecal}}
+\index{DrawWarpedDecal@{DrawWarpedDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{DrawWarpedDecal()}{DrawWarpedDecal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Draw\+Warped\+Decal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$}]{decal,  }\item[{const std\+::array$<$ \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}, 4 $>$ \&}]{pos,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a1e3453e2a118596fa04a961f66c6fd46}\label{classolc_1_1_pixel_game_engine_a1e3453e2a118596fa04a961f66c6fd46}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!EnableLayer@{EnableLayer}}
+\index{EnableLayer@{EnableLayer}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{EnableLayer()}{EnableLayer()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Enable\+Layer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{layer,  }\item[{bool}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a169b1c8ca3116ac2338785b8ffe87954}\label{classolc_1_1_pixel_game_engine_a169b1c8ca3116ac2338785b8ffe87954}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!FillCircle@{FillCircle}}
+\index{FillCircle@{FillCircle}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{FillCircle()}{FillCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Fill\+Circle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{int32\+\_\+t}]{radius,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a483f56606fbbf3ab4850554491a853bd}\label{classolc_1_1_pixel_game_engine_a483f56606fbbf3ab4850554491a853bd}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!FillCircle@{FillCircle}}
+\index{FillCircle@{FillCircle}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{FillCircle()}{FillCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Fill\+Circle (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{int32\+\_\+t}]{radius,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ae225f7027e20fe0f45a8190a992981cc}\label{classolc_1_1_pixel_game_engine_ae225f7027e20fe0f45a8190a992981cc}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!FillRect@{FillRect}}
+\index{FillRect@{FillRect}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{FillRect()}{FillRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Fill\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{size,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a6b5e218bb4360f27a470f9e821721331}\label{classolc_1_1_pixel_game_engine_a6b5e218bb4360f27a470f9e821721331}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!FillRect@{FillRect}}
+\index{FillRect@{FillRect}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{FillRect()}{FillRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Fill\+Rect (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y,  }\item[{int32\+\_\+t}]{w,  }\item[{int32\+\_\+t}]{h,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a02a26bca44e04f075f517bdae6ac0e9d}\label{classolc_1_1_pixel_game_engine_a02a26bca44e04f075f517bdae6ac0e9d}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!FillRectDecal@{FillRectDecal}}
+\index{FillRectDecal@{FillRectDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{FillRectDecal()}{FillRectDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Fill\+Rect\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{size,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}}}]{col = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a091224d5937210726d25c8cdeb4a951e}\label{classolc_1_1_pixel_game_engine_a091224d5937210726d25c8cdeb4a951e}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!FillTriangle@{FillTriangle}}
+\index{FillTriangle@{FillTriangle}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{FillTriangle()}{FillTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Fill\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos1,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos2,  }\item[{const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} \&}]{pos3,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ad31abffe6c4d0b864b8f7762c33b7a7d}\label{classolc_1_1_pixel_game_engine_ad31abffe6c4d0b864b8f7762c33b7a7d}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!FillTriangle@{FillTriangle}}
+\index{FillTriangle@{FillTriangle}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{FillTriangle()}{FillTriangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Fill\+Triangle (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x1,  }\item[{int32\+\_\+t}]{y1,  }\item[{int32\+\_\+t}]{x2,  }\item[{int32\+\_\+t}]{y2,  }\item[{int32\+\_\+t}]{x3,  }\item[{int32\+\_\+t}]{y3,  }\item[{\mbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p = {\ttfamily \mbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc\+::\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a5fd95bd9571bc3ed3fd5d7d110e48cff}\label{classolc_1_1_pixel_game_engine_a5fd95bd9571bc3ed3fd5d7d110e48cff}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetDrawTarget@{GetDrawTarget}}
+\index{GetDrawTarget@{GetDrawTarget}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetDrawTarget()}{GetDrawTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classolc_1_1_sprite}{olc\+::\+Sprite}}$\ast$ olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Draw\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a4ee3dbff01900d71e62bfe499b1c83c3}\label{classolc_1_1_pixel_game_engine_a4ee3dbff01900d71e62bfe499b1c83c3}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetDrawTargetHeight@{GetDrawTargetHeight}}
+\index{GetDrawTargetHeight@{GetDrawTargetHeight}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetDrawTargetHeight()}{GetDrawTargetHeight()}}
+{\footnotesize\ttfamily int32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Draw\+Target\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a45d918f65f5fee13e654878d8271326b}\label{classolc_1_1_pixel_game_engine_a45d918f65f5fee13e654878d8271326b}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetDrawTargetWidth@{GetDrawTargetWidth}}
+\index{GetDrawTargetWidth@{GetDrawTargetWidth}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetDrawTargetWidth()}{GetDrawTargetWidth()}}
+{\footnotesize\ttfamily int32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Draw\+Target\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_af881473291c52d849dbef155e359b27c}\label{classolc_1_1_pixel_game_engine_af881473291c52d849dbef155e359b27c}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetElapsedTime@{GetElapsedTime}}
+\index{GetElapsedTime@{GetElapsedTime}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetElapsedTime()}{GetElapsedTime()}}
+{\footnotesize\ttfamily float olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_abab955edc6d1ec6023a7806509582f52}\label{classolc_1_1_pixel_game_engine_abab955edc6d1ec6023a7806509582f52}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetFontSprite@{GetFontSprite}}
+\index{GetFontSprite@{GetFontSprite}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetFontSprite()}{GetFontSprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classolc_1_1_sprite}{olc\+::\+Sprite}}$\ast$ olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Font\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a89d27938d71d49b42a20307444147697}\label{classolc_1_1_pixel_game_engine_a89d27938d71d49b42a20307444147697}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetFPS@{GetFPS}}
+\index{GetFPS@{GetFPS}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetFPS()}{GetFPS()}}
+{\footnotesize\ttfamily uint32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Get\+F\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a27cb4cb68d5e1ca7df8014d66221269e}\label{classolc_1_1_pixel_game_engine_a27cb4cb68d5e1ca7df8014d66221269e}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetKey()}{GetKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structolc_1_1_h_w_button}{H\+W\+Button}} olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceolc_aa26a067cf0db83f0b1dd587036a64be7}{Key}}}]{k }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aac31baad6daf55b926f6add9c44a5591}\label{classolc_1_1_pixel_game_engine_aac31baad6daf55b926f6add9c44a5591}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetLayers@{GetLayers}}
+\index{GetLayers@{GetLayers}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetLayers()}{GetLayers()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structolc_1_1_layer_desc}{Layer\+Desc}}$>$\& olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_abdf9f5d70c9e24ab9358a8dd07474105}\label{classolc_1_1_pixel_game_engine_abdf9f5d70c9e24ab9358a8dd07474105}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetMouse@{GetMouse}}
+\index{GetMouse@{GetMouse}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetMouse()}{GetMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structolc_1_1_h_w_button}{H\+W\+Button}} olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Mouse (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{b }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_af11fb390dbc5a3168c26fe911690dcbe}\label{classolc_1_1_pixel_game_engine_af11fb390dbc5a3168c26fe911690dcbe}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetMousePos@{GetMousePos}}
+\index{GetMousePos@{GetMousePos}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetMousePos()}{GetMousePos()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}}\& olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Mouse\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a9640286e4a7cd03c6f545b1df7373269}\label{classolc_1_1_pixel_game_engine_a9640286e4a7cd03c6f545b1df7373269}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetMouseWheel@{GetMouseWheel}}
+\index{GetMouseWheel@{GetMouseWheel}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetMouseWheel()}{GetMouseWheel()}}
+{\footnotesize\ttfamily int32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Mouse\+Wheel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a2ec1d2a1f3777338fb4388c620344a34}\label{classolc_1_1_pixel_game_engine_a2ec1d2a1f3777338fb4388c620344a34}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetMouseX@{GetMouseX}}
+\index{GetMouseX@{GetMouseX}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetMouseX()}{GetMouseX()}}
+{\footnotesize\ttfamily int32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Get\+MouseX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a8dde80c07547240f5e72b4f2fcd89668}\label{classolc_1_1_pixel_game_engine_a8dde80c07547240f5e72b4f2fcd89668}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetMouseY@{GetMouseY}}
+\index{GetMouseY@{GetMouseY}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetMouseY()}{GetMouseY()}}
+{\footnotesize\ttfamily int32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Get\+MouseY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ad4f95a449dc09a2650ec771e6fa83049}\label{classolc_1_1_pixel_game_engine_ad4f95a449dc09a2650ec771e6fa83049}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetPixelMode@{GetPixelMode}}
+\index{GetPixelMode@{GetPixelMode}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetPixelMode()}{GetPixelMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structolc_1_1_pixel_ae9012164940526ddb09b217dbbddfd65}{Pixel\+::\+Mode}} olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Pixel\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a721fb4cfac75f76c6d5832415fccbe61}\label{classolc_1_1_pixel_game_engine_a721fb4cfac75f76c6d5832415fccbe61}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetPixelSize@{GetPixelSize}}
+\index{GetPixelSize@{GetPixelSize}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetPixelSize()}{GetPixelSize()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}}\& olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Pixel\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a5602d50220bd7edbd77fc67eaa981ce5}\label{classolc_1_1_pixel_game_engine_a5602d50220bd7edbd77fc67eaa981ce5}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetScreenPixelSize@{GetScreenPixelSize}}
+\index{GetScreenPixelSize@{GetScreenPixelSize}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetScreenPixelSize()}{GetScreenPixelSize()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}}\& olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Screen\+Pixel\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aa70121ffb85733f8ea2e7e5d0b4b311b}\label{classolc_1_1_pixel_game_engine_aa70121ffb85733f8ea2e7e5d0b4b311b}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetTextSize@{GetTextSize}}
+\index{GetTextSize@{GetTextSize}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetTextSize()}{GetTextSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Text\+Size (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ab282eddb9b8fe14d01311c8613f79e84}\label{classolc_1_1_pixel_game_engine_ab282eddb9b8fe14d01311c8613f79e84}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetTextSizeProp@{GetTextSizeProp}}
+\index{GetTextSizeProp@{GetTextSizeProp}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetTextSizeProp()}{GetTextSizeProp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Text\+Size\+Prop (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a54b5141da371af51541874dd68e4e6a2}\label{classolc_1_1_pixel_game_engine_a54b5141da371af51541874dd68e4e6a2}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetWindowMouse@{GetWindowMouse}}
+\index{GetWindowMouse@{GetWindowMouse}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetWindowMouse()}{GetWindowMouse()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}}\& olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Window\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aee10e917aeb1ce4625561d71126e0a7d}\label{classolc_1_1_pixel_game_engine_aee10e917aeb1ce4625561d71126e0a7d}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GetWindowSize@{GetWindowSize}}
+\index{GetWindowSize@{GetWindowSize}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GetWindowSize()}{GetWindowSize()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}}\& olc\+::\+Pixel\+Game\+Engine\+::\+Get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a11d9ed8762b81e0bd6bbe4349255b1e8}\label{classolc_1_1_pixel_game_engine_a11d9ed8762b81e0bd6bbe4349255b1e8}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!GradientFillRectDecal@{GradientFillRectDecal}}
+\index{GradientFillRectDecal@{GradientFillRectDecal}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{GradientFillRectDecal()}{GradientFillRectDecal()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Gradient\+Fill\+Rect\+Decal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{size,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}}}]{col\+TL,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}}}]{col\+BL,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}}}]{col\+BR,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}}}]{col\+TR }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a92192402b5d499ab8b230dfb9393f3b7}\label{classolc_1_1_pixel_game_engine_a92192402b5d499ab8b230dfb9393f3b7}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!IsFocused@{IsFocused}}
+\index{IsFocused@{IsFocused}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{IsFocused()}{IsFocused()}}
+{\footnotesize\ttfamily bool olc\+::\+Pixel\+Game\+Engine\+::\+Is\+Focused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a7afa0b57c65bd5d9a54c602afd4fe756}\label{classolc_1_1_pixel_game_engine_a7afa0b57c65bd5d9a54c602afd4fe756}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_ConfigureSystem@{olc\_ConfigureSystem}}
+\index{olc\_ConfigureSystem@{olc\_ConfigureSystem}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_ConfigureSystem()}{olc\_ConfigureSystem()}}
+{\footnotesize\ttfamily virtual void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Configure\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a117eedbe1e9366fe2bf402334beb9692}\label{classolc_1_1_pixel_game_engine_a117eedbe1e9366fe2bf402334beb9692}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_ConstructFontSheet@{olc\_ConstructFontSheet}}
+\index{olc\_ConstructFontSheet@{olc\_ConstructFontSheet}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_ConstructFontSheet()}{olc\_ConstructFontSheet()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Construct\+Font\+Sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a0018131435f88bb5de406fd11ee54058}\label{classolc_1_1_pixel_game_engine_a0018131435f88bb5de406fd11ee54058}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_CoreUpdate@{olc\_CoreUpdate}}
+\index{olc\_CoreUpdate@{olc\_CoreUpdate}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_CoreUpdate()}{olc\_CoreUpdate()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Core\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a7b0f41bc4b4258a5c4fa1742b41d15e3}\label{classolc_1_1_pixel_game_engine_a7b0f41bc4b4258a5c4fa1742b41d15e3}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_IsRunning@{olc\_IsRunning}}
+\index{olc\_IsRunning@{olc\_IsRunning}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_IsRunning()}{olc\_IsRunning()}}
+{\footnotesize\ttfamily bool olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aa19aafa028a7e2eaaf7b2235a9bd2256}\label{classolc_1_1_pixel_game_engine_aa19aafa028a7e2eaaf7b2235a9bd2256}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_PrepareEngine@{olc\_PrepareEngine}}
+\index{olc\_PrepareEngine@{olc\_PrepareEngine}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_PrepareEngine()}{olc\_PrepareEngine()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Prepare\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a417b6cd564ccad1d878ae51cfdd3be8e}\label{classolc_1_1_pixel_game_engine_a417b6cd564ccad1d878ae51cfdd3be8e}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_Reanimate@{olc\_Reanimate}}
+\index{olc\_Reanimate@{olc\_Reanimate}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_Reanimate()}{olc\_Reanimate()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Reanimate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a2da1f2ebbc1a5fbdbf52890e6ac707b1}\label{classolc_1_1_pixel_game_engine_a2da1f2ebbc1a5fbdbf52890e6ac707b1}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_Terminate@{olc\_Terminate}}
+\index{olc\_Terminate@{olc\_Terminate}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_Terminate()}{olc\_Terminate()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a7343712504f23f86c8490646ffc50e7f}\label{classolc_1_1_pixel_game_engine_a7343712504f23f86c8490646ffc50e7f}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_UpdateKeyFocus@{olc\_UpdateKeyFocus}}
+\index{olc\_UpdateKeyFocus@{olc\_UpdateKeyFocus}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_UpdateKeyFocus()}{olc\_UpdateKeyFocus()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Update\+Key\+Focus (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a61fde81846a9ef7f8fcf63080e6d350b}\label{classolc_1_1_pixel_game_engine_a61fde81846a9ef7f8fcf63080e6d350b}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_UpdateKeyState@{olc\_UpdateKeyState}}
+\index{olc\_UpdateKeyState@{olc\_UpdateKeyState}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_UpdateKeyState()}{olc\_UpdateKeyState()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Update\+Key\+State (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{key,  }\item[{bool}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a6e10d8fae75e26dea03b0b447667a308}\label{classolc_1_1_pixel_game_engine_a6e10d8fae75e26dea03b0b447667a308}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_UpdateMouse@{olc\_UpdateMouse}}
+\index{olc\_UpdateMouse@{olc\_UpdateMouse}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_UpdateMouse()}{olc\_UpdateMouse()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Update\+Mouse (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ab3150ba487188e64940c294998fa38d3}\label{classolc_1_1_pixel_game_engine_ab3150ba487188e64940c294998fa38d3}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_UpdateMouseFocus@{olc\_UpdateMouseFocus}}
+\index{olc\_UpdateMouseFocus@{olc\_UpdateMouseFocus}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_UpdateMouseFocus()}{olc\_UpdateMouseFocus()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Update\+Mouse\+Focus (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a59645c08376a7d4e58673919f3bd0dfb}\label{classolc_1_1_pixel_game_engine_a59645c08376a7d4e58673919f3bd0dfb}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_UpdateMouseState@{olc\_UpdateMouseState}}
+\index{olc\_UpdateMouseState@{olc\_UpdateMouseState}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_UpdateMouseState()}{olc\_UpdateMouseState()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Update\+Mouse\+State (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{button,  }\item[{bool}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aa33ea5e40d4577e3c44fcf4a26cecadd}\label{classolc_1_1_pixel_game_engine_aa33ea5e40d4577e3c44fcf4a26cecadd}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_UpdateMouseWheel@{olc\_UpdateMouseWheel}}
+\index{olc\_UpdateMouseWheel@{olc\_UpdateMouseWheel}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_UpdateMouseWheel()}{olc\_UpdateMouseWheel()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Update\+Mouse\+Wheel (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_af1cd38cf0df2e7c3ab53bee66ec63771}\label{classolc_1_1_pixel_game_engine_af1cd38cf0df2e7c3ab53bee66ec63771}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_UpdateViewport@{olc\_UpdateViewport}}
+\index{olc\_UpdateViewport@{olc\_UpdateViewport}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_UpdateViewport()}{olc\_UpdateViewport()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Update\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a4f0dae00f21f8d71d4544d50593234c3}\label{classolc_1_1_pixel_game_engine_a4f0dae00f21f8d71d4544d50593234c3}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!olc\_UpdateWindowSize@{olc\_UpdateWindowSize}}
+\index{olc\_UpdateWindowSize@{olc\_UpdateWindowSize}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{olc\_UpdateWindowSize()}{olc\_UpdateWindowSize()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::olc\+\_\+\+Update\+Window\+Size (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x,  }\item[{int32\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a6a33b6ff7cd23dfd05b34416865fb5c3}\label{classolc_1_1_pixel_game_engine_a6a33b6ff7cd23dfd05b34416865fb5c3}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!OnUserCreate@{OnUserCreate}}
+\index{OnUserCreate@{OnUserCreate}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{OnUserCreate()}{OnUserCreate()}}
+{\footnotesize\ttfamily virtual bool olc\+::\+Pixel\+Game\+Engine\+::\+On\+User\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_client_a698bb8a4ba91211dc4fcaa4079d8d070}{Game\+Client}}.
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ad4fbf979865fb1f08250ea379f2de669}\label{classolc_1_1_pixel_game_engine_ad4fbf979865fb1f08250ea379f2de669}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!OnUserDestroy@{OnUserDestroy}}
+\index{OnUserDestroy@{OnUserDestroy}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{OnUserDestroy()}{OnUserDestroy()}}
+{\footnotesize\ttfamily virtual bool olc\+::\+Pixel\+Game\+Engine\+::\+On\+User\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_af9379a3db341b0acb410ea543e30fdd1}\label{classolc_1_1_pixel_game_engine_af9379a3db341b0acb410ea543e30fdd1}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!OnUserUpdate@{OnUserUpdate}}
+\index{OnUserUpdate@{OnUserUpdate}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{OnUserUpdate()}{OnUserUpdate()}}
+{\footnotesize\ttfamily virtual bool olc\+::\+Pixel\+Game\+Engine\+::\+On\+User\+Update (\begin{DoxyParamCaption}\item[{float}]{f\+Elapsed\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_client_ab6e2efe37e67de64062bca35d8a11e2e}{Game\+Client}}.
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a49a2ead57239e1595cc555effd3e3a2b}\label{classolc_1_1_pixel_game_engine_a49a2ead57239e1595cc555effd3e3a2b}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!pgex\_Register@{pgex\_Register}}
+\index{pgex\_Register@{pgex\_Register}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{pgex\_Register()}{pgex\_Register()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::pgex\+\_\+\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_p_g_e_x}{olc\+::\+P\+G\+EX}} $\ast$}]{pgex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_abbbee4578ffa6b844c04c1af363052af}\label{classolc_1_1_pixel_game_engine_abbbee4578ffa6b844c04c1af363052af}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!ScreenHeight@{ScreenHeight}}
+\index{ScreenHeight@{ScreenHeight}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{ScreenHeight()}{ScreenHeight()}}
+{\footnotesize\ttfamily int32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Screen\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_aa3b458d05eab503d9918cfd2d383a45c}\label{classolc_1_1_pixel_game_engine_aa3b458d05eab503d9918cfd2d383a45c}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!ScreenWidth@{ScreenWidth}}
+\index{ScreenWidth@{ScreenWidth}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{ScreenWidth()}{ScreenWidth()}}
+{\footnotesize\ttfamily int32\+\_\+t olc\+::\+Pixel\+Game\+Engine\+::\+Screen\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a27ee96acff2c74d47f0cb78493aac756}\label{classolc_1_1_pixel_game_engine_a27ee96acff2c74d47f0cb78493aac756}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetDecalMode@{SetDecalMode}}
+\index{SetDecalMode@{SetDecalMode}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetDecalMode()}{SetDecalMode()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Decal\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138ca}{olc\+::\+Decal\+Mode}} \&}]{mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a70b6a145d7ab0c8857000a72ce4d4a70}\label{classolc_1_1_pixel_game_engine_a70b6a145d7ab0c8857000a72ce4d4a70}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetDrawTarget@{SetDrawTarget}}
+\index{SetDrawTarget@{SetDrawTarget}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetDrawTarget()}{SetDrawTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Draw\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_sprite}{Sprite}} $\ast$}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a5842c1087a70c95a7ff96d53f28b7bab}\label{classolc_1_1_pixel_game_engine_a5842c1087a70c95a7ff96d53f28b7bab}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetDrawTarget@{SetDrawTarget}}
+\index{SetDrawTarget@{SetDrawTarget}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetDrawTarget()}{SetDrawTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Draw\+Target (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a40a88ddb3800e59121f05b06fd64dbfd}\label{classolc_1_1_pixel_game_engine_a40a88ddb3800e59121f05b06fd64dbfd}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetLayerCustomRenderFunction@{SetLayerCustomRenderFunction}}
+\index{SetLayerCustomRenderFunction@{SetLayerCustomRenderFunction}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetLayerCustomRenderFunction()}{SetLayerCustomRenderFunction()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Layer\+Custom\+Render\+Function (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{layer,  }\item[{std\+::function$<$ void()$>$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a0e1ddc993ef65dfe00f2bbcf59e535ad}\label{classolc_1_1_pixel_game_engine_a0e1ddc993ef65dfe00f2bbcf59e535ad}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetLayerOffset@{SetLayerOffset}}
+\index{SetLayerOffset@{SetLayerOffset}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetLayerOffset()}{SetLayerOffset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Layer\+Offset (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{layer,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{offset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a9fed21eddcebeb743472d8b9eb1e3ece}\label{classolc_1_1_pixel_game_engine_a9fed21eddcebeb743472d8b9eb1e3ece}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetLayerOffset@{SetLayerOffset}}
+\index{SetLayerOffset@{SetLayerOffset}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetLayerOffset()}{SetLayerOffset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Layer\+Offset (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{layer,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_af8fbe005b4069ed1de8e0347b72ebc30}\label{classolc_1_1_pixel_game_engine_af8fbe005b4069ed1de8e0347b72ebc30}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetLayerScale@{SetLayerScale}}
+\index{SetLayerScale@{SetLayerScale}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetLayerScale()}{SetLayerScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Layer\+Scale (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{layer,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{scale }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a409825b0147e25c0d4c05fb0aa1f6273}\label{classolc_1_1_pixel_game_engine_a409825b0147e25c0d4c05fb0aa1f6273}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetLayerScale@{SetLayerScale}}
+\index{SetLayerScale@{SetLayerScale}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetLayerScale()}{SetLayerScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Layer\+Scale (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{layer,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a7d7c04245161782d5f5c48d3d62ff7a7}\label{classolc_1_1_pixel_game_engine_a7d7c04245161782d5f5c48d3d62ff7a7}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetLayerTint@{SetLayerTint}}
+\index{SetLayerTint@{SetLayerTint}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetLayerTint()}{SetLayerTint()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Layer\+Tint (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{layer,  }\item[{const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&}]{tint }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ab0726b7758bc1bf7f7de30369076b8e7}\label{classolc_1_1_pixel_game_engine_ab0726b7758bc1bf7f7de30369076b8e7}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetPixelBlend@{SetPixelBlend}}
+\index{SetPixelBlend@{SetPixelBlend}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetPixelBlend()}{SetPixelBlend()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Pixel\+Blend (\begin{DoxyParamCaption}\item[{float}]{f\+Blend }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_ae4a3d1aaa40761986389966ab927ef32}\label{classolc_1_1_pixel_game_engine_ae4a3d1aaa40761986389966ab927ef32}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetPixelMode@{SetPixelMode}}
+\index{SetPixelMode@{SetPixelMode}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetPixelMode()}{SetPixelMode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Pixel\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structolc_1_1_pixel_ae9012164940526ddb09b217dbbddfd65}{Pixel\+::\+Mode}}}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a9aa31ae4e1735efa72f3ea17fb51b2ef}\label{classolc_1_1_pixel_game_engine_a9aa31ae4e1735efa72f3ea17fb51b2ef}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetPixelMode@{SetPixelMode}}
+\index{SetPixelMode@{SetPixelMode}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetPixelMode()}{SetPixelMode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Pixel\+Mode (\begin{DoxyParamCaption}\item[{std\+::function$<$ \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}}(const int x, const int y, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&p\+Source, const \mbox{\hyperlink{structolc_1_1_pixel}{olc\+::\+Pixel}} \&p\+Dest)$>$}]{pixel\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_abd403468f57f7665d56e202da8de8e76}\label{classolc_1_1_pixel_game_engine_abd403468f57f7665d56e202da8de8e76}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!SetScreenSize@{SetScreenSize}}
+\index{SetScreenSize@{SetScreenSize}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{SetScreenSize()}{SetScreenSize()}}
+{\footnotesize\ttfamily void olc\+::\+Pixel\+Game\+Engine\+::\+Set\+Screen\+Size (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a8e8848aa1c743a1ec2cdaa14c87e5cde}\label{classolc_1_1_pixel_game_engine_a8e8848aa1c743a1ec2cdaa14c87e5cde}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!Start@{Start}}
+\index{Start@{Start}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc\+::rcode}} olc\+::\+Pixel\+Game\+Engine\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a98fcee28f1a645fe0a29f6b6e6a5d7bb}\label{classolc_1_1_pixel_game_engine_a98fcee28f1a645fe0a29f6b6e6a5d7bb}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!PGEX@{PGEX}}
+\index{PGEX@{PGEX}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{PGEX}{PGEX}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classolc_1_1_p_g_e_x}{P\+G\+EX}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 1106 of file olc\+Pixel\+Game\+Engine.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classolc_1_1_pixel_game_engine_a02d0f9c50770aa38aea1448f62d3604f}\label{classolc_1_1_pixel_game_engine_a02d0f9c50770aa38aea1448f62d3604f}} 
+\index{olc::PixelGameEngine@{olc::PixelGameEngine}!sAppName@{sAppName}}
+\index{sAppName@{sAppName}!olc::PixelGameEngine@{olc::PixelGameEngine}}
+\doxysubsubsection{\texorpdfstring{sAppName}{sAppName}}
+{\footnotesize\ttfamily std\+::string olc\+::\+Pixel\+Game\+Engine\+::s\+App\+Name}
+
+
+
+Definition at line 1024 of file olc\+Pixel\+Game\+Engine.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{olc_pixel_game_engine_8h}{olc\+Pixel\+Game\+Engine.\+h}}\end{DoxyCompactItemize}

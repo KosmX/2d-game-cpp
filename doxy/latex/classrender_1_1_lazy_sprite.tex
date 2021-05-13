@@ -1,0 +1,140 @@
+\hypertarget{classrender_1_1_lazy_sprite}{}\doxysection{render\+::Lazy\+Sprite Class Reference}
+\label{classrender_1_1_lazy_sprite}\index{render::LazySprite@{render::LazySprite}}
+
+
+Refer to one texture, not animated, not modifiable, just a simple image. Lazy loading means, it will load it only, when you\textquotesingle{}re trying to use it.  
+
+
+
+
+{\ttfamily \#include $<$Lazy\+Sprite.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrender_1_1_lazy_sprite_a28a8d429dc27035aa9a09151aa150b0a}{Lazy\+Sprite}} (const std\+::string \&res\+Name)
+\item 
+void \mbox{\hyperlink{classrender_1_1_lazy_sprite_a3e2884ba94b5f6bbe9061c5a44ca6a23}{render}} (\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&scene, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&uv, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&size, \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} scale=\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(1, 1))
+\begin{DoxyCompactList}\small\item\em Renders the sprite into the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrender_1_1_lazy_sprite_a1e0b32f06c67b96eed8da12747aa4f0a}{render\+Centered}} (\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&scene, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&uv, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&size, \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} scale=\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(1, 1))
+\begin{DoxyCompactList}\small\item\em Render, but pos in the center. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$ \mbox{\hyperlink{classrender_1_1_lazy_sprite_aea6cdfcf5295c8a2c4b3f4a51ee0bc28}{get\+Decal}} ()
+\begin{DoxyCompactList}\small\item\em get an old\+::\+Decal \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classrender_1_1_lazy_sprite_a67a794671efc86ea29921c0e5934377e}{resource\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Refer to one texture, not animated, not modifiable, just a simple image. Lazy loading means, it will load it only, when you\textquotesingle{}re trying to use it. 
+
+Definition at line 13 of file Lazy\+Sprite.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrender_1_1_lazy_sprite_a28a8d429dc27035aa9a09151aa150b0a}\label{classrender_1_1_lazy_sprite_a28a8d429dc27035aa9a09151aa150b0a}} 
+\index{render::LazySprite@{render::LazySprite}!LazySprite@{LazySprite}}
+\index{LazySprite@{LazySprite}!render::LazySprite@{render::LazySprite}}
+\doxysubsubsection{\texorpdfstring{LazySprite()}{LazySprite()}}
+{\footnotesize\ttfamily render\+::\+Lazy\+Sprite\+::\+Lazy\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{res\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+u, v the texture coordinates on the image, sizeU, V are the size of that sprite 
+
+Definition at line 15 of file Lazy\+Sprite.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrender_1_1_lazy_sprite_aea6cdfcf5295c8a2c4b3f4a51ee0bc28}\label{classrender_1_1_lazy_sprite_aea6cdfcf5295c8a2c4b3f4a51ee0bc28}} 
+\index{render::LazySprite@{render::LazySprite}!getDecal@{getDecal}}
+\index{getDecal@{getDecal}!render::LazySprite@{render::LazySprite}}
+\doxysubsubsection{\texorpdfstring{getDecal()}{getDecal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classolc_1_1_decal}{olc\+::\+Decal}} $\ast$ render\+::\+Lazy\+Sprite\+::get\+Decal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+get an old\+::\+Decal 
+
+
+
+Definition at line 6 of file Lazy\+Sprite.\+cpp.
+
+\mbox{\Hypertarget{classrender_1_1_lazy_sprite_a3e2884ba94b5f6bbe9061c5a44ca6a23}\label{classrender_1_1_lazy_sprite_a3e2884ba94b5f6bbe9061c5a44ca6a23}} 
+\index{render::LazySprite@{render::LazySprite}!render@{render}}
+\index{render@{render}!render::LazySprite@{render::LazySprite}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void render\+::\+Lazy\+Sprite\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&}]{scene,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{uv,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{size,  }\item[{\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}}]{scale = {\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(1,~1)} }\end{DoxyParamCaption})}
+
+
+
+Renders the sprite into the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & \mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} scene \\
+\hline
+{\em pos} & the in-\/world pos \\
+\hline
+{\em uv} & texture uv pos \\
+\hline
+{\em size} & texture size \\
+\hline
+{\em scale} & scale, 1 by default \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Lazy\+Sprite.\+cpp.
+
+\mbox{\Hypertarget{classrender_1_1_lazy_sprite_a1e0b32f06c67b96eed8da12747aa4f0a}\label{classrender_1_1_lazy_sprite_a1e0b32f06c67b96eed8da12747aa4f0a}} 
+\index{render::LazySprite@{render::LazySprite}!renderCentered@{renderCentered}}
+\index{renderCentered@{renderCentered}!render::LazySprite@{render::LazySprite}}
+\doxysubsubsection{\texorpdfstring{renderCentered()}{renderCentered()}}
+{\footnotesize\ttfamily void render\+::\+Lazy\+Sprite\+::render\+Centered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&}]{scene,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{uv,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{size,  }\item[{\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}}]{scale = {\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(1,~1)} }\end{DoxyParamCaption})}
+
+
+
+Render, but pos in the center. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & \mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} scene \\
+\hline
+{\em pos} & the in-\/world pos \\
+\hline
+{\em uv} & texture uv pos \\
+\hline
+{\em size} & texture size \\
+\hline
+{\em scale} & scale, 1 by default \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file Lazy\+Sprite.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrender_1_1_lazy_sprite_a67a794671efc86ea29921c0e5934377e}\label{classrender_1_1_lazy_sprite_a67a794671efc86ea29921c0e5934377e}} 
+\index{render::LazySprite@{render::LazySprite}!resourceName@{resourceName}}
+\index{resourceName@{resourceName}!render::LazySprite@{render::LazySprite}}
+\doxysubsubsection{\texorpdfstring{resourceName}{resourceName}}
+{\footnotesize\ttfamily const std\+::string render\+::\+Lazy\+Sprite\+::resource\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 19 of file Lazy\+Sprite.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_lazy_sprite_8h}{Lazy\+Sprite.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_lazy_sprite_8cpp}{Lazy\+Sprite.\+cpp}}\end{DoxyCompactItemize}

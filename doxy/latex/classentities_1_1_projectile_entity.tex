@@ -1,0 +1,304 @@
+\hypertarget{classentities_1_1_projectile_entity}{}\doxysection{entities\+::Projectile\+Entity Class Reference}
+\label{classentities_1_1_projectile_entity}\index{entities::ProjectileEntity@{entities::ProjectileEntity}}
+
+
+A projectile, a bullet.  
+
+
+
+
+{\ttfamily \#include $<$Projectile\+Entity.\+h$>$}
+
+Inheritance diagram for entities\+::Projectile\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classentities_1_1_projectile_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_projectile_entity_ad42e2a1181110d2fa3acbec7eef3424e}{Projectile\+Entity}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&\mbox{\hyperlink{classentities_1_1_projectile_entity_ab01d1aa4b66b21481d07f7777bfb2ca3}{user}}, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos0, \mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&texture, int \mbox{\hyperlink{classentities_1_1_projectile_entity_a723e706e6421504ce9c6d70d77561215}{damage}}=20)
+\item 
+void \mbox{\hyperlink{classentities_1_1_projectile_entity_a761f27885de02515edaf252e8a4162b5}{tick}} (\mbox{\hyperlink{class_game_client}{Game\+Client}} \&client, float deltaT, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&shared\+\_\+this) override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classentities_1_1_entity}{Entity}} tick multiple times per sec. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classentities_1_1_projectile_entity_ad88aa7e53b9a6671dab6132a8d58dbb5}{set\+Velocity}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&v)
+\begin{DoxyCompactList}\small\item\em Set its velocity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentities_1_1_projectile_entity_a723e706e6421504ce9c6d70d77561215}{damage}} (int damage, \mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&attacker) override
+\begin{DoxyCompactList}\small\item\em something damage this \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classrender_1_1_simple_sprite}{render\+::\+Simple\+Sprite}} \mbox{\hyperlink{classentities_1_1_projectile_entity_aedd28853ca6fd6f1b8fa45dbe6b90c63}{projectile}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \& \mbox{\hyperlink{classentities_1_1_projectile_entity_a7e67fe629e1ef7115fd2a0cae8b1efc0}{get\+Texture}} () override
+\begin{DoxyCompactList}\small\item\em the object\textquotesingle{}s texture \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classentities_1_1_projectile_entity_a463a54543d8412feddf3be0aa7ab532a}{get\+Damage}} ()
+\item 
+virtual void \mbox{\hyperlink{classentities_1_1_projectile_entity_ab3eb63e6fdf0ca5c4b81ebbc02e7f513}{bounce}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&collision)
+\begin{DoxyCompactList}\small\item\em not used, do a bounce function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classentities_1_1_projectile_entity_a865c1a9527f67a3e5402a4fcf8baac98}{on\+Collide}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&collision\+Vector, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&who)
+\begin{DoxyCompactList}\small\item\em Determines, what will the projectile do, if it hit something. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classentities_1_1_projectile_entity_ae38525094695db8ab564c5ae27711bb4}{get\+Hit\+Box\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em half hitbox size \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classentities_1_1_projectile_entity_a29cb43b58d34f32f18986185bf8691f8}{velocity}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{classentities_1_1_projectile_entity_ab01d1aa4b66b21481d07f7777bfb2ca3}{user}}
+\begin{DoxyCompactList}\small\item\em Who is the owner of this bullet. needed to not damage the user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classentities_1_1_projectile_entity_ad4325b9194e4c76e68f27857226eefd8}{damage\+Value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A projectile, a bullet. 
+
+Definition at line 9 of file Projectile\+Entity.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_ad42e2a1181110d2fa3acbec7eef3424e}\label{classentities_1_1_projectile_entity_ad42e2a1181110d2fa3acbec7eef3424e}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!ProjectileEntity@{ProjectileEntity}}
+\index{ProjectileEntity@{ProjectileEntity}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{ProjectileEntity()}{ProjectileEntity()}}
+{\footnotesize\ttfamily entities\+::\+Projectile\+Entity\+::\+Projectile\+Entity (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{user,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos0,  }\item[{\mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&}]{texture,  }\item[{int}]{damage = {\ttfamily 20} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file Projectile\+Entity.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_ab3eb63e6fdf0ca5c4b81ebbc02e7f513}\label{classentities_1_1_projectile_entity_ab3eb63e6fdf0ca5c4b81ebbc02e7f513}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!bounce@{bounce}}
+\index{bounce@{bounce}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{bounce()}{bounce()}}
+{\footnotesize\ttfamily void entities\+::\+Projectile\+Entity\+::bounce (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+not used, do a bounce function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & collision vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file Projectile\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_a723e706e6421504ce9c6d70d77561215}\label{classentities_1_1_projectile_entity_a723e706e6421504ce9c6d70d77561215}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!damage@{damage}}
+\index{damage@{damage}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}}
+{\footnotesize\ttfamily bool entities\+::\+Projectile\+Entity\+::damage (\begin{DoxyParamCaption}\item[{int}]{damage,  }\item[{\mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&}]{attacker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+something damage this 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & how much damage should it take \\
+\hline
+{\em attacker} & who deal the damage. not the projectile, the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+did the entity take the damage or no (like a wall) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classentities_1_1_entity_af7fc9949fc50b1b31abb36a3d51b0597}{entities\+::\+Entity}}.
+
+
+
+Definition at line 66 of file Projectile\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_a463a54543d8412feddf3be0aa7ab532a}\label{classentities_1_1_projectile_entity_a463a54543d8412feddf3be0aa7ab532a}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int entities\+::\+Projectile\+Entity\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 13 of file Projectile\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_ae38525094695db8ab564c5ae27711bb4}\label{classentities_1_1_projectile_entity_ae38525094695db8ab564c5ae27711bb4}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!getHitBoxSize@{getHitBoxSize}}
+\index{getHitBoxSize@{getHitBoxSize}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{getHitBoxSize()}{getHitBoxSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} entities\+::\+Projectile\+Entity\+::get\+Hit\+Box\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+half hitbox size 
+
+\begin{DoxyReturn}{Returns}
+hitbox size as a vector 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classentities_1_1_entity_a9cd7ba81ddbd978b8f43e9f10e97492f}{entities\+::\+Entity}}.
+
+
+
+Definition at line 36 of file Projectile\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_a7e67fe629e1ef7115fd2a0cae8b1efc0}\label{classentities_1_1_projectile_entity_a7e67fe629e1ef7115fd2a0cae8b1efc0}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \& entities\+::\+Projectile\+Entity\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+the object\textquotesingle{}s texture 
+
+\begin{DoxyReturn}{Returns}
+the texture 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classentities_1_1_entity_af01b796fb472ef3139aea41aeed36c76}{entities\+::\+Entity}}.
+
+
+
+Definition at line 9 of file Projectile\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_a865c1a9527f67a3e5402a4fcf8baac98}\label{classentities_1_1_projectile_entity_a865c1a9527f67a3e5402a4fcf8baac98}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!onCollide@{onCollide}}
+\index{onCollide@{onCollide}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{onCollide()}{onCollide()}}
+{\footnotesize\ttfamily bool entities\+::\+Projectile\+Entity\+::on\+Collide (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{collision\+Vector,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{who }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Determines, what will the projectile do, if it hit something. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Vector} & the collision vector \\
+\hline
+{\em who} & who is the affected entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+is the projectile destroyed. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classentities_1_1_explosive_projectile_a7e0d880f0dfeb6570dc724a0739b1331}{entities\+::\+Explosive\+Projectile}}.
+
+
+
+Definition at line 27 of file Projectile\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_ad88aa7e53b9a6671dab6132a8d58dbb5}\label{classentities_1_1_projectile_entity_ad88aa7e53b9a6671dab6132a8d58dbb5}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily void entities\+::\+Projectile\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set its velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & velocity vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Projectile\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_a761f27885de02515edaf252e8a4162b5}\label{classentities_1_1_projectile_entity_a761f27885de02515edaf252e8a4162b5}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!tick@{tick}}
+\index{tick@{tick}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void entities\+::\+Projectile\+Entity\+::tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_client}{Game\+Client}} \&}]{client,  }\item[{float}]{deltaT,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{shared\+\_\+this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classentities_1_1_entity}{Entity}} tick multiple times per sec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & the game client object \\
+\hline
+{\em deltaT} & how long take a tick \\
+\hline
+{\em shared\+\_\+this} & this as a shared\+\_\+ptr \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_entity_a0440674bf90ae83d9a26aa4b0ac8309e}{entities\+::\+Entity}}.
+
+
+
+Definition at line 43 of file Projectile\+Entity.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_ad4325b9194e4c76e68f27857226eefd8}\label{classentities_1_1_projectile_entity_ad4325b9194e4c76e68f27857226eefd8}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!damageValue@{damageValue}}
+\index{damageValue@{damageValue}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{damageValue}{damageValue}}
+{\footnotesize\ttfamily int entities\+::\+Projectile\+Entity\+::damage\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 28 of file Projectile\+Entity.\+h.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_aedd28853ca6fd6f1b8fa45dbe6b90c63}\label{classentities_1_1_projectile_entity_aedd28853ca6fd6f1b8fa45dbe6b90c63}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!projectile@{projectile}}
+\index{projectile@{projectile}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{projectile}{projectile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrender_1_1_simple_sprite}{render\+::\+Simple\+Sprite}} entities\+::\+Projectile\+Entity\+::projectile\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 13 of file Projectile\+Entity.\+h.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_ab01d1aa4b66b21481d07f7777bfb2ca3}\label{classentities_1_1_projectile_entity_ab01d1aa4b66b21481d07f7777bfb2ca3}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!user@{user}}
+\index{user@{user}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classentities_1_1_entity}{Entity}}$>$ entities\+::\+Projectile\+Entity\+::user\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Who is the owner of this bullet. needed to not damage the user. 
+
+
+
+Definition at line 25 of file Projectile\+Entity.\+h.
+
+\mbox{\Hypertarget{classentities_1_1_projectile_entity_a29cb43b58d34f32f18986185bf8691f8}\label{classentities_1_1_projectile_entity_a29cb43b58d34f32f18986185bf8691f8}} 
+\index{entities::ProjectileEntity@{entities::ProjectileEntity}!velocity@{velocity}}
+\index{velocity@{velocity}!entities::ProjectileEntity@{entities::ProjectileEntity}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} entities\+::\+Projectile\+Entity\+::velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 21 of file Projectile\+Entity.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_projectile_entity_8h}{Projectile\+Entity.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_projectile_entity_8cpp}{Projectile\+Entity.\+cpp}}\end{DoxyCompactItemize}

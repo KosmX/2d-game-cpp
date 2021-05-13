@@ -1,0 +1,126 @@
+\hypertarget{classweapons_1_1_e_m_gun}{}\doxysection{weapons\+::E\+M\+Gun Class Reference}
+\label{classweapons_1_1_e_m_gun}\index{weapons::EMGun@{weapons::EMGun}}
+
+
+\mbox{\hyperlink{classweapons_1_1_weapon}{Weapon}} with energy level.  
+
+
+
+
+{\ttfamily \#include $<$E\+M\+Gun.\+h$>$}
+
+Inheritance diagram for weapons\+::E\+M\+Gun\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classweapons_1_1_e_m_gun}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classweapons_1_1_e_m_gun_a39114a620affbf0d80d616cf4baf7e17}{E\+M\+Gun}} (\mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&texture, float \mbox{\hyperlink{classweapons_1_1_weapon_aa3d78dae766eee8279326026dbb46f1f}{cooldown\+Time}}, int \mbox{\hyperlink{classweapons_1_1_weapon_a397c372ffe2838f7c9c1ce67c06e55a9}{damage}}, float \mbox{\hyperlink{classweapons_1_1_ranged_weapon_a299d09c213670d80f7215e2310c92889}{projectile\+Speed}}=10, const std\+::string \&\mbox{\hyperlink{classweapons_1_1_weapon_a3dab7574419aed48f2a0f2d54cfcd825}{name}}=\char`\"{}Ranged\+Weapon\char`\"{}, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&\mbox{\hyperlink{classentities_1_1_entity_a04f9c2febe8d435138a07eb2f48ba96b}{pos}}=\{ 0, 0 \}, float energy\+Regen=12)
+\item 
+bool \mbox{\hyperlink{classweapons_1_1_e_m_gun_a8034852a4a5957c3d3bc00ca5f7df6e4}{use}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ user, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&direction) override
+\item 
+float \mbox{\hyperlink{classweapons_1_1_e_m_gun_a1d2c920f4fddd40d39dba5d4dddf496f}{get\+Secondary\+Bar}} () override
+\begin{DoxyCompactList}\small\item\em Shows the energy level in the secondary status-\/bar. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classweapons_1_1_e_m_gun_a0bb30401aa36e2205c011ea0fcf40303}{update}} (float d\+Tick) override
+\begin{DoxyCompactList}\small\item\em Update the weapon in a Character\textquotesingle{}s inventory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classweapons_1_1_weapon}{Weapon}} with energy level. 
+
+Definition at line 10 of file E\+M\+Gun.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classweapons_1_1_e_m_gun_a39114a620affbf0d80d616cf4baf7e17}\label{classweapons_1_1_e_m_gun_a39114a620affbf0d80d616cf4baf7e17}} 
+\index{weapons::EMGun@{weapons::EMGun}!EMGun@{EMGun}}
+\index{EMGun@{EMGun}!weapons::EMGun@{weapons::EMGun}}
+\doxysubsubsection{\texorpdfstring{EMGun()}{EMGun()}}
+{\footnotesize\ttfamily weapons\+::\+E\+M\+Gun\+::\+E\+M\+Gun (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&}]{texture,  }\item[{float}]{cooldown\+Time,  }\item[{int}]{damage,  }\item[{float}]{projectile\+Speed = {\ttfamily 10},  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}RangedWeapon\char`\"{}},  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos = {\ttfamily \{~0,~0~\}},  }\item[{float}]{energy\+Regen = {\ttfamily 12} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file E\+M\+Gun.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classweapons_1_1_e_m_gun_a1d2c920f4fddd40d39dba5d4dddf496f}\label{classweapons_1_1_e_m_gun_a1d2c920f4fddd40d39dba5d4dddf496f}} 
+\index{weapons::EMGun@{weapons::EMGun}!getSecondaryBar@{getSecondaryBar}}
+\index{getSecondaryBar@{getSecondaryBar}!weapons::EMGun@{weapons::EMGun}}
+\doxysubsubsection{\texorpdfstring{getSecondaryBar()}{getSecondaryBar()}}
+{\footnotesize\ttfamily float weapons\+::\+E\+M\+Gun\+::get\+Secondary\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Shows the energy level in the secondary status-\/bar. 
+
+\begin{DoxyReturn}{Returns}
+0-\/1 float 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classweapons_1_1_weapon_a3f84544c15d6220252c6175fdfe5c61d}{weapons\+::\+Weapon}}.
+
+
+
+Definition at line 22 of file E\+M\+Gun.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_e_m_gun_a0bb30401aa36e2205c011ea0fcf40303}\label{classweapons_1_1_e_m_gun_a0bb30401aa36e2205c011ea0fcf40303}} 
+\index{weapons::EMGun@{weapons::EMGun}!update@{update}}
+\index{update@{update}!weapons::EMGun@{weapons::EMGun}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool weapons\+::\+E\+M\+Gun\+::update (\begin{DoxyParamCaption}\item[{float}]{d\+Tick }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the weapon in a Character\textquotesingle{}s inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d\+Tick} & a.\+k.\+a. deltaT, or f\+Elapsed\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+is the user can use it 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classweapons_1_1_weapon_a1cbf391f196bd151f3e3f1ae1e316088}{weapons\+::\+Weapon}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classweapons_1_1_glitch_gun_a6687147e8005e96f12806862f73a6cd8}{weapons\+::\+Glitch\+Gun}}.
+
+
+
+Definition at line 26 of file E\+M\+Gun.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_e_m_gun_a8034852a4a5957c3d3bc00ca5f7df6e4}\label{classweapons_1_1_e_m_gun_a8034852a4a5957c3d3bc00ca5f7df6e4}} 
+\index{weapons::EMGun@{weapons::EMGun}!use@{use}}
+\index{use@{use}!weapons::EMGun@{weapons::EMGun}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily bool weapons\+::\+E\+M\+Gun\+::use (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$}]{user,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true, if you did something with it. false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classweapons_1_1_weapon_a8c6f12ac9ed871ebd0394f6b5c447868}{weapons\+::\+Weapon}}.
+
+
+
+Definition at line 8 of file E\+M\+Gun.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_e_m_gun_8h}{E\+M\+Gun.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_e_m_gun_8cpp}{E\+M\+Gun.\+cpp}}\end{DoxyCompactItemize}

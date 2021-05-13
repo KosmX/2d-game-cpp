@@ -1,0 +1,252 @@
+\hypertarget{class_game_client}{}\doxysection{Game\+Client Class Reference}
+\label{class_game_client}\index{GameClient@{GameClient}}
+
+
+The game main class itself. manages the entities, adjust the screen...  
+
+
+
+
+{\ttfamily \#include $<$main\+Game.\+h$>$}
+
+Inheritance diagram for Game\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_client}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_client_a1324a20c121e201e69391dfe7a08e546}{Game\+Client}} (bool debug=false)
+\item 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} $>$ $>$ \& \mbox{\hyperlink{class_game_client_a6984da0365fd19c81dbc8907b598bf49}{get\+Entities}} ()
+\item 
+bool \mbox{\hyperlink{class_game_client_a698bb8a4ba91211dc4fcaa4079d8d070}{On\+User\+Create}} () override
+\begin{DoxyCompactList}\small\item\em Create a new game instance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_client_ab6e2efe37e67de64062bca35d8a11e2e}{On\+User\+Update}} (float f\+Elapsed\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_client_a9af9a685c31d428921b0cf5976a63c14}{set\+Debug\+Mode}} (bool bl=true)
+\begin{DoxyCompactList}\small\item\em turn on debug, caused by an exception \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_client_ac1df0a856bd945976c06b3977167d4c7}{add\+Entity}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} $>$ \&entity)
+\begin{DoxyCompactList}\small\item\em Add a new entity to the world. you can also use +=. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \& \mbox{\hyperlink{class_game_client_a01a0c559c6cfe63557fa4b5d7aa9e72c}{get\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the screen details. needed in fire direction calculation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_client}{Game\+Client}} \& \mbox{\hyperlink{class_game_client_abf4100b1ee69f4f300346424139f8d93}{operator+=}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} $>$ entity)
+\begin{DoxyCompactList}\small\item\em Add an entity to the world. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_player_entity}{entities\+::\+Player\+Entity}} $>$ \mbox{\hyperlink{class_game_client_acc1e0f1d4836be4a8556289cfdfd4049}{get\+Player\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Get the main player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_game_client}{Game\+Client}} \& \mbox{\hyperlink{class_game_client_adfcb979db6333b335dee4e6d785aabcf}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game_client_a81ce304348a420752ee080480d2b3095}{main}} (int, char $\ast$\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The game main class itself. manages the entities, adjust the screen... 
+
+Definition at line 11 of file main\+Game.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_client_a1324a20c121e201e69391dfe7a08e546}\label{class_game_client_a1324a20c121e201e69391dfe7a08e546}} 
+\index{GameClient@{GameClient}!GameClient@{GameClient}}
+\index{GameClient@{GameClient}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{GameClient()}{GameClient()}}
+{\footnotesize\ttfamily Game\+Client\+::\+Game\+Client (\begin{DoxyParamCaption}\item[{bool}]{debug = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file main\+Game.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_client_ac1df0a856bd945976c06b3977167d4c7}\label{class_game_client_ac1df0a856bd945976c06b3977167d4c7}} 
+\index{GameClient@{GameClient}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void Game\+Client\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} $>$ \&}]{entity }\end{DoxyParamCaption})}
+
+
+
+Add a new entity to the world. you can also use +=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & entity \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 140 of file main\+Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_client_a6984da0365fd19c81dbc8907b598bf49}\label{class_game_client_a6984da0365fd19c81dbc8907b598bf49}} 
+\index{GameClient@{GameClient}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ $>$ \& Game\+Client\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file main\+Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_client_adfcb979db6333b335dee4e6d785aabcf}\label{class_game_client_adfcb979db6333b335dee4e6d785aabcf}} 
+\index{GameClient@{GameClient}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_client}{Game\+Client}} \& Game\+Client\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 40 of file main\+Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_client_acc1e0f1d4836be4a8556289cfdfd4049}\label{class_game_client_acc1e0f1d4836be4a8556289cfdfd4049}} 
+\index{GameClient@{GameClient}!getPlayerEntity@{getPlayerEntity}}
+\index{getPlayerEntity@{getPlayerEntity}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{getPlayerEntity()}{getPlayerEntity()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_player_entity}{entities\+::\+Player\+Entity}} $>$ Game\+Client\+::get\+Player\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the main player. 
+
+\begin{DoxyReturn}{Returns}
+the Player\+Entity 
+\end{DoxyReturn}
+
+
+Definition at line 156 of file main\+Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_client_a01a0c559c6cfe63557fa4b5d7aa9e72c}\label{class_game_client_a01a0c559c6cfe63557fa4b5d7aa9e72c}} 
+\index{GameClient@{GameClient}!getScene@{getScene}}
+\index{getScene@{getScene}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{getScene()}{getScene()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \& Game\+Client\+::get\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the screen details. needed in fire direction calculation. 
+
+\begin{DoxyReturn}{Returns}
+the scene 
+\end{DoxyReturn}
+
+
+Definition at line 145 of file main\+Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_client_a698bb8a4ba91211dc4fcaa4079d8d070}\label{class_game_client_a698bb8a4ba91211dc4fcaa4079d8d070}} 
+\index{GameClient@{GameClient}!OnUserCreate@{OnUserCreate}}
+\index{OnUserCreate@{OnUserCreate}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{OnUserCreate()}{OnUserCreate()}}
+{\footnotesize\ttfamily bool Game\+Client\+::\+On\+User\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a new game instance. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classolc_1_1_pixel_game_engine_a6a33b6ff7cd23dfd05b34416865fb5c3}{olc\+::\+Pixel\+Game\+Engine}}.
+
+
+
+Definition at line 45 of file main\+Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_client_ab6e2efe37e67de64062bca35d8a11e2e}\label{class_game_client_ab6e2efe37e67de64062bca35d8a11e2e}} 
+\index{GameClient@{GameClient}!OnUserUpdate@{OnUserUpdate}}
+\index{OnUserUpdate@{OnUserUpdate}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{OnUserUpdate()}{OnUserUpdate()}}
+{\footnotesize\ttfamily bool Game\+Client\+::\+On\+User\+Update (\begin{DoxyParamCaption}\item[{float}]{f\+Elapsed\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Elapsed\+Time} & the length of the last tick \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false, if the game can quit 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classolc_1_1_pixel_game_engine_af9379a3db341b0acb410ea543e30fdd1}{olc\+::\+Pixel\+Game\+Engine}}.
+
+
+
+Definition at line 89 of file main\+Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_client_abf4100b1ee69f4f300346424139f8d93}\label{class_game_client_abf4100b1ee69f4f300346424139f8d93}} 
+\index{GameClient@{GameClient}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_client}{Game\+Client}} \& Game\+Client\+::operator+= (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Add an entity to the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_game_client}{Game\+Client}} 
+\end{DoxyReturn}
+
+
+Definition at line 150 of file main\+Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_client_a9af9a685c31d428921b0cf5976a63c14}\label{class_game_client_a9af9a685c31d428921b0cf5976a63c14}} 
+\index{GameClient@{GameClient}!setDebugMode@{setDebugMode}}
+\index{setDebugMode@{setDebugMode}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{setDebugMode()}{setDebugMode()}}
+{\footnotesize\ttfamily void Game\+Client\+::set\+Debug\+Mode (\begin{DoxyParamCaption}\item[{bool}]{bl = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+turn on debug, caused by an exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bl} & true \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file main\+Game.\+cpp.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_game_client_a81ce304348a420752ee080480d2b3095}\label{class_game_client_a81ce304348a420752ee080480d2b3095}} 
+\index{GameClient@{GameClient}!main@{main}}
+\index{main@{main}!GameClient@{GameClient}}
+\doxysubsubsection{\texorpdfstring{main}{main}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 13 of file game.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{main_game_8h}{main\+Game.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{main_game_8cpp}{main\+Game.\+cpp}}\end{DoxyCompactItemize}

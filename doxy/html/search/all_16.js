@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['v_560',['V',['../namespaceolc.html#aa26a067cf0db83f0b1dd587036a64be7a170eaa7913d25c0ff02712bd93d7bf81',1,'olc']]],
+  ['v2d_5fgeneric_561',['v2d_generic',['../structolc_1_1v2d__generic.html',1,'olc::v2d_generic&lt; T &gt;'],['../structolc_1_1v2d__generic.html#aba35d326b62454a5fbdeea4220438784',1,'olc::v2d_generic::v2d_generic()'],['../structolc_1_1v2d__generic.html#a2fc62e52adae5f9e4138adf073afddb0',1,'olc::v2d_generic::v2d_generic(T _x, T _y)'],['../structolc_1_1v2d__generic.html#a7897de7e3e5f2a0e6ba1d2aef2015fce',1,'olc::v2d_generic::v2d_generic(const v2d_generic &amp;v)']]],
+  ['v2d_5fgeneric_3c_20float_20_3e_562',['v2d_generic&lt; float &gt;',['../structolc_1_1v2d__generic.html',1,'olc']]],
+  ['v2d_5fgeneric_3c_20int32_5ft_20_3e_563',['v2d_generic&lt; int32_t &gt;',['../structolc_1_1v2d__generic.html',1,'olc']]],
+  ['vd2d_564',['vd2d',['../namespaceolc.html#a51aaa7b75138a3323048a77457735d33',1,'olc']]],
+  ['vecdecalinstance_565',['vecDecalInstance',['../structolc_1_1_layer_desc.html#ac6cd952e0ebbd7cde19060b4e3896875',1,'olc::LayerDesc']]],
+  ['velocity_566',['velocity',['../classentities_1_1_projectile_entity.html#a29cb43b58d34f32f18986185bf8691f8',1,'entities::ProjectileEntity']]],
+  ['vert_567',['VERT',['../classolc_1_1_sprite.html#ad0d1976d2060997f5cd99eb284a5dc24a7d2b99d18b574e41332e569d141914c5',1,'olc::Sprite']]],
+  ['very_5fdark_5fblue_568',['VERY_DARK_BLUE',['../namespaceolc.html#a48fb6375b9a7c0a0d44feaa879e7ebb7',1,'olc']]],
+  ['very_5fdark_5fcyan_569',['VERY_DARK_CYAN',['../namespaceolc.html#aee6a06b446368ac58033b5ae4f4c6ca2',1,'olc']]],
+  ['very_5fdark_5fgreen_570',['VERY_DARK_GREEN',['../namespaceolc.html#a29c85b49a3c9cbd0b251e80e3bc57140',1,'olc']]],
+  ['very_5fdark_5fgrey_571',['VERY_DARK_GREY',['../namespaceolc.html#a93de271d8b3cbd5aec73a085e6a6ec7a',1,'olc']]],
+  ['very_5fdark_5fmagenta_572',['VERY_DARK_MAGENTA',['../namespaceolc.html#a150fed0369958dc77d3207298588bc94',1,'olc']]],
+  ['very_5fdark_5fred_573',['VERY_DARK_RED',['../namespaceolc.html#a82b6404acf7ac86f237179fc5f9a859f',1,'olc']]],
+  ['very_5fdark_5fyellow_574',['VERY_DARK_YELLOW',['../namespaceolc.html#a131df56f1dd5cb0906cd02f9df49b17d',1,'olc']]],
+  ['vf2d_575',['vf2d',['../namespaceolc.html#adb87819740ea9625f84c821fffb16429',1,'olc']]],
+  ['vi2d_576',['vi2d',['../namespaceolc.html#a3c42697361e8a28424bcf8415aba3564',1,'olc']]],
+  ['vmemory_577',['vMemory',['../structolc_1_1_resource_buffer.html#a413e818311737396d14838a00df05303',1,'olc::ResourceBuffer']]],
+  ['voffset_578',['vOffset',['../structolc_1_1_layer_desc.html#a1657be3b96c8fbb85fe113ae695fece9',1,'olc::LayerDesc']]],
+  ['vscale_579',['vScale',['../structolc_1_1_layer_desc.html#ab9701d17eb84ab32e93211277cacc763',1,'olc::LayerDesc']]],
+  ['vu2d_580',['vu2d',['../namespaceolc.html#ac9f9fa9267428312fd81237a4cc5c8e5',1,'olc']]],
+  ['vuvscale_581',['vUVScale',['../classolc_1_1_decal.html#aff06190e3ca17446d373d5a93a3636c7',1,'olc::Decal']]]
+];

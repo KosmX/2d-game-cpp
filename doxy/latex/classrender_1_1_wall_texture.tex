@@ -1,0 +1,110 @@
+\hypertarget{classrender_1_1_wall_texture}{}\doxysection{render\+::Wall\+Texture Class Reference}
+\label{classrender_1_1_wall_texture}\index{render::WallTexture@{render::WallTexture}}
+
+
+Texture to render walls, with 16 possible states.  
+
+
+
+
+{\ttfamily \#include $<$Wall\+Texture.\+h$>$}
+
+Inheritance diagram for render\+::Wall\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrender_1_1_wall_texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrender_1_1_wall_texture_af0420c11949bbc21421cc21765bd8920}{Wall\+Texture}} (const std\+::string \&res\+Name, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&base\+Offset, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&size=\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(16, 16))
+\item 
+void \mbox{\hyperlink{classrender_1_1_wall_texture_a03239c7168e114906cb20f3d39815344}{render}} (\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&scene, \mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} \&entity) override
+\begin{DoxyCompactList}\small\item\em Render the sprite, abstract function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::map$<$ byte, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{olc\+::vi2d}} $>$ \mbox{\hyperlink{classrender_1_1_wall_texture_a8246fdde3751baf778392ce6f4577a8d}{offset\+Map}}
+\begin{DoxyCompactList}\small\item\em map, witch state means what coordinates in the sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Texture to render walls, with 16 possible states. 
+
+Definition at line 11 of file Wall\+Texture.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrender_1_1_wall_texture_af0420c11949bbc21421cc21765bd8920}\label{classrender_1_1_wall_texture_af0420c11949bbc21421cc21765bd8920}} 
+\index{render::WallTexture@{render::WallTexture}!WallTexture@{WallTexture}}
+\index{WallTexture@{WallTexture}!render::WallTexture@{render::WallTexture}}
+\doxysubsubsection{\texorpdfstring{WallTexture()}{WallTexture()}}
+{\footnotesize\ttfamily render\+::\+Wall\+Texture\+::\+Wall\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{res\+Name,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{base\+Offset,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{size = {\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}(16,~16)} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file Wall\+Texture.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrender_1_1_wall_texture_a03239c7168e114906cb20f3d39815344}\label{classrender_1_1_wall_texture_a03239c7168e114906cb20f3d39815344}} 
+\index{render::WallTexture@{render::WallTexture}!render@{render}}
+\index{render@{render}!render::WallTexture@{render::WallTexture}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void render\+::\+Wall\+Texture\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&}]{scene,  }\item[{\mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Render the sprite, abstract function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & view description \\
+\hline
+{\em entity} & entity to render with this texture \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classrender_1_1_i_texture_aedf64dab92f17e22a807635493196913}{render\+::\+I\+Texture}}.
+
+
+
+Definition at line 14 of file Wall\+Texture.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrender_1_1_wall_texture_a8246fdde3751baf778392ce6f4577a8d}\label{classrender_1_1_wall_texture_a8246fdde3751baf778392ce6f4577a8d}} 
+\index{render::WallTexture@{render::WallTexture}!offsetMap@{offsetMap}}
+\index{offsetMap@{offsetMap}!render::WallTexture@{render::WallTexture}}
+\doxysubsubsection{\texorpdfstring{offsetMap}{offsetMap}}
+{\footnotesize\ttfamily const std\+::map$<$ byte, vi2d $>$ render\+::\+Wall\+Texture\+::offset\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \{0b0000, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(1, 1) \}, \{0b0001, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(1, 1)\}, \{0b0010, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(0, 1)\}, \{0b0011, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(0, 1)\},}
+\DoxyCodeLine{        \{0b0100, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(1, 0) \}, \{0b0101, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(2, 2)\}, \{0b0110, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(2, 0)\}, \{0b0111, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(5, 1)\},}
+\DoxyCodeLine{        \{0b1000, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(1, 0) \}, \{0b1001, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(0, 2)\}, \{0b1010, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(0, 0)\}, \{0b1011, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(3, 1)\},}
+\DoxyCodeLine{        \{0b1100, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(1, 0) \}, \{0b1101, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(4, 2)\}, \{0b1110, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(4, 0)\}, \{0b1111, \mbox{\hyperlink{namespaceolc_a3c42697361e8a28424bcf8415aba3564}{vi2d}}(4, 1)\}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+map, witch state means what coordinates in the sprite 
+
+
+
+Definition at line 21 of file Wall\+Texture.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_wall_texture_8h}{Wall\+Texture.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_wall_texture_8cpp}{Wall\+Texture.\+cpp}}\end{DoxyCompactItemize}

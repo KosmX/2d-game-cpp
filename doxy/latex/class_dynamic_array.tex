@@ -1,0 +1,129 @@
+\hypertarget{class_dynamic_array}{}\doxysection{Dynamic\+Array$<$ T $>$ Class Template Reference}
+\label{class_dynamic_array}\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+
+
+Dynamic array, to store entities, have a buffer, to don\textquotesingle{}t tick newly added entities too early.  
+
+
+
+
+{\ttfamily \#include $<$Dynamic\+Array.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dynamic_array_a7d42e6eaa66bab7c43f193e78d2d56a9}{Dynamic\+Array}} ()
+\item 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \& \mbox{\hyperlink{class_dynamic_array_a9f3bb8f56ad0cb35f890ebae426c7a61}{operator+=}} (T \&entry)
+\item 
+auto \mbox{\hyperlink{class_dynamic_array_a180959557f211bf3fcdf5e26b7cb67ab}{finalize\+Add}} ()
+\item 
+void \mbox{\hyperlink{class_dynamic_array_a9db6489676b4560684be1ba03233fca0}{remove\+If}} (bool($\ast$l)(const T \&))
+\item 
+auto \mbox{\hyperlink{class_dynamic_array_a3b4f5925657f9e8dfd71bcc5973399ee}{begin}} ()
+\item 
+auto \mbox{\hyperlink{class_dynamic_array_ac316f2e7a1938687031cb5cc34df34cc}{end}} ()
+\item 
+int \mbox{\hyperlink{class_dynamic_array_acbec0bb643ebec934cf5e9dfc1ecf01e}{get\+Size}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Dynamic\+Array$<$ T $>$}
+
+Dynamic array, to store entities, have a buffer, to don\textquotesingle{}t tick newly added entities too early. 
+
+Definition at line 14 of file Dynamic\+Array.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dynamic_array_a7d42e6eaa66bab7c43f193e78d2d56a9}\label{class_dynamic_array_a7d42e6eaa66bab7c43f193e78d2d56a9}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}}
+\index{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 22 of file Dynamic\+Array.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dynamic_array_a3b4f5925657f9e8dfd71bcc5973399ee}\label{class_dynamic_array_a3b4f5925657f9e8dfd71bcc5973399ee}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+auto \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Dynamic\+Array.\+hpp.
+
+\mbox{\Hypertarget{class_dynamic_array_ac316f2e7a1938687031cb5cc34df34cc}\label{class_dynamic_array_ac316f2e7a1938687031cb5cc34df34cc}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!end@{end}}
+\index{end@{end}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+auto \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 53 of file Dynamic\+Array.\+hpp.
+
+\mbox{\Hypertarget{class_dynamic_array_a180959557f211bf3fcdf5e26b7cb67ab}\label{class_dynamic_array_a180959557f211bf3fcdf5e26b7cb67ab}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!finalizeAdd@{finalizeAdd}}
+\index{finalizeAdd@{finalizeAdd}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{finalizeAdd()}{finalizeAdd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+auto \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::finalize\+Add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+an iterator pointing to the first, newly added element. 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file Dynamic\+Array.\+hpp.
+
+\mbox{\Hypertarget{class_dynamic_array_acbec0bb643ebec934cf5e9dfc1ecf01e}\label{class_dynamic_array_acbec0bb643ebec934cf5e9dfc1ecf01e}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file Dynamic\+Array.\+hpp.
+
+\mbox{\Hypertarget{class_dynamic_array_a9f3bb8f56ad0cb35f890ebae426c7a61}\label{class_dynamic_array_a9f3bb8f56ad0cb35f890ebae426c7a61}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\& \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{T \&}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 24 of file Dynamic\+Array.\+hpp.
+
+\mbox{\Hypertarget{class_dynamic_array_a9db6489676b4560684be1ba03233fca0}\label{class_dynamic_array_a9db6489676b4560684be1ba03233fca0}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!removeIf@{removeIf}}
+\index{removeIf@{removeIf}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeIf()}{removeIf()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::remove\+If (\begin{DoxyParamCaption}\item[{bool($\ast$)(const T \&)}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Dynamic\+Array.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_dynamic_array_8hpp}{Dynamic\+Array.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\hypertarget{classentities_1_1_explosive_projectile}{}\doxysection{entities\+::Explosive\+Projectile Class Reference}
+\label{classentities_1_1_explosive_projectile}\index{entities::ExplosiveProjectile@{entities::ExplosiveProjectile}}
+
+
+A projectile, that explodes.  
+
+
+
+
+{\ttfamily \#include $<$Explosive\+Projectile.\+h$>$}
+
+Inheritance diagram for entities\+::Explosive\+Projectile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classentities_1_1_explosive_projectile}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_explosive_projectile_ae80625e2530015d21b963ec219be758e}{Explosive\+Projectile}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&\mbox{\hyperlink{classentities_1_1_projectile_entity_ab01d1aa4b66b21481d07f7777bfb2ca3}{user}}, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&pos0, \mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&texture, int \mbox{\hyperlink{classentities_1_1_projectile_entity_a723e706e6421504ce9c6d70d77561215}{damage}}=40)
+\item 
+void \mbox{\hyperlink{classentities_1_1_explosive_projectile_a3aa22ab3467caa20a8c7b3cc818b157d}{tick}} (\mbox{\hyperlink{class_game_client}{Game\+Client}} \&client, float deltaT, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&shared\+\_\+this) override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classentities_1_1_entity}{Entity}} tick multiple times per sec. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentities_1_1_explosive_projectile_a8b075196a23aed5116e885709b64d583}{can\+Be\+Removed}} () const override
+\item 
+void \mbox{\hyperlink{classentities_1_1_explosive_projectile_a86148b27403d275c1513f22bb3f47892}{render}} (\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&scene) override
+\begin{DoxyCompactList}\small\item\em render \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classentities_1_1_explosive_projectile_a7e0d880f0dfeb6570dc724a0739b1331}{on\+Collide}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&collision\+Vector, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&who) override
+\begin{DoxyCompactList}\small\item\em Determines, what will the projectile do, if it hit something. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A projectile, that explodes. 
+
+Definition at line 8 of file Explosive\+Projectile.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_explosive_projectile_ae80625e2530015d21b963ec219be758e}\label{classentities_1_1_explosive_projectile_ae80625e2530015d21b963ec219be758e}} 
+\index{entities::ExplosiveProjectile@{entities::ExplosiveProjectile}!ExplosiveProjectile@{ExplosiveProjectile}}
+\index{ExplosiveProjectile@{ExplosiveProjectile}!entities::ExplosiveProjectile@{entities::ExplosiveProjectile}}
+\doxysubsubsection{\texorpdfstring{ExplosiveProjectile()}{ExplosiveProjectile()}}
+{\footnotesize\ttfamily entities\+::\+Explosive\+Projectile\+::\+Explosive\+Projectile (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{user,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos0,  }\item[{\mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&}]{texture,  }\item[{int}]{damage = {\ttfamily 40} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file Explosive\+Projectile.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_explosive_projectile_a8b075196a23aed5116e885709b64d583}\label{classentities_1_1_explosive_projectile_a8b075196a23aed5116e885709b64d583}} 
+\index{entities::ExplosiveProjectile@{entities::ExplosiveProjectile}!canBeRemoved@{canBeRemoved}}
+\index{canBeRemoved@{canBeRemoved}!entities::ExplosiveProjectile@{entities::ExplosiveProjectile}}
+\doxysubsubsection{\texorpdfstring{canBeRemoved()}{canBeRemoved()}}
+{\footnotesize\ttfamily bool entities\+::\+Explosive\+Projectile\+::can\+Be\+Removed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+can be deleted from the entity list. mostly is dead 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_entity_a59426fe1b7dcefe96a0a748250724ff6}{entities\+::\+Entity}}.
+
+
+
+Definition at line 32 of file Explosive\+Projectile.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_explosive_projectile_a7e0d880f0dfeb6570dc724a0739b1331}\label{classentities_1_1_explosive_projectile_a7e0d880f0dfeb6570dc724a0739b1331}} 
+\index{entities::ExplosiveProjectile@{entities::ExplosiveProjectile}!onCollide@{onCollide}}
+\index{onCollide@{onCollide}!entities::ExplosiveProjectile@{entities::ExplosiveProjectile}}
+\doxysubsubsection{\texorpdfstring{onCollide()}{onCollide()}}
+{\footnotesize\ttfamily bool entities\+::\+Explosive\+Projectile\+::on\+Collide (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{collision\+Vector,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{who }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Determines, what will the projectile do, if it hit something. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Vector} & the collision vector \\
+\hline
+{\em who} & who is the affected entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+is the projectile destroyed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_projectile_entity_a865c1a9527f67a3e5402a4fcf8baac98}{entities\+::\+Projectile\+Entity}}.
+
+
+
+Definition at line 10 of file Explosive\+Projectile.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_explosive_projectile_a86148b27403d275c1513f22bb3f47892}\label{classentities_1_1_explosive_projectile_a86148b27403d275c1513f22bb3f47892}} 
+\index{entities::ExplosiveProjectile@{entities::ExplosiveProjectile}!render@{render}}
+\index{render@{render}!entities::ExplosiveProjectile@{entities::ExplosiveProjectile}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void entities\+::\+Explosive\+Projectile\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+render 
+
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_entity_abcc4364b5b7250f0364f3550a618b3ab}{entities\+::\+Entity}}.
+
+
+
+Definition at line 36 of file Explosive\+Projectile.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_explosive_projectile_a3aa22ab3467caa20a8c7b3cc818b157d}\label{classentities_1_1_explosive_projectile_a3aa22ab3467caa20a8c7b3cc818b157d}} 
+\index{entities::ExplosiveProjectile@{entities::ExplosiveProjectile}!tick@{tick}}
+\index{tick@{tick}!entities::ExplosiveProjectile@{entities::ExplosiveProjectile}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void entities\+::\+Explosive\+Projectile\+::tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_client}{Game\+Client}} \&}]{client,  }\item[{float}]{deltaT,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{shared\+\_\+this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classentities_1_1_entity}{Entity}} tick multiple times per sec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & the game client object \\
+\hline
+{\em deltaT} & how long take a tick \\
+\hline
+{\em shared\+\_\+this} & this as a shared\+\_\+ptr \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_entity_a0440674bf90ae83d9a26aa4b0ac8309e}{entities\+::\+Entity}}.
+
+
+
+Definition at line 22 of file Explosive\+Projectile.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_explosive_projectile_8h}{Explosive\+Projectile.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_explosive_projectile_8cpp}{Explosive\+Projectile.\+cpp}}\end{DoxyCompactItemize}

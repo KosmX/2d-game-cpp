@@ -1,0 +1,73 @@
+\hypertarget{classrender_1_1_i_texture}{}\doxysection{render\+::I\+Texture Class Reference}
+\label{classrender_1_1_i_texture}\index{render::ITexture@{render::ITexture}}
+
+
+Every texture, what can render an entity.  
+
+
+
+
+{\ttfamily \#include $<$I\+Texture.\+h$>$}
+
+Inheritance diagram for render\+::I\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.717791cm]{classrender_1_1_i_texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classrender_1_1_i_texture_aedf64dab92f17e22a807635493196913}{render}} (\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&scene, \mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} \&entity)=0
+\begin{DoxyCompactList}\small\item\em Render the sprite, abstract function. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classrender_1_1_i_texture_a2dcbcad96404d6a0ff64e8053ccde162}{$\sim$\+I\+Texture}} ()=default
+\begin{DoxyCompactList}\small\item\em mostly not needed, but I can never know it \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Every texture, what can render an entity. 
+
+Definition at line 15 of file I\+Texture.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrender_1_1_i_texture_a2dcbcad96404d6a0ff64e8053ccde162}\label{classrender_1_1_i_texture_a2dcbcad96404d6a0ff64e8053ccde162}} 
+\index{render::ITexture@{render::ITexture}!````~ITexture@{$\sim$ITexture}}
+\index{````~ITexture@{$\sim$ITexture}!render::ITexture@{render::ITexture}}
+\doxysubsubsection{\texorpdfstring{$\sim$ITexture()}{~ITexture()}}
+{\footnotesize\ttfamily virtual render\+::\+I\+Texture\+::$\sim$\+I\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+mostly not needed, but I can never know it 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrender_1_1_i_texture_aedf64dab92f17e22a807635493196913}\label{classrender_1_1_i_texture_aedf64dab92f17e22a807635493196913}} 
+\index{render::ITexture@{render::ITexture}!render@{render}}
+\index{render@{render}!render::ITexture@{render::ITexture}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void render\+::\+I\+Texture\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&}]{scene,  }\item[{\mbox{\hyperlink{classentities_1_1_entity}{entities\+::\+Entity}} \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Render the sprite, abstract function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & view description \\
+\hline
+{\em entity} & entity to render with this texture \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classweapons_1_1_glitch_texture_a5484c864f917e54fb6041b7d0d33ef42}{weapons\+::\+Glitch\+Texture}}, \mbox{\hyperlink{classrender_1_1_wall_texture_a03239c7168e114906cb20f3d39815344}{render\+::\+Wall\+Texture}}, \mbox{\hyperlink{classrender_1_1_simple_sprite_aaed7cf3094f69387291a2d287d7753a5}{render\+::\+Simple\+Sprite}}, and \mbox{\hyperlink{classrender_1_1_character_texture_a16ced1889ccaf7ca4c913ec1475c2f9a}{render\+::\+Character\+Texture}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_i_texture_8h}{I\+Texture.\+h}}\end{DoxyCompactItemize}

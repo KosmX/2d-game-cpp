@@ -1,0 +1,364 @@
+\hypertarget{classentities_1_1_entity}{}\doxysection{entities\+::Entity Class Reference}
+\label{classentities_1_1_entity}\index{entities::Entity@{entities::Entity}}
+
+
+Every object, what can be on the map.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+Inheritance diagram for entities\+::Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.828283cm]{classentities_1_1_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classentities_1_1_entity_a539ddef34b718b6068df421f316f4a6d}{Entity}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&\mbox{\hyperlink{classentities_1_1_entity_a04f9c2febe8d435138a07eb2f48ba96b}{pos}})
+\item 
+virtual void \mbox{\hyperlink{classentities_1_1_entity_afd80ddceccb36b87d0d80dcc7f88fc3b}{init}} (\mbox{\hyperlink{class_game_client}{Game\+Client}} \&client)
+\item 
+virtual bool \mbox{\hyperlink{classentities_1_1_entity_ab010066d52a02c63908f70ff6ef7d873}{is\+Initialized}} ()
+\item 
+virtual \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classentities_1_1_entity_a799a692b988248dd23d207b95e7fe2b7}{get\+Pos}} () const
+\item 
+virtual \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classentities_1_1_entity_ac60e9beb5a45fc65120e9779e680c04b}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get it\textquotesingle{}s size to render \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classentities_1_1_entity_ab0ee90a84f2163b600e603f24cff046f}{is\+Alive}} () const
+\item 
+virtual bool \mbox{\hyperlink{classentities_1_1_entity_a59426fe1b7dcefe96a0a748250724ff6}{can\+Be\+Removed}} () const
+\item 
+virtual void \mbox{\hyperlink{classentities_1_1_entity_a0440674bf90ae83d9a26aa4b0ac8309e}{tick}} (\mbox{\hyperlink{class_game_client}{Game\+Client}} \&client, float deltaT, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&shared\+\_\+this)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classentities_1_1_entity}{Entity}} tick multiple times per sec. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classentities_1_1_entity_af7fc9949fc50b1b31abb36a3d51b0597}{damage}} (int damage, \mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&attacker)=0
+\begin{DoxyCompactList}\small\item\em something damage this \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classentities_1_1_entity_abcc4364b5b7250f0364f3550a618b3ab}{render}} (\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&scene)
+\begin{DoxyCompactList}\small\item\em render \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classentities_1_1_entity_a8c4b0c1eb69a673619e4c8943ef34f86}{get\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{classentities_1_1_entity_a64d968c160dee2fdfca68aff2e49946b}{$\sim$\+Entity}} ()=default
+\item 
+virtual \mbox{\hyperlink{classentities_1_1_entity_ad0a172ff99a7e73aaaee3658d5e3ae08}{operator Wall\+Entity $\ast$}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \& \mbox{\hyperlink{classentities_1_1_entity_af01b796fb472ef3139aea41aeed36c76}{get\+Texture}} ()=0
+\begin{DoxyCompactList}\small\item\em the object\textquotesingle{}s texture \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classentities_1_1_entity_a9cd7ba81ddbd978b8f43e9f10e97492f}{get\+Hit\+Box\+Size}} () const =0
+\begin{DoxyCompactList}\small\item\em half hitbox size \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classentities_1_1_entity_a94d18db8d502d677b6f4215dc1e1d820}{get\+Collision}} (const \mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&other)
+\begin{DoxyCompactList}\small\item\em Calculate collision with another \mbox{\hyperlink{classentities_1_1_entity}{Entity}}, how much should this entity move, to avoid the collision. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classentities_1_1_entity_a04f9c2febe8d435138a07eb2f48ba96b}{pos}}
+\begin{DoxyCompactList}\small\item\em it\textquotesingle{}s position \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentities_1_1_entity_a1453bca3376a185aa54135dd4958b244}{is\+\_\+initialized}}
+\begin{DoxyCompactList}\small\item\em well, is initialized \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentities_1_1_entity_aedac7bb35b729e4a02c582b9f4369ab8}{is\+\_\+alive}}
+\begin{DoxyCompactList}\small\item\em true, if it is alive \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Every object, what can be on the map. 
+
+Definition at line 16 of file Entity.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_entity_a539ddef34b718b6068df421f316f4a6d}\label{classentities_1_1_entity_a539ddef34b718b6068df421f316f4a6d}} 
+\index{entities::Entity@{entities::Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily entities\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 39 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_a64d968c160dee2fdfca68aff2e49946b}\label{classentities_1_1_entity_a64d968c160dee2fdfca68aff2e49946b}} 
+\index{entities::Entity@{entities::Entity}!````~Entity@{$\sim$Entity}}
+\index{````~Entity@{$\sim$Entity}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{$\sim$Entity()}{~Entity()}}
+{\footnotesize\ttfamily virtual entities\+::\+Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_entity_a59426fe1b7dcefe96a0a748250724ff6}\label{classentities_1_1_entity_a59426fe1b7dcefe96a0a748250724ff6}} 
+\index{entities::Entity@{entities::Entity}!canBeRemoved@{canBeRemoved}}
+\index{canBeRemoved@{canBeRemoved}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{canBeRemoved()}{canBeRemoved()}}
+{\footnotesize\ttfamily bool entities\+::\+Entity\+::can\+Be\+Removed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+can be deleted from the entity list. mostly is dead 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classweapons_1_1_weapon_aaf97827d27191b7b437ef1be96d6ac2c}{weapons\+::\+Weapon}}, and \mbox{\hyperlink{classentities_1_1_explosive_projectile_a8b075196a23aed5116e885709b64d583}{entities\+::\+Explosive\+Projectile}}.
+
+
+
+Definition at line 75 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_af7fc9949fc50b1b31abb36a3d51b0597}\label{classentities_1_1_entity_af7fc9949fc50b1b31abb36a3d51b0597}} 
+\index{entities::Entity@{entities::Entity}!damage@{damage}}
+\index{damage@{damage}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}}
+{\footnotesize\ttfamily virtual bool entities\+::\+Entity\+::damage (\begin{DoxyParamCaption}\item[{int}]{damage,  }\item[{\mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&}]{attacker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+something damage this 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & how much damage should it take \\
+\hline
+{\em attacker} & who deal the damage. not the projectile, the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+did the entity take the damage or no (like a wall) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classweapons_1_1_weapon_a397c372ffe2838f7c9c1ce67c06e55a9}{weapons\+::\+Weapon}}, \mbox{\hyperlink{classentities_1_1_wall_entity_a0cd908003450361a7c08d2c7c83d21dc}{entities\+::\+Wall\+Entity}}, \mbox{\hyperlink{classweapons_1_1_typical_melee_weapon_a00287ced5e67a7f91423596fac46606b}{weapons\+::\+Typical\+Melee\+Weapon}}, \mbox{\hyperlink{classentities_1_1_projectile_entity_a723e706e6421504ce9c6d70d77561215}{entities\+::\+Projectile\+Entity}}, \mbox{\hyperlink{classentities_1_1_player_entity_ab654524e0ad7ba5a9b1b590794d347f2}{entities\+::\+Player\+Entity}}, \mbox{\hyperlink{classentities_1_1_living_entity_a28d31eff59137171da3e23a8e3ef9c1c}{entities\+::\+Living\+Entity}}, and \mbox{\hyperlink{classentities_1_1_entity_with_a_i_a49a1c8a8ec1a318f65007d54173c3d37}{entities\+::\+Entity\+With\+AI}}.
+
+\mbox{\Hypertarget{classentities_1_1_entity_a94d18db8d502d677b6f4215dc1e1d820}\label{classentities_1_1_entity_a94d18db8d502d677b6f4215dc1e1d820}} 
+\index{entities::Entity@{entities::Entity}!getCollision@{getCollision}}
+\index{getCollision@{getCollision}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{getCollision()}{getCollision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{vf2d}} entities\+::\+Entity\+::get\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Calculate collision with another \mbox{\hyperlink{classentities_1_1_entity}{Entity}}, how much should this entity move, to avoid the collision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+collision vector, 0 if there is no collision 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_a9cd7ba81ddbd978b8f43e9f10e97492f}\label{classentities_1_1_entity_a9cd7ba81ddbd978b8f43e9f10e97492f}} 
+\index{entities::Entity@{entities::Entity}!getHitBoxSize@{getHitBoxSize}}
+\index{getHitBoxSize@{getHitBoxSize}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{getHitBoxSize()}{getHitBoxSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} entities\+::\+Entity\+::get\+Hit\+Box\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+half hitbox size 
+
+\begin{DoxyReturn}{Returns}
+hitbox size as a vector 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classweapons_1_1_weapon_a862bd61cf947a91809b423304885cf66}{weapons\+::\+Weapon}}, \mbox{\hyperlink{classentities_1_1_wall_entity_afd4863a311190a59cdf7574798ac3f2d}{entities\+::\+Wall\+Entity}}, \mbox{\hyperlink{classweapons_1_1_typical_melee_weapon_ab60f5d99ae206d9064381b0c70b9a7a2}{weapons\+::\+Typical\+Melee\+Weapon}}, \mbox{\hyperlink{classentities_1_1_projectile_entity_ae38525094695db8ab564c5ae27711bb4}{entities\+::\+Projectile\+Entity}}, and \mbox{\hyperlink{classentities_1_1_living_entity_aa965d3922663b974dd14cc5f8004ed65}{entities\+::\+Living\+Entity}}.
+
+\mbox{\Hypertarget{classentities_1_1_entity_a8c4b0c1eb69a673619e4c8943ef34f86}\label{classentities_1_1_entity_a8c4b0c1eb69a673619e4c8943ef34f86}} 
+\index{entities::Entity@{entities::Entity}!getName@{getName}}
+\index{getName@{getName}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string entities\+::\+Entity\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 57 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_a799a692b988248dd23d207b95e7fe2b7}\label{classentities_1_1_entity_a799a692b988248dd23d207b95e7fe2b7}} 
+\index{entities::Entity@{entities::Entity}!getPos@{getPos}}
+\index{getPos@{getPos}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{vf2d}} entities\+::\+Entity\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 42 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_ac60e9beb5a45fc65120e9779e680c04b}\label{classentities_1_1_entity_ac60e9beb5a45fc65120e9779e680c04b}} 
+\index{entities::Entity@{entities::Entity}!getSize@{getSize}}
+\index{getSize@{getSize}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{vf2d}} entities\+::\+Entity\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get it\textquotesingle{}s size to render 
+
+
+
+Definition at line 47 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_af01b796fb472ef3139aea41aeed36c76}\label{classentities_1_1_entity_af01b796fb472ef3139aea41aeed36c76}} 
+\index{entities::Entity@{entities::Entity}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}}\& entities\+::\+Entity\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+the object\textquotesingle{}s texture 
+
+\begin{DoxyReturn}{Returns}
+the texture 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classentities_1_1_wall_entity_a4b6c55275f06a30dac07c2dc5452e602}{entities\+::\+Wall\+Entity}}, \mbox{\hyperlink{classentities_1_1_projectile_entity_a7e67fe629e1ef7115fd2a0cae8b1efc0}{entities\+::\+Projectile\+Entity}}, and \mbox{\hyperlink{classentities_1_1_character_entity_afdae03f49fd5d47d0837ed660e37038f}{entities\+::\+Character\+Entity}}.
+
+\mbox{\Hypertarget{classentities_1_1_entity_afd80ddceccb36b87d0d80dcc7f88fc3b}\label{classentities_1_1_entity_afd80ddceccb36b87d0d80dcc7f88fc3b}} 
+\index{entities::Entity@{entities::Entity}!init@{init}}
+\index{init@{init}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void entities\+::\+Entity\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_client}{Game\+Client}} \&}]{client }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classentities_1_1_wall_entity_ad66ed8002d8082035bd3b7df07ff45b5}{entities\+::\+Wall\+Entity}}.
+
+
+
+Definition at line 51 of file Entity.\+h.
+
+\mbox{\Hypertarget{classentities_1_1_entity_ab0ee90a84f2163b600e603f24cff046f}\label{classentities_1_1_entity_ab0ee90a84f2163b600e603f24cff046f}} 
+\index{entities::Entity@{entities::Entity}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{isAlive()}{isAlive()}}
+{\footnotesize\ttfamily bool entities\+::\+Entity\+::is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 70 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_ab010066d52a02c63908f70ff6ef7d873}\label{classentities_1_1_entity_ab010066d52a02c63908f70ff6ef7d873}} 
+\index{entities::Entity@{entities::Entity}!isInitialized@{isInitialized}}
+\index{isInitialized@{isInitialized}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{isInitialized()}{isInitialized()}}
+{\footnotesize\ttfamily bool entities\+::\+Entity\+::is\+Initialized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 65 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_ad0a172ff99a7e73aaaee3658d5e3ae08}\label{classentities_1_1_entity_ad0a172ff99a7e73aaaee3658d5e3ae08}} 
+\index{entities::Entity@{entities::Entity}!operator WallEntity $\ast$@{operator WallEntity $\ast$}}
+\index{operator WallEntity $\ast$@{operator WallEntity $\ast$}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{operator WallEntity $\ast$()}{operator WallEntity *()}}
+{\footnotesize\ttfamily virtual entities\+::\+Entity\+::operator \mbox{\hyperlink{classentities_1_1_wall_entity}{Wall\+Entity}} $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 94 of file Entity.\+h.
+
+\mbox{\Hypertarget{classentities_1_1_entity_abcc4364b5b7250f0364f3550a618b3ab}\label{classentities_1_1_entity_abcc4364b5b7250f0364f3550a618b3ab}} 
+\index{entities::Entity@{entities::Entity}!render@{render}}
+\index{render@{render}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void entities\+::\+Entity\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classolc_1_1_transformed_view}{olc\+::\+Transformed\+View}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+render 
+
+
+
+Reimplemented in \mbox{\hyperlink{classentities_1_1_explosive_projectile_a86148b27403d275c1513f22bb3f47892}{entities\+::\+Explosive\+Projectile}}, and \mbox{\hyperlink{classentities_1_1_character_entity_aeb6069f0f07d0914faf0f94c0cc33def}{entities\+::\+Character\+Entity}}.
+
+
+
+Definition at line 52 of file Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_entity_a0440674bf90ae83d9a26aa4b0ac8309e}\label{classentities_1_1_entity_a0440674bf90ae83d9a26aa4b0ac8309e}} 
+\index{entities::Entity@{entities::Entity}!tick@{tick}}
+\index{tick@{tick}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily virtual void entities\+::\+Entity\+::tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_client}{Game\+Client}} \&}]{client,  }\item[{float}]{deltaT,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{shared\+\_\+this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classentities_1_1_entity}{Entity}} tick multiple times per sec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & the game client object \\
+\hline
+{\em deltaT} & how long take a tick \\
+\hline
+{\em shared\+\_\+this} & this as a shared\+\_\+ptr \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classweapons_1_1_weapon_a92ae1db47ca866d828f8b09c6de5a3f6}{weapons\+::\+Weapon}}, \mbox{\hyperlink{classentities_1_1_projectile_entity_a761f27885de02515edaf252e8a4162b5}{entities\+::\+Projectile\+Entity}}, \mbox{\hyperlink{classentities_1_1_player_entity_a9f5c7033ca46daf217c73cb5edbb0d68}{entities\+::\+Player\+Entity}}, \mbox{\hyperlink{classentities_1_1_living_entity_af13cb8c3fabd2960746e21cd7dabe4d6}{entities\+::\+Living\+Entity}}, \mbox{\hyperlink{classentities_1_1_explosive_projectile_a3aa22ab3467caa20a8c7b3cc818b157d}{entities\+::\+Explosive\+Projectile}}, \mbox{\hyperlink{classentities_1_1_entity_with_a_i_a92708b14b042c03fa9a8673192867e72}{entities\+::\+Entity\+With\+AI}}, and \mbox{\hyperlink{classentities_1_1_character_entity_ae7cdddc6dca655e7bf8c2f48424c5208}{entities\+::\+Character\+Entity}}.
+
+
+
+Definition at line 72 of file Entity.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classentities_1_1_entity_aedac7bb35b729e4a02c582b9f4369ab8}\label{classentities_1_1_entity_aedac7bb35b729e4a02c582b9f4369ab8}} 
+\index{entities::Entity@{entities::Entity}!is\_alive@{is\_alive}}
+\index{is\_alive@{is\_alive}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{is\_alive}{is\_alive}}
+{\footnotesize\ttfamily bool entities\+::\+Entity\+::is\+\_\+alive\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+true, if it is alive 
+
+
+
+Definition at line 46 of file Entity.\+h.
+
+\mbox{\Hypertarget{classentities_1_1_entity_a1453bca3376a185aa54135dd4958b244}\label{classentities_1_1_entity_a1453bca3376a185aa54135dd4958b244}} 
+\index{entities::Entity@{entities::Entity}!is\_initialized@{is\_initialized}}
+\index{is\_initialized@{is\_initialized}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{is\_initialized}{is\_initialized}}
+{\footnotesize\ttfamily bool entities\+::\+Entity\+::is\+\_\+initialized\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+well, is initialized 
+
+
+
+Definition at line 42 of file Entity.\+h.
+
+\mbox{\Hypertarget{classentities_1_1_entity_a04f9c2febe8d435138a07eb2f48ba96b}\label{classentities_1_1_entity_a04f9c2febe8d435138a07eb2f48ba96b}} 
+\index{entities::Entity@{entities::Entity}!pos@{pos}}
+\index{pos@{pos}!entities::Entity@{entities::Entity}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} entities\+::\+Entity\+::pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+it\textquotesingle{}s position 
+
+
+
+Definition at line 22 of file Entity.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_entity_8h}{Entity.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_entity_8cpp}{Entity.\+cpp}}\end{DoxyCompactItemize}

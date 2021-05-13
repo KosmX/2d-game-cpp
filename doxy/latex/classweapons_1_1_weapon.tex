@@ -1,0 +1,344 @@
+\hypertarget{classweapons_1_1_weapon}{}\doxysection{weapons\+::Weapon Class Reference}
+\label{classweapons_1_1_weapon}\index{weapons::Weapon@{weapons::Weapon}}
+
+
+You can throw it to the ground, this is why it\textquotesingle{}s an entity. But it will be possible to use it. and shoot enemies, or projectiles.  
+
+
+
+
+{\ttfamily \#include $<$Weapon.\+h$>$}
+
+Inheritance diagram for weapons\+::Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classweapons_1_1_weapon}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classweapons_1_1_weapon_a28f7b716212ae6b4606cff82501e00a2}{Weapon}} (\mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&texture, float \mbox{\hyperlink{classweapons_1_1_weapon_aa3d78dae766eee8279326026dbb46f1f}{cooldown\+Time}}, int \mbox{\hyperlink{classweapons_1_1_weapon_a397c372ffe2838f7c9c1ce67c06e55a9}{damage}}=10, const std\+::string \&\mbox{\hyperlink{classweapons_1_1_weapon_a3dab7574419aed48f2a0f2d54cfcd825}{name}}=\char`\"{}Weapon\char`\"{}, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&\mbox{\hyperlink{classentities_1_1_entity_a04f9c2febe8d435138a07eb2f48ba96b}{pos}}=\{ 0, 0 \})
+\item 
+virtual bool \mbox{\hyperlink{classweapons_1_1_weapon_a8c6f12ac9ed871ebd0394f6b5c447868}{use}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ user, const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&direction)=0
+\item 
+void \mbox{\hyperlink{classweapons_1_1_weapon_a92ae1db47ca866d828f8b09c6de5a3f6}{tick}} (\mbox{\hyperlink{class_game_client}{Game\+Client}} \&client, float deltaT, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&shared\+\_\+this) override
+\begin{DoxyCompactList}\small\item\em tick, if on the ground. It does charge energy, or whatever. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classweapons_1_1_weapon_a1cbf391f196bd151f3e3f1ae1e316088}{update}} (float d\+Tick)
+\begin{DoxyCompactList}\small\item\em Update the weapon in a Character\textquotesingle{}s inventory. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classweapons_1_1_weapon_a9626ba57d509b1ee0fbe7f900d5181c6}{get\+Cooldown\+Bar}} ()
+\begin{DoxyCompactList}\small\item\em 0 -\/ 1 cooldown, 1 is ready to use, more than one makes sense, like 2 charges \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classweapons_1_1_weapon_aaf97827d27191b7b437ef1be96d6ac2c}{can\+Be\+Removed}} () const override
+\begin{DoxyCompactList}\small\item\em Can be removed form the ground. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classweapons_1_1_weapon_ace9c44751879af7382585c3338d4bc47}{set\+Pick\+Up}} (bool bl)
+\begin{DoxyCompactList}\small\item\em Mutator to is\+Picked\+Up. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classweapons_1_1_weapon_a3f84544c15d6220252c6175fdfe5c61d}{get\+Secondary\+Bar}} ()
+\begin{DoxyCompactList}\small\item\em Secondary charge bar. for some purpose. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classweapons_1_1_weapon_a34c39bfa9cdb2d7483bc340300e8a2d9}{set\+Pos}} (const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&new\+Pos)
+\item 
+bool \mbox{\hyperlink{classweapons_1_1_weapon_a397c372ffe2838f7c9c1ce67c06e55a9}{damage}} (int damage, \mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&attacker) override
+\begin{DoxyCompactList}\small\item\em something damage this \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classweapons_1_1_weapon_a862bd61cf947a91809b423304885cf66}{get\+Hit\+Box\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em half hitbox size \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classweapons_1_1_weapon_aa3529d6c0160f61132fc7bb1b9284a02}{cooldown}}
+\item 
+float \mbox{\hyperlink{classweapons_1_1_weapon_aa3d78dae766eee8279326026dbb46f1f}{cooldown\+Time}}
+\item 
+int \mbox{\hyperlink{classweapons_1_1_weapon_a27456b08c51df0759ae0155b9f79e336}{base\+Damage}}
+\item 
+std\+::string \mbox{\hyperlink{classweapons_1_1_weapon_a3dab7574419aed48f2a0f2d54cfcd825}{name}}
+\item 
+bool \mbox{\hyperlink{classweapons_1_1_weapon_aba025076ad5e6fae2f9b9d40f4ef815d}{is\+Picked\+Up}} = false
+\begin{DoxyCompactList}\small\item\em Is on the ground, or in an entity\textquotesingle{}s inventory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+You can throw it to the ground, this is why it\textquotesingle{}s an entity. But it will be possible to use it. and shoot enemies, or projectiles. 
+
+Definition at line 10 of file Weapon.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classweapons_1_1_weapon_a28f7b716212ae6b4606cff82501e00a2}\label{classweapons_1_1_weapon_a28f7b716212ae6b4606cff82501e00a2}} 
+\index{weapons::Weapon@{weapons::Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{Weapon()}{Weapon()}}
+{\footnotesize\ttfamily weapons\+::\+Weapon\+::\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&}]{texture,  }\item[{float}]{cooldown\+Time,  }\item[{int}]{damage = {\ttfamily 10},  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}Weapon\char`\"{}},  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{pos = {\ttfamily \{~0,~0~\}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Weapon.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classweapons_1_1_weapon_aaf97827d27191b7b437ef1be96d6ac2c}\label{classweapons_1_1_weapon_aaf97827d27191b7b437ef1be96d6ac2c}} 
+\index{weapons::Weapon@{weapons::Weapon}!canBeRemoved@{canBeRemoved}}
+\index{canBeRemoved@{canBeRemoved}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{canBeRemoved()}{canBeRemoved()}}
+{\footnotesize\ttfamily bool weapons\+::\+Weapon\+::can\+Be\+Removed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Can be removed form the ground. 
+
+\begin{DoxyReturn}{Returns}
+true if someone picked it up 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_entity_a59426fe1b7dcefe96a0a748250724ff6}{entities\+::\+Entity}}.
+
+
+
+Definition at line 30 of file Weapon.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a397c372ffe2838f7c9c1ce67c06e55a9}\label{classweapons_1_1_weapon_a397c372ffe2838f7c9c1ce67c06e55a9}} 
+\index{weapons::Weapon@{weapons::Weapon}!damage@{damage}}
+\index{damage@{damage}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}}
+{\footnotesize\ttfamily bool weapons\+::\+Weapon\+::damage (\begin{DoxyParamCaption}\item[{int}]{damage,  }\item[{\mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&}]{attacker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+something damage this 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & how much damage should it take \\
+\hline
+{\em attacker} & who deal the damage. not the projectile, the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+did the entity take the damage or no (like a wall) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classentities_1_1_entity_af7fc9949fc50b1b31abb36a3d51b0597}{entities\+::\+Entity}}.
+
+
+
+Definition at line 45 of file Weapon.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a9626ba57d509b1ee0fbe7f900d5181c6}\label{classweapons_1_1_weapon_a9626ba57d509b1ee0fbe7f900d5181c6}} 
+\index{weapons::Weapon@{weapons::Weapon}!getCooldownBar@{getCooldownBar}}
+\index{getCooldownBar@{getCooldownBar}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{getCooldownBar()}{getCooldownBar()}}
+{\footnotesize\ttfamily float weapons\+::\+Weapon\+::get\+Cooldown\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+0 -\/ 1 cooldown, 1 is ready to use, more than one makes sense, like 2 charges 
+
+\begin{DoxyReturn}{Returns}
+cooldown time 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file Weapon.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a862bd61cf947a91809b423304885cf66}\label{classweapons_1_1_weapon_a862bd61cf947a91809b423304885cf66}} 
+\index{weapons::Weapon@{weapons::Weapon}!getHitBoxSize@{getHitBoxSize}}
+\index{getHitBoxSize@{getHitBoxSize}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{getHitBoxSize()}{getHitBoxSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} weapons\+::\+Weapon\+::get\+Hit\+Box\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+half hitbox size 
+
+\begin{DoxyReturn}{Returns}
+hitbox size as a vector 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classentities_1_1_entity_a9cd7ba81ddbd978b8f43e9f10e97492f}{entities\+::\+Entity}}.
+
+
+
+Definition at line 10 of file Weapon.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a3f84544c15d6220252c6175fdfe5c61d}\label{classweapons_1_1_weapon_a3f84544c15d6220252c6175fdfe5c61d}} 
+\index{weapons::Weapon@{weapons::Weapon}!getSecondaryBar@{getSecondaryBar}}
+\index{getSecondaryBar@{getSecondaryBar}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{getSecondaryBar()}{getSecondaryBar()}}
+{\footnotesize\ttfamily virtual float weapons\+::\+Weapon\+::get\+Secondary\+Bar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Secondary charge bar. for some purpose. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classweapons_1_1_e_m_gun_a1d2c920f4fddd40d39dba5d4dddf496f}{weapons\+::\+E\+M\+Gun}}.
+
+
+
+Definition at line 74 of file Weapon.\+h.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_ace9c44751879af7382585c3338d4bc47}\label{classweapons_1_1_weapon_ace9c44751879af7382585c3338d4bc47}} 
+\index{weapons::Weapon@{weapons::Weapon}!setPickUp@{setPickUp}}
+\index{setPickUp@{setPickUp}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{setPickUp()}{setPickUp()}}
+{\footnotesize\ttfamily void weapons\+::\+Weapon\+::set\+Pick\+Up (\begin{DoxyParamCaption}\item[{bool}]{bl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Mutator to is\+Picked\+Up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bl} & bool \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Weapon.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a34c39bfa9cdb2d7483bc340300e8a2d9}\label{classweapons_1_1_weapon_a34c39bfa9cdb2d7483bc340300e8a2d9}} 
+\index{weapons::Weapon@{weapons::Weapon}!setPos@{setPos}}
+\index{setPos@{setPos}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void weapons\+::\+Weapon\+::set\+Pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{new\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 40 of file Weapon.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a92ae1db47ca866d828f8b09c6de5a3f6}\label{classweapons_1_1_weapon_a92ae1db47ca866d828f8b09c6de5a3f6}} 
+\index{weapons::Weapon@{weapons::Weapon}!tick@{tick}}
+\index{tick@{tick}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void weapons\+::\+Weapon\+::tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_client}{Game\+Client}} \&}]{client,  }\item[{float}]{deltaT,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{shared\+\_\+this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+tick, if on the ground. It does charge energy, or whatever. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & see \\
+\hline
+{\em deltaT} & the \\
+\hline
+{\em shared\+\_\+this} & Entity class \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_entity_a0440674bf90ae83d9a26aa4b0ac8309e}{entities\+::\+Entity}}.
+
+
+
+Definition at line 41 of file Weapon.\+h.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a1cbf391f196bd151f3e3f1ae1e316088}\label{classweapons_1_1_weapon_a1cbf391f196bd151f3e3f1ae1e316088}} 
+\index{weapons::Weapon@{weapons::Weapon}!update@{update}}
+\index{update@{update}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool weapons\+::\+Weapon\+::update (\begin{DoxyParamCaption}\item[{float}]{d\+Tick }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the weapon in a Character\textquotesingle{}s inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d\+Tick} & a.\+k.\+a. deltaT, or f\+Elapsed\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+is the user can use it 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classweapons_1_1_glitch_gun_a6687147e8005e96f12806862f73a6cd8}{weapons\+::\+Glitch\+Gun}}, and \mbox{\hyperlink{classweapons_1_1_e_m_gun_a0bb30401aa36e2205c011ea0fcf40303}{weapons\+::\+E\+M\+Gun}}.
+
+
+
+Definition at line 18 of file Weapon.\+cpp.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a8c6f12ac9ed871ebd0394f6b5c447868}\label{classweapons_1_1_weapon_a8c6f12ac9ed871ebd0394f6b5c447868}} 
+\index{weapons::Weapon@{weapons::Weapon}!use@{use}}
+\index{use@{use}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily virtual bool weapons\+::\+Weapon\+::use (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$}]{user,  }\item[{const \mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \&}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true, if you did something with it. false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classweapons_1_1_ranged_weapon_a0e8915ad79021eb8fd79a1a3d7b1c92c}{weapons\+::\+Ranged\+Weapon}}, \mbox{\hyperlink{classweapons_1_1_melee_weapon_ac1b9a6718cbf78cea0b9e5e0b8dcc64e}{weapons\+::\+Melee\+Weapon}}, and \mbox{\hyperlink{classweapons_1_1_e_m_gun_a8034852a4a5957c3d3bc00ca5f7df6e4}{weapons\+::\+E\+M\+Gun}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classweapons_1_1_weapon_a27456b08c51df0759ae0155b9f79e336}\label{classweapons_1_1_weapon_a27456b08c51df0759ae0155b9f79e336}} 
+\index{weapons::Weapon@{weapons::Weapon}!baseDamage@{baseDamage}}
+\index{baseDamage@{baseDamage}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{baseDamage}{baseDamage}}
+{\footnotesize\ttfamily int weapons\+::\+Weapon\+::base\+Damage\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 19 of file Weapon.\+h.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_aa3529d6c0160f61132fc7bb1b9284a02}\label{classweapons_1_1_weapon_aa3529d6c0160f61132fc7bb1b9284a02}} 
+\index{weapons::Weapon@{weapons::Weapon}!cooldown@{cooldown}}
+\index{cooldown@{cooldown}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{cooldown}{cooldown}}
+{\footnotesize\ttfamily float weapons\+::\+Weapon\+::cooldown\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17 of file Weapon.\+h.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_aa3d78dae766eee8279326026dbb46f1f}\label{classweapons_1_1_weapon_aa3d78dae766eee8279326026dbb46f1f}} 
+\index{weapons::Weapon@{weapons::Weapon}!cooldownTime@{cooldownTime}}
+\index{cooldownTime@{cooldownTime}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{cooldownTime}{cooldownTime}}
+{\footnotesize\ttfamily float weapons\+::\+Weapon\+::cooldown\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 18 of file Weapon.\+h.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_aba025076ad5e6fae2f9b9d40f4ef815d}\label{classweapons_1_1_weapon_aba025076ad5e6fae2f9b9d40f4ef815d}} 
+\index{weapons::Weapon@{weapons::Weapon}!isPickedUp@{isPickedUp}}
+\index{isPickedUp@{isPickedUp}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{isPickedUp}{isPickedUp}}
+{\footnotesize\ttfamily bool weapons\+::\+Weapon\+::is\+Picked\+Up = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Is on the ground, or in an entity\textquotesingle{}s inventory. 
+
+
+
+Definition at line 24 of file Weapon.\+h.
+
+\mbox{\Hypertarget{classweapons_1_1_weapon_a3dab7574419aed48f2a0f2d54cfcd825}\label{classweapons_1_1_weapon_a3dab7574419aed48f2a0f2d54cfcd825}} 
+\index{weapons::Weapon@{weapons::Weapon}!name@{name}}
+\index{name@{name}!weapons::Weapon@{weapons::Weapon}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string weapons\+::\+Weapon\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 20 of file Weapon.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_weapon_8h}{Weapon.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_weapon_8cpp}{Weapon.\+cpp}}\end{DoxyCompactItemize}

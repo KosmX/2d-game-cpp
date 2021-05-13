@@ -1,0 +1,172 @@
+\hypertarget{classentities_1_1_player_entity}{}\doxysection{entities\+::Player\+Entity Class Reference}
+\label{classentities_1_1_player_entity}\index{entities::PlayerEntity@{entities::PlayerEntity}}
+
+
+You, or the player.  
+
+
+
+
+{\ttfamily \#include $<$Player\+Entity.\+h$>$}
+
+Inheritance diagram for entities\+::Player\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classentities_1_1_player_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classweapons_1_1_weapon}{weapons\+::\+Weapon}} $>$ \mbox{\hyperlink{classentities_1_1_player_entity_a6b0fdc757c8e1d95012a31dab836f20a}{get\+Weapon}} () override
+\begin{DoxyCompactList}\small\item\em Get selected weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classentities_1_1_player_entity_a9f5c7033ca46daf217c73cb5edbb0d68}{tick}} (\mbox{\hyperlink{class_game_client}{Game\+Client}} \&client, float deltaT, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&shared\+\_\+this) override
+\begin{DoxyCompactList}\small\item\em Tick the entity, read the control keys, HP regen logic, etc... \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classentities_1_1_player_entity_ace0cf1f8c711b21afef3965eb3b380a1}{Player\+Entity}} (\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}} \mbox{\hyperlink{classentities_1_1_entity_a04f9c2febe8d435138a07eb2f48ba96b}{pos}}, \mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&skin, const std\+::string \&name=\char`\"{}Player\char`\"{})
+\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classweapons_1_1_weapon}{weapons\+::\+Weapon}} $>$ \& \mbox{\hyperlink{classentities_1_1_player_entity_a1759d4f054b70c3c57f0f66c03fe09bb}{get\+Weapon}} () const
+\begin{DoxyCompactList}\small\item\em Constant weapon getter. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classentities_1_1_player_entity_ab654524e0ad7ba5a9b1b590794d347f2}{damage}} (int damage, \mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&attacker) override
+\begin{DoxyCompactList}\small\item\em Ouch. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classentities_1_1_player_entity_ab4a5cd2af67538f73832668a2cd32c9f}{get\+Health\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Sorry for these very meaningless descriptions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+You, or the player. 
+
+Definition at line 10 of file Player\+Entity.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentities_1_1_player_entity_ace0cf1f8c711b21afef3965eb3b380a1}\label{classentities_1_1_player_entity_ace0cf1f8c711b21afef3965eb3b380a1}} 
+\index{entities::PlayerEntity@{entities::PlayerEntity}!PlayerEntity@{PlayerEntity}}
+\index{PlayerEntity@{PlayerEntity}!entities::PlayerEntity@{entities::PlayerEntity}}
+\doxysubsubsection{\texorpdfstring{PlayerEntity()}{PlayerEntity()}}
+{\footnotesize\ttfamily entities\+::\+Player\+Entity\+::\+Player\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceolc_adb87819740ea9625f84c821fffb16429}{olc\+::vf2d}}}]{pos,  }\item[{\mbox{\hyperlink{classrender_1_1_i_texture}{render\+::\+I\+Texture}} \&}]{skin,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}Player\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file Player\+Entity.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classentities_1_1_player_entity_ab654524e0ad7ba5a9b1b590794d347f2}\label{classentities_1_1_player_entity_ab654524e0ad7ba5a9b1b590794d347f2}} 
+\index{entities::PlayerEntity@{entities::PlayerEntity}!damage@{damage}}
+\index{damage@{damage}!entities::PlayerEntity@{entities::PlayerEntity}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}}
+{\footnotesize\ttfamily bool entities\+::\+Player\+Entity\+::damage (\begin{DoxyParamCaption}\item[{int}]{damage,  }\item[{\mbox{\hyperlink{classentities_1_1_entity}{Entity}} \&}]{attacker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Ouch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & that hurt \\
+\hline
+{\em attacker} & the bad guy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+:D 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_living_entity_a28d31eff59137171da3e23a8e3ef9c1c}{entities\+::\+Living\+Entity}}.
+
+
+
+Definition at line 89 of file Player\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_player_entity_ab4a5cd2af67538f73832668a2cd32c9f}\label{classentities_1_1_player_entity_ab4a5cd2af67538f73832668a2cd32c9f}} 
+\index{entities::PlayerEntity@{entities::PlayerEntity}!getHealthStatus@{getHealthStatus}}
+\index{getHealthStatus@{getHealthStatus}!entities::PlayerEntity@{entities::PlayerEntity}}
+\doxysubsubsection{\texorpdfstring{getHealthStatus()}{getHealthStatus()}}
+{\footnotesize\ttfamily float entities\+::\+Player\+Entity\+::get\+Health\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sorry for these very meaningless descriptions. 
+
+\begin{DoxyReturn}{Returns}
+0-\/1 float, hp in percents. 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file Player\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_player_entity_a1759d4f054b70c3c57f0f66c03fe09bb}\label{classentities_1_1_player_entity_a1759d4f054b70c3c57f0f66c03fe09bb}} 
+\index{entities::PlayerEntity@{entities::PlayerEntity}!getWeapon@{getWeapon}}
+\index{getWeapon@{getWeapon}!entities::PlayerEntity@{entities::PlayerEntity}}
+\doxysubsubsection{\texorpdfstring{getWeapon()}{getWeapon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classweapons_1_1_weapon}{weapons\+::\+Weapon}} $>$ \& entities\+::\+Player\+Entity\+::get\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Constant weapon getter. 
+
+\begin{DoxyReturn}{Returns}
+idk 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file Player\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_player_entity_a6b0fdc757c8e1d95012a31dab836f20a}\label{classentities_1_1_player_entity_a6b0fdc757c8e1d95012a31dab836f20a}} 
+\index{entities::PlayerEntity@{entities::PlayerEntity}!getWeapon@{getWeapon}}
+\index{getWeapon@{getWeapon}!entities::PlayerEntity@{entities::PlayerEntity}}
+\doxysubsubsection{\texorpdfstring{getWeapon()}{getWeapon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classweapons_1_1_weapon}{weapons\+::\+Weapon}} $>$ entities\+::\+Player\+Entity\+::get\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get selected weapon. 
+
+\begin{DoxyReturn}{Returns}
+nullptr if has no selected weapon 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_character_entity_a7926bfbac4481203c1bd8920fcb2c432}{entities\+::\+Character\+Entity}}.
+
+
+
+Definition at line 11 of file Player\+Entity.\+cpp.
+
+\mbox{\Hypertarget{classentities_1_1_player_entity_a9f5c7033ca46daf217c73cb5edbb0d68}\label{classentities_1_1_player_entity_a9f5c7033ca46daf217c73cb5edbb0d68}} 
+\index{entities::PlayerEntity@{entities::PlayerEntity}!tick@{tick}}
+\index{tick@{tick}!entities::PlayerEntity@{entities::PlayerEntity}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void entities\+::\+Player\+Entity\+::tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_client}{Game\+Client}} \&}]{client,  }\item[{float}]{deltaT,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classentities_1_1_entity}{Entity}} $>$ \&}]{shared\+\_\+this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Tick the entity, read the control keys, HP regen logic, etc... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & client \\
+\hline
+{\em deltaT} & f\+Elapsed\+Time \\
+\hline
+{\em shared\+\_\+this} & this \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classentities_1_1_character_entity_ae7cdddc6dca655e7bf8c2f48424c5208}{entities\+::\+Character\+Entity}}.
+
+
+
+Definition at line 15 of file Player\+Entity.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_player_entity_8h}{Player\+Entity.\+h}}\item 
+C\+:/\+Users/kosmx/\+Documents/\+Git\+Hub/2d-\/game/\mbox{\hyperlink{_player_entity_8cpp}{Player\+Entity.\+cpp}}\end{DoxyCompactItemize}

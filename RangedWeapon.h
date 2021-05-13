@@ -5,7 +5,10 @@ namespace weapons {
 
     class Pistol;
     class EMGun;
-	
+
+    /**
+     * @brief Any weapon, what does shoot. not melee
+    */
     class RangedWeapon :
         public Weapon
     {
@@ -15,7 +18,14 @@ namespace weapons {
     	
     protected:
         float projectileSpeed;
-    	
+
+        /**
+         * @brief Spawn a projectile entity
+         * @param user the user of the weapon
+         * @param pos where to
+         * @param v0 what speed
+         * @param damage what damage
+        */
         virtual void spawnProjectile(std::shared_ptr<Entity>& user, const olc::vf2d& pos, const olc::vf2d& v0, int damage) = 0;
 
     public:

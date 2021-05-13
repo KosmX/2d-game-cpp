@@ -4,6 +4,9 @@
 
 namespace weapons
 {
+	/**
+	 * @brief Textures for common weapons...
+	*/
 	namespace textures
 	{
 		inline render::SimpleSprite sword1("Items/LongWep.png", { 0, 16 });

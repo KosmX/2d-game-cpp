@@ -8,7 +8,7 @@ namespace entities {
 class GameClient;
 
 /**
- * Generate random dungeons...
+ * @brief Generate random dungeons...
  */
 class DungeonGenerator
 {

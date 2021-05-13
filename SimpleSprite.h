@@ -5,11 +5,20 @@
 
 namespace render {
 
+	/**
+	 * @brief Simplest useable texture
+	*/
 	class SimpleSprite :
 		public ITexture
 	{
 	private:
+		/**
+		 * @brief The sprite it is referring
+		*/
 		LazySprite sprite;
+		/**
+		 * @brief image in the sprite
+		*/
 		const olc::vf2d uv, size;
 	
 	public:

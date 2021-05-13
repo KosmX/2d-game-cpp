@@ -3,7 +3,7 @@
 #include "ResourceManager.h"
 
 namespace render {
-	olc::Decal* LazySprite::getDecay()
+	olc::Decal* LazySprite::getDecal()
 	{
 		if (sprite == nullptr) {
 			this->sprite = ResourceManager::getSprite(this->resourceName);
@@ -18,7 +18,7 @@ namespace render {
 
 	void LazySprite::render(olc::TransformedView& scene, const olc::vf2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale)
 	{
-		scene.DrawPartialDecal(pos, this->getDecay(), uv, size, scale);
+		scene.DrawPartialDecal(pos, this->getDecal(), uv, size, scale);
 	}
 	
 

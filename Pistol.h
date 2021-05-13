@@ -4,6 +4,9 @@
 
 namespace weapons
 {
+	/**
+	 * @brief Just a pistol, nothing too dangerous
+	*/
 	class Pistol :
 		public RangedWeapon
 	{

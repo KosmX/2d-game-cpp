@@ -2,11 +2,20 @@
 #include "ProjectileEntity.h"
 
 namespace entities {
+	/**
+	 * @brief A projectile, that explodes
+	*/
 	class ExplosiveProjectile :
 		public ProjectileEntity
 	{
 	private:
+		/**
+		 * @brief After exploding, it will expire
+		*/
 		float stateTime = 0;
+		/**
+		 * @brief Is still a projectile, or a fireball
+		*/
 		bool state = false;
 		static render::SimpleSprite explosion;
 	protected:

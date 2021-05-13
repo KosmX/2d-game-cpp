@@ -2,6 +2,9 @@
 #include "CharacterEntity.h"
 
 namespace entities {
+    /**
+     * @brief A test/dummy entity. it can't do anything... no, it can die
+    */
     class DummyEntity :
         public CharacterEntity
     {

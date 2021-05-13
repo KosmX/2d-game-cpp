@@ -9,14 +9,23 @@ namespace entities {
 
 namespace render
 {
-
+	/**
+	 * @brief Every texture, what can render an entity
+	*/
 	class ITexture
 	{
 	public:
 
-		//Giving the entity will reduce the variables needed, and will make it's use more dynamic
+		/**
+		 * @brief Render the sprite, abstract function
+		 * @param scene view description
+		 * @param entity entity to render with this texture
+		*/
 		virtual void render(olc::TransformedView& scene, entities::Entity& entity) = 0;
-		
+
+		/**
+		 * @brief mostly not needed, but I can never know it
+		*/
 		virtual ~ITexture() = default;
 	};
 }

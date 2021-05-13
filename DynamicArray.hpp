@@ -7,6 +7,9 @@
 
 //Dynamic data type, set (not ordered), I'll use arrays for entry pointers, I will leave nullptr in the list.
 //I don't want to waste time with resizing this, I'll allocate more memory and if I delete from this, I'll do it in
+/**
+ * @brief Dynamic array, to store entities, have a buffer, to don't tick newly added entities too early
+ */
 template<typename T>
 class DynamicArray
 {

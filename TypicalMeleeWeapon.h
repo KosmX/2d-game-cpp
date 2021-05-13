@@ -1,6 +1,9 @@
 #pragma once
 #include "MeleeWeapon.h"
 namespace weapons {
+    /**
+     * @brief A typical melee weapon. I want to do not typical melee weapons too
+    */
     class TypicalMeleeWeapon :
         public MeleeWeapon
     {

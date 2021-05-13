@@ -121,9 +121,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="interfaces.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="LazySprite.h">
       <Filter>Header Files\gameObj\render</Filter>
     </ClInclude>

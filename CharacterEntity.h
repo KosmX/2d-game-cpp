@@ -7,6 +7,9 @@ namespace weapons
 }
 
 namespace entities {
+    /**
+     * @brief A player or an enemy
+    */
     class CharacterEntity :
         public LivingEntity
     {

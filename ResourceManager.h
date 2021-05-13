@@ -5,10 +5,11 @@
 
 namespace render
 {
+	
 	class SpriteManager;
 
 	/**
-	 * Load every sprite only once,
+	 * @brief Load every sprite only once, act as a set for loaded textures
 	 */
 	class ResourceManager
 	{
@@ -23,6 +24,11 @@ namespace render
 		 */
 		static void createInstance(std::string* parent = nullptr);
 
+		/**
+		 * @brief get a sprite, it it's already loaded, doesn't load it again
+		 * @param key string sprite key
+		 * @return the sprite
+		*/
 		static olc::Decal* getSprite(const std::string& key);
 
 	private:
@@ -30,11 +36,22 @@ namespace render
 		const std::string parentFolder;
 		ResourceManager(std::string* parent, olc::ResourcePack *pack = nullptr);
 		ResourceManager(const ResourceManager& other) = default; //make it private... I won't copy it.
+		/**
+		 * @brief The map of the sprites
+		*/
 		std::map<std::string, SpriteManager*> resourceMap;
 		olc::ResourcePack* pack;
 	public:
+		/**
+		 * @brief used by GetSprite
+		 * @param string asd
+		 * @return the sprite
+		*/
 		olc::Decal* getDecal(const std::string& string);
 		//olc::Decal* operator[](std::string* key);
+		/**
+		 * @brief indexing operator :D
+		 */
 		olc::Decal* operator[](const std::string& key);
 		
 		~ResourceManager();

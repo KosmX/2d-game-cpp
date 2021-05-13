@@ -7,6 +7,11 @@ namespace weapons
 		return this->texture;
 	}
 
+	olc::vf2d Weapon::getHitBoxSize() const
+	{
+		return olc::vf2d(0, 0);
+	}
+
 	Weapon::Weapon(render::ITexture& texture, float cooldownTime, int damage, const std::string& name, const olc::vf2d& pos)
 		: Entity(pos), texture(texture), cooldown(0), cooldownTime(cooldownTime), baseDamage(damage), name(name) {}
 
@@ -35,6 +40,11 @@ namespace weapons
 	void Weapon::setPos(const olc::vf2d& newPos)
 	{
 		this->pos = newPos;
+	}
+
+	bool Weapon::damage(int damage, Entity& attacker)
+	{
+		return false;
 	}
 
 	

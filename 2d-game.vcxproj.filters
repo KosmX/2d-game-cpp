@@ -95,6 +95,18 @@
     <ClCompile Include="CharacterEntity.cpp">
       <Filter>Source Files\gameObj\entities</Filter>
     </ClCompile>
+    <ClCompile Include="ProjectileEntity.cpp">
+      <Filter>Source Files\gameObj\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="EMGun.cpp">
+      <Filter>Source Files\gameObj\wepons</Filter>
+    </ClCompile>
+    <ClCompile Include="Pistol.cpp">
+      <Filter>Source Files\gameObj\wepons</Filter>
+    </ClCompile>
+    <ClCompile Include="RangedWeapon.cpp">
+      <Filter>Source Files\gameObj\wepons</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interfaces.h">
@@ -171,6 +183,18 @@
     </ClInclude>
     <ClInclude Include="CharacterEntity.h">
       <Filter>Header Files\gameObj\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectileEntity.h">
+      <Filter>Header Files\gameObj\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="RangedWeapon.h">
+      <Filter>Header Files\gameObj\wepons</Filter>
+    </ClInclude>
+    <ClInclude Include="Pistol.h">
+      <Filter>Header Files\gameObj\wepons</Filter>
+    </ClInclude>
+    <ClInclude Include="EMGun.h">
+      <Filter>Header Files\gameObj\wepons</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

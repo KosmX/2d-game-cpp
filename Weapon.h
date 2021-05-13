@@ -20,6 +20,7 @@ namespace weapons {
         int baseDamage;
         std::string name;
         bool isPickedUp = false;
+		olc::vf2d getHitBoxSize() const override;
     public:
 
         Weapon(render::ITexture& texture, float cooldownTime, int damage = 10, const std::string& name = "Weapon", const olc::vf2d& pos = { 0, 0 });
@@ -46,5 +47,7 @@ namespace weapons {
     	 */
         virtual float getSecondaryBar() { return 0; }
         virtual void setPos(const olc::vf2d& newPos);
+
+    	bool damage(int damage, Entity& attacker) override;
     };
 }

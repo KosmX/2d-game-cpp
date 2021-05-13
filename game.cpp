@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 	cout << argv[0] << endl;
 	
 	bool invalidArg = false;
-	bool debug = true;
+	bool debug = false;
 	for(int i = 0; i < argc; i++){
 		std::string tmp(argv[i]);
 		if(tmp == "-r" || tmp == "--resource"){

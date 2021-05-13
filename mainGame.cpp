@@ -3,6 +3,7 @@
 #include <algorithm>
 #include "GameException.h"
 #include "TestGenerator.h"
+#include "SquareRoomGenerator.h"
 #include "Weapon.h"
 
 const float maxTimeDelta = 0.05f;
@@ -50,7 +51,7 @@ bool GameClient::OnUserCreate()
 	scene.Initialise(GetWindowSize(), { worldToScreenScale, worldToScreenScale }); // uh. idk. maybe that's the best option
 	
 	
-	TestGenerator generator;
+	SquareRoomGenerator generator;
 	player = generator.generate(*this);
 
 	

@@ -56,7 +56,7 @@ namespace entities
 			GameClient::getInstance() += weapon;
 		}
 		this->weapon = nullptr;
-		return false;
+		return bl;
 	}
 	std::shared_ptr<weapons::Weapon> EntityWithAI::getWeapon()
 	{

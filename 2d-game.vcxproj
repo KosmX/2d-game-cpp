@@ -164,6 +164,7 @@
     <ClCompile Include="RangedWeapon.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SimpleSprite.cpp" />
+    <ClCompile Include="SquareRoomGenerator.cpp" />
     <ClCompile Include="TestGenerator.cpp" />
     <ClCompile Include="TypicalMeleeWeapon.cpp" />
     <ClCompile Include="WallEntity.cpp" />
@@ -197,6 +198,7 @@
     <ClInclude Include="RangedWeapon.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SimpleSprite.h" />
+    <ClInclude Include="SquareRoomGenerator.h" />
     <ClInclude Include="TestGenerator.h" />
     <ClInclude Include="TypicalMeleeWeapon.h" />
     <ClInclude Include="WallEntity.h" />

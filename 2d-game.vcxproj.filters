@@ -116,6 +116,9 @@
     <ClCompile Include="EntityWithAI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SquareRoomGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interfaces.h">
@@ -213,6 +216,9 @@
     </ClInclude>
     <ClInclude Include="EntityWithAI.h">
       <Filter>Header Files\gameObj\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRoomGenerator.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -107,17 +107,17 @@
     <ClCompile Include="RangedWeapon.cpp">
       <Filter>Source Files\gameObj\wepons</Filter>
     </ClCompile>
-    <ClCompile Include="GlitchGun.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="EntityWithAI.cpp">
+      <Filter>Source Files\gameObj\entities</Filter>
     </ClCompile>
     <ClCompile Include="ExplosiveProjectile.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\gameObj\entities</Filter>
     </ClCompile>
-    <ClCompile Include="EntityWithAI.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GlitchGun.cpp">
+      <Filter>Source Files\gameObj\wepons</Filter>
     </ClCompile>
     <ClCompile Include="SquareRoomGenerator.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\gameObj</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -215,7 +215,7 @@
       <Filter>Header Files\gameObj\entities</Filter>
     </ClInclude>
     <ClInclude Include="SquareRoomGenerator.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\gameObj\management</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

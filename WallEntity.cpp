@@ -45,7 +45,7 @@ namespace entities {
 		return false;
 	}
 
-	byte WallEntity::getNeighbourID() const
+	char WallEntity::getNeighbourID() const
 	{
 		return neighbourID;
 	}

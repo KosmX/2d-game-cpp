@@ -232,7 +232,4 @@
       <Filter>Header Files\gameObj\wepons</Filter>
     </Text>
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="2d-game1.rc" />
-  </ItemGroup>
 </Project>

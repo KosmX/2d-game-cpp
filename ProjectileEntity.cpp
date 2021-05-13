@@ -3,6 +3,8 @@
 #include "LivingEntity.h"
 #include "mainGame.h"
 
+const float maxProjectileAge = 16.f;
+
 namespace entities {
 	render::ITexture& ProjectileEntity::getTexture()
 	{
@@ -51,6 +53,10 @@ namespace entities {
 					}
 				}
 			}
+		}
+		age += deltaT;
+		if(age > maxProjectileAge){
+			this->is_alive = false; //sign it to remove...
 		}
 	}
 	void ProjectileEntity::setVelocity(const olc::vf2d& v)

@@ -25,14 +25,14 @@ GameClient::GameClient(bool debug)
 	this->sAppName = "KosmX's game";
 }
 
-DynamicArray<std::shared_ptr<entities::Entity>>& GameClient::getEntities()
+DynamicArray<std::shared_ptr<Entity>>& GameClient::getEntities()
 {
 	return this->entities;
 }
 
 void GameClient::updateWorldOffset(float dTick)
 {
-	vf2d delta = scene.GetWorldOffset() + this->GetScreenPixelSize()/2.f + vf2d(4, 0);
+	vf2d delta = scene.GetWorldOffset() + scene.GetWorldTL()/4;
 	scene.MoveWorldOffset((player->getPos() - delta) * dTick * screenMoveScale);
 }
 
@@ -47,7 +47,8 @@ bool GameClient::OnUserCreate()
 	//Set resource parent!
 	render::ResourceManager::createInstance();
 
-	scene.Initialise(this->GetScreenPixelSize(), {worldToScreenScale, worldToScreenScale}); // uh. idk. maybe that's the best option
+	scene.Initialise(GetWindowSize(), { worldToScreenScale, worldToScreenScale }); // uh. idk. maybe that's the best option
+	
 	
 	TestGenerator generator;
 	player = generator.generate(*this);

@@ -33,6 +33,8 @@ shared_ptr<PlayerEntity> TestGenerator::generate(GameClient& client)
 	weapon2->setPos({ -4, -5 });
 	
 	client += weapon;
+	client += weapon2;
+	client += weapon1;
 	shared_ptr<PlayerEntity> player(new PlayerEntity({ 0, -4 }, render::CharacterTexture::EngineerTexture));
 
 

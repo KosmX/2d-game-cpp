@@ -24,6 +24,6 @@ namespace render {
 
 	void LazySprite::renderCentered(olc::TransformedView& scene, const olc::vf2d& pos, const olc::vf2d& uv, const olc::vf2d& size, olc::vf2d scale)
 	{
-		this->render(scene, pos + size / 2.0f, uv, size, scale);
+		this->render(scene, pos - scale / 2.0f, uv, size, scale);
 	}
 }

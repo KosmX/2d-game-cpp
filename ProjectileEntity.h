@@ -10,6 +10,7 @@ namespace entities {
         static render::SimpleSprite projectile;
     private:
         render::ITexture& texture;
+        float age = 0;
     protected:
         olc::vf2d velocity;
         std::shared_ptr<Entity> user;

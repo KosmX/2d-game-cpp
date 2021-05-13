@@ -6,18 +6,16 @@ namespace weapons {
 		: Pistol(texture, cooldownTime, damage, projectileSpeed, name, pos) {}
 	bool EMGun::use(std::shared_ptr<Entity> user, const olc::vf2d& direction)
 	{
-		if (cooldown != 0) return false;
 		if (energy < 10) return false;
-		cooldown = cooldownTime;
-		energy -= 10;
-
-		this->spawnProjectile(user, this->pos, direction.norm() * projectileSpeed, this->baseDamage);
-
-		return true;
+		if(Pistol::use(user, direction)){
+			energy -= 10;
+			return true;
+		}
+		return false;
 	}
 	float EMGun::getSecondaryBar()
 	{
-		return energy / 128;
+		return energy / 128.f;
 	}
 	bool EMGun::update(float dTick)
 	{
